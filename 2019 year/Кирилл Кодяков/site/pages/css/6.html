@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Шрифт</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ШРИФТ
+		</div>
+	</div>
+	<a href="7.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Красивый шрифт - один из самых важных элементов сайта, поэтому эту тему стоит рассмотреть отдельно. Прежде всего вам нужно найти нужный вам шрифт в интернете. Их существует огромное множество, поэтому подобрать тот, который идеально впишется в ваш сайт, не составит большого труда. 
+		</div>
+		<div id="div_2" class="text">
+			После выбора шрифта, его нужно <span>подключить</span> к вашему сайту, но всё не так просто. Шрифт должен правильно отображаться во всех возможных браузерах, а для этого нужно подключить <span>несколько версий</span> вашего шрифта с разными расширениями. Общая схема выглядит так:
+		</div>
+		<div id="code_1" class="text code">
+			@<span>font-face</span>{ 
+				<br>
+			&emsp;font-family: 'FontName';
+				<br> 
+			&emsp;src: url('FontName.woff2') format('woff2'), 
+				<br>
+			&emsp;&emsp;   url('FontName.ttf') format('truetype'), 
+				<br>
+			&emsp;&emsp;   url('FontName.woff') format('woff'); 
+				<br>
+			}
+		</div>
+		<div id="div_3" class="text">
+			Правило @<span>font-face</span> отвечает за подключение шрифта. В это правило записывается имя подключаемого шрифта (<span>font-family</span>) и путь к нему (<span>url</span>). Теперь вы можете использовать этот шрифт. Для этого у объекта прописывается свойство <span>font-family</span> со значением имени, которое вы указали в @<span>font-face</span>.
+		</div>
+		<div id="code_2" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;font-family: 'FontName';
+				<br>
+			}
+		</div>
+		<div id="div_4" class="text">
+			За размер шрифта отвечает свойство <span>font-size</span>. Обычно указывается в пунктах (pt), но никто не мешает вам выставлять значения в пикселях, сантиметрах или какой-либо другой единице измерения.
+		</div>
+		<div id="div_5" class="text">
+			Свойство <span>font-style</span> задается курсивное (значение <span>italic</span>) и наклонное (значение <span>oblique</span>) начертания, а свойство <span>font-weight</span> со значением bold задает жирное начертание.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

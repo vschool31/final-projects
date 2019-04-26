@@ -1,0 +1,7 @@
+video{
+	height: 70vh;
+	position: absolute;
+	top: 40vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+}

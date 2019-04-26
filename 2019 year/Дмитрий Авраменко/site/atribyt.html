@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+			<div><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li><li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>
+				</ul>
+			</nav>
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+	<section>
+		<div class="container2">
+			<div>
+			<p>Универсальные атрибуты применяются практически ко всем тегам, поэтому выделены в отдельную группу, чтобы не повторять их для всех тегов.</p>
+		</div>
+			<table class="t3">
+<caption>Таблица Универсальные атрибуты</caption>
+<tbody><tr><th style="width: 20%;">Атрибут</th>
+<th>Описание</th></tr>
+<tr><td><kbd>&lt;accesskey&gt;</kbd></td><td>Позволяет получить доступ к элементу с помощью заданного сочетания клавиш.</td></tr><tr>
+<tr><td><kbd>&lt;class&gt;</kbd></td><td>Определяет имя класса, которое позволяет связать тег со стилевым оформлением.</td></tr><tr>
+<tr><td><kbd>&lt;contenteditable&gt;</kbd></td><td>Сообщает, что элемент доступен для редактирования пользователем.</td></tr><tr>
+<tr><td><kbd>&lt;contextmenu&gt;</kbd></td><td>Устанавливает контекстное меню для элемента.</td></tr><tr>
+<tr><td><kbd>&lt;dir&gt;</kbd></td><td>Задает направление и отображение текста — слева направо или справа налево.</td></tr><tr>
+<tr><td><kbd>&lt;hidden&gt;</kbd></td><td>Скрывает содержимое элемента от просмотра.</td></tr><tr>
+<tr><td><kbd>&lt;id&gt;</kbd></td><td>Указывает имя стилевого идентификатора.</td></tr><tr>
+<tr><td><kbd>&lt;lang&gt;</kbd></td><td>Браузер использует значение параметра для правильного отображения некоторых национальных символов.</td></tr><tr>
+<tr><td><kbd>&lt;spellcheck&gt;</kbd></td><td>Указывает браузеру проверять или нет правописание и грамматику в тексте.
+</td></tr><tr>
+<tr><td><kbd>&lt;style&gt;</kbd></td><td>Применяется для определения стиля элемента с помощью правил CSS.</td></tr><tr>
+<tr><td><kbd>&lt;tabindex&gt;</kbd></td><td>Устанавливает порядок получения фокуса при переходе между элементами с помощью клавиши Tab.</td></tr><tr>
+<tr><td><kbd>&lt;title&gt;</kbd></td><td>Описывает содержимое элемента в виде всплывающей подсказки.</td></tr><tr>
+<tr><td><kbd>&lt;xml:lang&gt;</kbd></td><td>Этот атрибут по своему действию похож на lang, но применяется только в XHTML-документах и указывает язык всего текста или его фрагмента.</td></tr><tr>
+<tr><td><kbd>&lt;translate&gt;</kbd></td><td>Разрешает или запрещает перевод текста внутри элемента.
+Принимаемые значения: <kbd>yes/no</kbd>.</td></tr><tr>
+
+		</div>
+	<footer>
+		<div class="footer">	
+		Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/*Общее для всех уроков*/
+
+.html_lesson, .js_lesson,
+.css_lesson, .video_lesson{
+	width: 20vw;
+	height: 12vh;
+
+	background-color: #fff;
+	border: solid 7px;
+
+	border-radius: 35px;
+
+	font-size: 22pt;
+	text-align: center;
+
+	transform: scale(0);
+	opacity: 0;
+	transition-duration: 0.5s;
+
+	z-index: 1;
+
+	cursor: pointer;
+}
+
+/*Контейнеры текста*/
+
+.html_lesson div, .js_lesson div,
+.css_lesson div, .video_lesson div{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	width: inherit;
+	height: inherit;
+
+	font-size: 22pt;
+}
+
+/*Цвета границ*/
+
+.html_lesson{
+	border-color: #E54D26;
+}
+.js_lesson{
+	border-color: #E5A227;
+}
+.css_lesson{
+	border-color: #0070BA;
+}
+.video_lesson{
+	border-color: #63A712;
+}
+
+/*Смещение уроков*/
+
+.one{
+	position: absolute;
+	top: 15vh;
+	left: 11vw;
+}
+.two{
+	position: absolute;
+	top: 15vh;
+	left: 40vw;
+}
+.three{
+	position: absolute;
+	top: 15vh;
+	left: 69vw;
+}
+.four{
+	position: absolute;
+	top: 44vh;
+	left: 4vw;
+}
+.fife{
+	position: absolute;
+	top: 44vh;
+	left: 28vw;
+}
+.six{
+	position: absolute;
+	top: 44vh;
+	left: 52vw;
+}
+.seven{
+	position: absolute;
+	top: 44vh;
+	left: 76vw;
+}
+.eight{
+	position: absolute;
+	top: 73vh;
+	left: 11vw;
+}
+.nine{
+	position: absolute;
+	top: 73vh;
+	left: 40vw;
+}
+.ten{
+	position: absolute;
+	top: 73vh;
+	left: 69vw;
+}

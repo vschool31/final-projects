@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Введение в JS + переменные</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ВВЕДЕНИЕ В JS + ПЕРЕМЕННЫЕ
+		</div>
+	</div>
+	<a href="2.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			<span>JsvaScript</span> - язык программирования, который создавался с целью добавления сайтам динамичности. Он подключается напрямую к HTML с помощью тега &lt;/<span>script</span>&gt;.
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>script</span> <span>src</span>="путь к файлу"&gt;&lt;/script&gt;
+		</div>
+		<div id="div_2" class="text">
+			Почему для создания сайтов используют именно этот язык программирования? <span>Во-первых</span>, с его помощью можно тесно взаимодействовать с HTML и CSS. Это позволяет осуществлять вам любые идеи по оформлению страниц, которые приходят вам в голову. <span>Во-вторых</span>, простые вещи в нем делаются просто. Вам не нужно писать кучу строк кода, чтобы, например, сделать объект на странице кликабельным. <span>В-третьих</span>, интерпретатор JavaScript  присутствует во всех современных браузерах. Всё это делает его идеальным языком программирования для "оживления" сайтов.
+		</div>
+		<div id="div_3" class="text">
+			В любой JavaScript-программе вы будете работать с информацией. Для хранения этой информации используются <span>переменные</span>. Переменная состоит из имени и выделенной области памяти, которая ему соответствут. Для <span>объявления</span> (создания) переменной используют ключевое слово <span>var</span>.
+		</div>
+		<div id="code_2" class="text code">
+			<span>var</span> *имя переменной*;
+		</div>
+		
+		<div id="div_3" class="text">
+			После объявления (или во время объявления) в переменную можно записать данные:
+		</div>
+		<div id="code_3" class="text code">
+			<span>var</span> message;
+				<br>
+			message = 'Hello, World!';
+				<br>
+			<span>var</span> number = 123;
+		</div>
+		<div id="div_4" class="text">
+			В  JavaScript <span>не объявляют</span> тип переменной (он определяется <span>автоматически</span>). В дальнейшем с этими данными можно будет работать, обращаясь к ним по имени переменной. Можно объявлять несколько переменных сразу:
+		</div>
+		<div id="code_4" class="text code">
+			<span>var</span> user = 'Igor', age = 25, message = 'Hello';
+		</div>
+		<div id="div_5" class="text">
+			На имя переменной в JavaScript наложены некоторые ограничения: имя может состоять из букв, цифр (цифра не может быть первым символом имени) и двух символов ($ и _). Регистр также имеет значение: переменные num и Num - две разные переменные.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

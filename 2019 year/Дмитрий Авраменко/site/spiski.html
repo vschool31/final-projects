@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container"> 
+      <a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+        <div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+            <li><a href="kontakt.html">Контакты</a></li>
+            <li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+<section>
+
+
+	<div class="container2">
+		<h1 class="html12">1.8. HTML-списки</h1>
+		<img src="\сайтик\img\html_list.png" class="tuturu">
+		<p><strong>HTML-списки</strong> используются для группировки связанных между собой фрагментов информации. Существует три вида списков:   </p>
+		<p><strong>маркированный список</strong> — <kbd>&lt;ul&gt;</kbd> — каждый элемент списка <kbd>&lt;li&gt;</kbd> отмечается маркером,<br>
+<strong>нумерованный список</strong> — <kbd>&lt;ol&gt;</kbd> — каждый элемент списка <kbd>&lt;li&gt;</kbd> отмечается цифрой,<br>
+<strong>список определений</strong> — <kbd>&lt;dl&gt;</kbd> — состоит из пар термин <kbd>&lt;dt&gt;</kbd> — <kbd>&lt;dd&gt;</kbd> определение.</p>
+<p>Каждый список представляет собой контейнер, внутри которого располагаются элементы списка или пары термин-определение. Элементы списка ведут себя как блочные элементы, располагаясь друг под другом и занимая всю ширину блока-контейнера. Каждый элемент списка имеет дополнительный блок, расположенный сбоку, который не участвует в компоновке.</p>
+<h2>Создание HTML-списков</h2>
+
+<div>
+<p><ul class="textatr">
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="#glava1">1. Маркированный список <kbd>&lt;ul&gt;</kbd></a></li>
+<li><a href="#glava2">2. Нумерованный список <kbd>&lt;ol&gt;</kbd></a></li>
+<li><a href="#glava3">3. Список определений <kbd>&lt;dl&gt;</kbd></a></li>
+<li><a href="#glava4">4. Вложенный список</a></li>
+<li><a href="#glava5">5. Многоуровневый нумерованный список</a></li>
+</ul>
+</p>
+</div>
+
+<h1 id="glava1" class="html1">1. Маркированный список</h1>
+<p><strong>Маркированный список</strong> представляет собой неупорядоченный список <em>(от англ. Unordered List)</em>. Создаётся с помощью парного тега <kbd>&lt;ul&gt;&lt;/ul&gt;</kbd>. В качестве маркера элемента списка выступает метка, например, закрашенный кружок. </p>
+<p>Браузеры по умолчанию добавляют следующее форматирование блоку списка: </p>
+<pre>ul {padding-left: 40px; margin-top: 1em; margin-bottom: 1em;}</pre>
+<p>Каждый элемент списка создаётся с помощью парного тега <kbd>&lt;li&gt;&lt;/li&gt;</kbd> <em>(от англ. List Item)</em>. </p>
+<p>Для тега <kbd>&lt;ul&gt;</kbd> доступны <a href="atribyt.html" class="atri" target="_blank"> ‎глобальные атрибуты</a>.</p>
+<pre>&lt;ul&gt;
+  &lt;li&gt;Microsoft&lt;/li&gt;
+  &lt;li&gt;Google&lt;/li&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;IBM&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+
+<figure><img src="\сайтик\img\unordered-list.png" alt="unordered list" width="660" height="82" class="alignleft size-full wp-image-4569" ><figcaption>Рис. 1. Маркированный список</figcaption></figure>
+
+<h1 id="glava2" class="html1">2. Нумерованный список</h1>
+<p><strong>Нумерованный список</strong> создаётся с помощью парного тега <kbd>&lt;ol&gt;&lt;/ol&gt;</kbd>. Каждый пункт списка также создаётся с помощью элемента <kbd>&lt;li&gt;</kbd>. Браузер нумерует элементы по порядку автоматически и если удалить один или несколько элементов такого списка, то остальные номера будут автоматически пересчитаны. </p>
+<p>Блок списка также имеет стили браузера по умолчанию: </p>
+<pre class="lang:css decode:true ">ol {padding-left: 40px; margin-top: 1em; margin-bottom: 1em;}</pre>
+<p>Для тега <kbd>&lt;li&gt;</kbd> доступен атрибут <kbd>value</kbd>, который позволяет изменить номер по умолчанию для выбранного элемента списка. Например, если для первого пункта списка задать <kbd>&lt;li value="10"&gt;</kbd>, то остальная нумерация будет пересчитана относительно нового значения. </p>
+<p>Для тега <kbd>&lt;ol&gt;</kbd> доступны  следующие атрибуты:</p>
+<table class="t3">
+<caption>Таблица 1. Атрибуты тега &lt;ol&gt;</caption>
+<tbody><tr>
+<th style="width:20%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td><kbd>reversed</kbd></td>
+<td>Атрибут <kbd>reversed</kbd> задает отображение списка в обратном порядке (например, 9, 8, 7…).</td>
+</tr>
+<tr>
+<td><kbd>start</kbd></td>
+<td>Атрибут <kbd>start</kbd> задает начальное значение, от которого пойдет отсчет нумерации, например, конструкция <kbd>&lt;ol start="10"&gt;</kbd> первому пункту присвоит порядковый номер «10». Также можно одновременно задавать тип нумерации, например, <kbd>&lt;ol type="I" start="10"&gt;</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>type</kbd></td>
+<td>Атрибут <kbd>type</kbd> задает вид маркера для использования в списке (в виде букв или цифр). Принимаемые значения:<br>
+<kbd>1</kbd> — значение по умолчанию, десятичная нумерация.<br>
+<kbd>A</kbd> — нумерация списка в алфавитном порядке, заглавные буквы (A, B, C, D).<br>
+<kbd>a</kbd> — нумерация списка в алфавитном порядке, строчные буквы (a, b, c, d).<br>
+<kbd>I</kbd> — нумерация римскими заглавными цифрами (I, II, III, IV).<br>
+<kbd>i</kbd> — нумерация римскими строчными цифрами (i, ii, iii, iv).
+</td>
+</tr>
+</tbody></table>
+<pre>&lt;ol&gt;
+  &lt;li&gt;Microsoft&lt;/li&gt;
+  &lt;li&gt;Google&lt;/li&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;IBM&lt;/li&gt;
+&lt;/ol&gt;</pre>
+<figure><img src="\сайтик\img\ordered-list.png" alt="ordered list" width="660" height="81"><figcaption>Рис. 2. Нумерованный список</figcaption></figure>
+
+<h1 id="glava3" class="html1">3. Список определений</h1>
+<p><strong>Списки определений</strong> создаются с помощью тега <kbd>&lt;dl&gt;&lt;/dl&gt;</kbd>. Для добавления термина применяется тег <kbd>&lt;dt&gt;&lt;/dt&gt;</kbd>, а для вставки определения — тег <kbd>&lt;dd&gt;&lt;/dd&gt;</kbd>.</p>
+<div style="float: none; margin:0px;">
+<div style="margin: 0 0 20px 0;clear:both;">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- new -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4906567094890032" data-ad-slot="3058577107" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<p>Блок списка определений имеет следующие стили браузера по умолчанию: </p>
+<pre class="lang:css decode:true ">dl {margin-top: 1em; margin-bottom: 1em;}</pre>
+<p>Для тегов <kbd>&lt;dl&gt;</kbd>, <kbd>&lt;dt&gt;</kbd> и <kbd>&lt;dd&gt;</kbd> доступны <a href="https://html5book.ru/html-attributes/" class="site" target="_blank"> ‎глобальные атрибуты</a>.</p>
+<pre>&lt;dl&gt;
+  &lt;dt&gt;Режиссер:&lt;/dt&gt;
+    &lt;dd&gt;Петр Точилин&lt;/dd&gt;
+  &lt;dt&gt;В ролях:&lt;/dt&gt;
+    &lt;dd&gt;Андрей Гайдулян&lt;/dd&gt;
+    &lt;dd&gt;Алексей Гаврилов&lt;/dd&gt;
+    &lt;dd&gt;Виталий Гогунский&lt;/dd&gt;
+    &lt;dd&gt;Мария Кожевникова&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+<figure><img src="\сайтик\img\dl.png" alt="dl" width="660" height="136"><figcaption>Рис. 3. Список определений</figcaption></figure>
+<h1 id="glava4" class="html1">4. Вложенный список</h1>
+<p>Зачастую возможностей простых списков не хватает, например, при создании оглавления никак не обойтись без <b>вложенных пунктов</b>. Разметка для вложенного списка будет следующей:</p>
+<pre>&lt;ul&gt;
+ &lt;li&gt;Пункт 1.&lt;/li&gt;
+  &lt;li&gt;Пункт 2.
+    &lt;ul&gt;
+      &lt;li&gt;Подпункт 2.1.&lt;/li&gt;
+       &lt;li&gt;Подпункт 2.2.     
+        &lt;ul&gt;
+          &lt;li&gt;Подпункт 2.2.1.&lt;/li&gt;
+          &lt;li&gt;Подпункт 2.2.2.&lt;/li&gt;
+          &lt;/ul&gt;
+       &lt;/li&gt;          
+      &lt;li&gt;Подпункт 2.3.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+ &lt;li&gt;Пункт 3.&lt;/li&gt;
+&lt;/ul&gt;</pre>
+<figure><img src="\сайтик\img/=\ul-ul-ul.png" alt="ul ul ul" width="660" height="160"><figcaption>Рис. 4. Вложенный список</figcaption></figure>
+
+<h1 id="glava5" class="html1">5. Многоуровневый нумерованный список</h1>
+<p>Многоуровневый список используется для отображения элементов списка на разных уровнях с различными отступами. Разметка для многоуровневого нумерованного списка будет следующей:</p>
+<pre>&lt;ol&gt;
+  &lt;li&gt;пункт&lt;/li&gt; &lt;!-1.-&gt;
+  &lt;li&gt;пункт           
+    &lt;ol&gt;
+      &lt;li&gt;пункт&lt;/li&gt; &lt;!-2.1.-&gt;
+      &lt;li&gt;пункт&lt;/li&gt; &lt;!-2.2.-&gt;
+      &lt;li&gt;пункт
+        &lt;ol&gt;
+          &lt;li&gt;пункт&lt;/li&gt; &lt;!-2.3.1.-&gt;
+          &lt;li&gt;пункт&lt;/li&gt; &lt;!-2.3.2.-&gt;
+          &lt;li&gt;пункт&lt;/li&gt; &lt;!-2.3.3.-&gt; 
+        &lt;/ol&gt;
+      &lt;/li&gt; &lt;!-2.3.-&gt;
+      &lt;li&gt;пункт&lt;/li&gt; &lt;!-2.4.-&gt;  
+    &lt;/ol&gt;
+  &lt;/li&gt; &lt;!-2.-&gt;
+  &lt;li&gt;пункт&lt;/li&gt; &lt;!-3.-&gt;        
+  &lt;li&gt;пункт&lt;/li&gt; &lt;!-4.-&gt;        
+&lt;/ol&gt;</pre>
+<p>Такая разметка по умолчанию создаст для каждого вложенного списка новую нумерацию, начинающуюся с единицы. Чтобы сделать вложенную нумерацию, нужно использовать следующие свойства:<br>
+<kbd>counter-reset</kbd> сбрасывает один или несколько счётчиков, задавая значение для сброса;<br>
+<kbd>counter-increment</kbd> задаёт значение приращения счётчика, т.е. с каким шагом будет нумероваться каждый последующий пункт;<br>
+<kbd>content</kbd> — генерируемое содержимое, в данном случае отвечает за вывод номера перед каждым пунктом списка.</p>
+<pre>ol {
+/* убираем стандартную нумерацию */
+list-style: none; 
+/* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */ 
+counter-reset: li; 
+}
+li:before {
+/* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+counter-increment: li; 
+/* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+content: counters(li,".") ". "; 
+}</pre>
+<figure><img src="\сайтик\img\numeric-list1.png" alt="numeric list" width="660" height="220"><figcaption>Рис. 5. Многоуровневый нумерованный список</figcaption></figure>
+
+
+
+
+
+
+
+
+	</div>
+<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

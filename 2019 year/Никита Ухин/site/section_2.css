@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'Amatic SC';
+	src: url('AmaticSC-Regular.ttf');
+}
+
+#color {
+	background-color: #FAFAFA;
+}
+
+.crew {
+	font-family: 'Amatic SC', cursive;
+	position: absolute;
+	display: block;
+	width: inherit;
+	height: 10vh;
+	top: 7vh;
+	text-align: center;
+	font-size: 7vh;
+	line-height: 10vh;
+	margin-top: 0;
+}
+
+.center2 {
+	position: absolute;
+	width: 100%;
+	height: 90vh;
+	bottom: 0;
+}
+
+.one {
+	position: absolute;
+	width: 23vw;
+	margin-left: 4vw;
+	height: 75vh;
+	margin-top: 15vh;  
+}
+
+.two {
+	position: absolute;
+	width: 23vw;
+	height: 75vh;
+	margin-top: 15vh;
+	margin-left: 27vw;
+}
+
+.three {
+	position: absolute;
+	width: 23vw;
+	height: 75vh;
+	margin-top: 15vh;
+	margin-left: 50vw;
+}
+
+.four {
+	position: absolute;
+	width: 23vw;
+	height: 75vh;
+	margin-top: 15vh;
+	margin-left: 73vw;
+}
+
+.circle {
+	width: 14vw;
+	height: 14vw;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 3px solid #26A69A;
+	margin-left: calc(50% - 7.5vw);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+
+.name {
+	font-family: 'Amatic SC', cursive;
+	display: block;
+	text-align: center;
+	width: 75%;
+	margin-left: 12.5%;
+	border-bottom: 2px solid #26A69A;
+	font-size: 4vh;
+}
+
+.person {
+	width: 100%;
+}
+
+.person1 {
+	height: 100%;
+	margin-left: -2vh;
+}
+
+.personS {
+	width: 100%;
+}
+
+.discription {
+	margin: 2vw;
+}
+
+.discription p {
+	font-family: Tahoma;
+	text-align: center;
+	font-size: 2.5vh;
+}

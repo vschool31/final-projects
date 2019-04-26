@@ -1,0 +1,275 @@
+﻿	<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+				<div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+	<section>
+		<div class="container2">
+			<div>
+			<ul class="textatr">
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="#glava1">1. Тег <kbd>&lt;HTML&gt;</kbd></a></li>
+<li><a href="#glava2">2. Тег <kbd>&lt;Head&gt;</kbd></a></li>
+<li><a href="#glava3">3. Тег <kbd>&lt;title&gt;</kbd></a></li>
+<li><a href="#glava4">4. Тег <kbd>&lt;meta&gt;</kbd></a></li>
+<li><a href="#glava5">5. Тег <kbd>&lt;style&gt;</kbd></a></li>
+<li><a href="#glava6">6. Тег <kbd>&lt;link&gt;</kbd></a></li>
+<li><a href="#glava7">7. Тег <kbd>&lt;body&gt;</kbd></a></li>
+</ul>
+		</div>
+			<div class="rere">
+		<h1 id="glava1" class="html">Тег &lt;HTML&gt;</h1>
+		</div>
+	Начнем с самого первого. В начале документа я открыл тег "html" и в конце я его закрыл "/html". 
+	<br>Данный код присутствует абсолютно в каждом документе, он говорит браузеру, что все, помещенное между этими тегами, является HTML кодом. Является корнем самого документа, все, что в дальнейшем присутствует за этим тегом, уже не включается в документ и не воспринимается браузерами. 
+	<br><strong>В самом начале документа тег открывается и в самом конце он обязательно должен быть закрытым. </strong>
+	<p>
+		Для элемента доступны атрибуты <kbd><strong>&lt;manifest&gt;</strong></kbd> и <kbd><strong>&lt;xmlns&gt;</strong></kbd>
+	</p>
+	<table>
+		<tbody class="t3">
+			<tr>
+				<th style="width: 20%;">Атрибут</th>
+				<th>Описание, принимаемое значение</th>
+			</tr>
+			<tr>
+				<td><kbd>manifest</kbd></td>
+				<td>
+					С помощью значения атрибута указывается путь к документу кэша манифеста, например:
+					<br><kbd>&lt;html manifest="about_company.appcache"&gt;</kbd>
+				</td>
+			</tr>
+			</tbody>>
+		</table>
+<p>
+	<div class="rere">
+	<h1 id="glava2" class="html">Тег &lt;Head&gt;</h1></div>
+Весь раздел этого тега содержит в себе всю техническую информацию документа. Как и предыдущий тег, head так же должен быть открыт и в конце закрыт. В такую информацию относится заголовок страницы, ее описание, ключевые слова для поисковых систем и кодировку. Про кодировку немного ниже.
+<pre id="lalala">
+&lt;!DOCTYPE html&gt; &lt;!-- Объявление формата документа --&gt;
+&lt;html&gt;
+&lt;head&gt; &lt;!-- Техническая информация о документе --&gt;
+&lt;meta charset="UTF-8"&gt; &lt;!-- Определяем кодировку символов документа --&gt;
+&lt;title&gt;...&lt;/title&gt; &lt;!-- Задаем заголовок документа --&gt;
+&lt;link rel="stylesheet" type="text/css" href="style.css"&gt; &lt;!-- Подключаем внешнюю таблицу стилей --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt; &lt;!-- Подключаем сценарии --&gt;
+&lt;/head&gt;
+&lt;body&gt; &lt;!-- Основная часть документа --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+<p>
+	<div class="rere">
+	<h1 id="glava3" class="html">Тег &lt;title&gt;</h1></div>
+	Данный тег включается в head, он должен быть написан внутри тега head. Данный тег title является обязательным и должен присутствовать в каждом html документе. В добавок к этому он отображается как заголовок окна браузера. Длинна такого заголовка не должна превышать 60 символов. В тексте такого заголовка должна содержаться максимально полная информация, которая характеризует содержание страницы.
+	<br>Если вы написали в заголовке "Привет Мир", именно эта информация должна отображаться на странице и никакой другой. Не стоит обманывать людей и поисковые машины, они этого не любят, тем самым вы делаете хуже себе. Информация, которая содержится в этом теге, должна соответствовать содержанию вашей страницы.
+</p>
+<p><div class="rere">
+	<h1 id="glava4" class="html">Тег &lt;meta&gt;</h1></div>
+	После обязательного тега title, идет необязательный, но так же не мало важный тег meta. Данный тег является одинарным. С помощью данного тега задается описание для страницы (description) и ее ключевые слова (keywords).
+	<pre>
+			&lt;meta name="keywords" content="Ключевые слова задаются через запятую"&gt;
+			&lt;meta name="description" content="Описание страницы не больше двух предложений"&gt;
+</pre>
+<br>Кроме этого, в теге meta могут содержаться данные про автора страницы и другие свойства метаданных. Можно запретить индексацию страницы в целом для поисковых машин. Поставить автоматическое обновление страницы через 20 секунд или через 5 секунд с последующим переходом на другую страниц.
+<p>
+	<pre>
+			&lt;meta name="robots" content="index, follow"&gt;
+			&lt;meta http-equiv="refresh" content="20"&gt;
+			&lt;meta http-equiv="refresh" content="5; url=http://nesmelov.ru/"&gt;
+	</pre>
+</p>
+
+<br>	Таких элементов meta может быть несколько, так как они могут нести абсолютно разную информацию. Остальные пользователи, когда открывают страницу в браузере, не видят все ваши описания, все это остается скрытым от глаз.
+
+<p><div class="rere">
+	<h1 id="glava5" class="html">Тег &lt;style&gt;</h1>
+	<p></p>
+		Внутри этого элемента задаются стили, которые используются на странице. Для задания стилей в HTML-документе используется язык CSS. Таких элементов на странице может быть несколько.
+		Для элемента доступны атрибуты <kbd>media</kbd>, <kbd>scoped</kbd>, <kbd>type</kbd>
+	</p>
+	<p>
+		<pre>
+			&lt;style type="text/css"&gt;
+			.base {
+			width: 100px;
+			background-color: #000;
+			height: 150px;
+			color: #fff;
+			}
+</pre>
+	</p>
+	
+	<br>	Или добавить стили конкретно к одному тегу, для этого внутри самого тега нужно добавить элемент style. Данный тег нужно использовать внутри контейнера &lt;head&gt;, который задает стили для страницы. Можно использовать несколько таких тегов, ошибкой это не будет.
+	
+	<p>
+		<pre>
+			&lt;h3 style="color: #fff; background: #3ee33e; margin: 5px 10px 15px 20px;"&gt;
+		</pre>
+	</p>
+</p>
+<p>
+	<h1 id="glava6" class="html">Тег &lt;link&gt;</h1>
+	
+		<br>Немного похожий с предыдущим тегом, с помощью тега link можно задать стили для документа, которые находятся в другом файле. Другими словами, можно подключить к существующему документу полную таблицу стилей css, которая состоит из множества свойств. Тем самым вы уменьшаете размер документа, который в итоге будет быстрее грузиться и открываться на компьютере или мобильном устройстве при слабой скорости интернета.
+
+<br>Подключать можно больше одного файла, тут ограничений нет. Закрывать такой тег не нужно. Если все сделать правильно, к вашему документу будут подгружаться конкретные стили из отдельного файла. Данный тег можно добавить в основы html и не забывать про его существование. В итоге получается такая картинка:<
+
+<p>
+<pre>
+			1.&lt;link href="css/style-lg.css" rel="stylesheet"&gt;
+			2.&lt;link href="css/style-md.css" rel="stylesheet"&gt;
+			3.&lt;link href="css/style-sm.css" rel="stylesheet"&gt;
+</pre>
+</p>
+<h1 id="glava7" class="html">Тег &lt;body&gt;</h1>
+<p>
+	В этом разделе располагается все содержимое документа. Для элемента доступны 
+	<table class="t3">
+<caption> Атрибуты тега &lt;body&gt;</caption>
+<tbody>
+<tr>
+<th style="width: 20%;">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td><kbd>onafterprint</kbd></td>
+<td>Событие, срабатывающее после отправки страницы на печать или после закрытия окна печати.</td>
+</tr>
+<tr>
+<td><kbd>onbeforeprint</kbd></td>
+<td>Событие, срабатывающее перед отправкой страницы на печать.</td>
+</tr>
+<tr>
+<td><kbd>onbeforeunload</kbd></td>
+<td>Событие срабатывает, когда посетитель инициировал переход на другую страницу или нажал «закрыть окно». Позволяет отображать сообщение в диалоговом окне подтверждения, чтобы сообщить пользователю, хочет ли он остаться или покинуть текущую страницу.</td>
+</tr>
+<tr>
+<td><kbd>onhashchange</kbd></td>
+<td>Событие срабатывает, когда меняется hash-часть URL, например, когда пользователь перейдет с адреса <kbd>example.domain/test.aspx#page1</kbd> на <kbd>example.domain/test.aspx#page2</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>onmessage</kbd></td>
+<td>Событие происходит, когда сообщение получено через источник события.</td>
+</tr>
+<tr>
+<td><kbd>onoffline</kbd></td>
+<td>Событие вызывается браузером в том случае, когда браузер определит, что соединение с интернет пропало.</td>
+</tr>
+<tr>
+<td><kbd>ononline</kbd></td>
+<td>Событие вызывается браузером в том случае, когда соединение с интернет возобновилось.</td>
+</tr>
+<tr>
+<td><kbd>onpagehide</kbd></td>
+<td>Событие происходит, когда пользователь покидает страницу посредством навигации, например, нажав на ссылку, обновив страницу, заполнив форму и т.д.</td>
+</tr>
+<tr>
+<td><kbd>onpageshow</kbd></td>
+<td>Событие происходит, когда пользователь переходит на веб-страницу, после события onload.</td>
+</tr>
+
+<tr>
+<td><kbd>onunload</kbd></td>
+<td>Событие срабатывает если страница не загрузилась по каким-либо причинам, либо при закрытии окна браузера.</td>
+</tr>
+</tbody>
+</table>
+</p>
+
+
+
+
+
+
+
+	<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

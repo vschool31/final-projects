@@ -1,0 +1,152 @@
+body {
+	margin: 0;
+}
+
+.mainvideos {
+	width: 100%;
+	height: 240vh;
+	background-color: #fafafa;
+}
+
+.zs {
+	position: absolute;
+	top: 10vh;
+	width: 35vw;
+	height: 35vh;
+	left: 12vw;
+}
+
+.prepri {
+	position: absolute;
+	top: 10vh;
+	width: 35vw;
+	height: 35vh;
+	left: 53vw;
+}
+
+.blu {
+	position: absolute;
+	top: 55vh;
+	width: 35vw;
+	height: 35vh;
+	left: 12vw;
+}
+
+.corniao {
+	position: absolute;
+	top: 55vh;
+	width: 35vw;
+	height: 35vh;
+	left: 53vw;
+}
+
+.corniie {
+	position: absolute;
+	top: 100vh;
+	width: 35vw;
+	height: 35vh;
+	left: 12vw;
+}
+
+.suffkromeninn {
+	position: absolute;
+	top: 100vh;
+	width: 35vw;
+	height: 35vh;
+	left: 53vw;	
+}
+
+.suffkromeninn2 {
+	position: absolute;
+	top: 145vh;
+	width: 35vw;
+	height: 35vh;
+	left: 12vw;	
+}
+
+.suffninn {
+	position: absolute;
+	top: 145vh;
+	width: 35vw;
+	height: 35vh;
+	left: 53vw;		
+}
+
+.suffninnprich {
+	position: absolute;
+	top: 190vh;
+	width: 35vw;
+	height: 35vh;
+	left: 12vw;	
+}
+
+.oconch {
+	position: absolute;
+	top: 190vh;
+	width: 35vw;
+	height: 35vh;
+	left: 53vw;		
+}
+
+
+.video {
+	position: relative;
+	width: 35vw;
+	height: 27vh;
+	margin-top: 0;
+	margin-left: 0;
+	border: 3px solid orange;
+}
+
+.description {
+	font-family: 'Montserrat', sans-serif;
+	width: 27vw;
+	height: 4vh;
+	margin-left: 4vw;
+	margin-top: 2vh;
+	line-height: 4vh;
+	text-align: center;
+	position: relative;
+}
+
+.footer {
+	position: absolute;
+	margin-top: 233vh;
+	width: 100%;
+	height: 7vh;
+	background-color: #ffb74d;
+	padding-bottom: 1vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.copyright {
+	display: block;
+	position: relative;
+	width: 15vw;
+	height: 5vh;
+	margin-left: 3vw;
+}
+
+.vk {
+	display: block;
+	position: relative;
+	width: 10vw;
+	height: 5vh;
+	text-decoration: none;
+	color: black;
+	margin-top: -7.5vh;
+	margin-left: 70vw;
+	text-align: center;
+}
+
+.youtube {
+	display: block;
+	position: relative;
+	width: 12vw;
+	height: 5vh;
+	text-decoration: none;
+	color: black;
+	margin-top: -5vh;
+	margin-left: 80vw;
+	text-align: center;
+}

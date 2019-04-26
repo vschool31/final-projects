@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Группировка контента</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ГРУППИРОВКА КОНТЕНТА
+		</div>
+	</div>
+	<a href="4.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			При систематизации какой-либо информации удобно использовать таблицы. Для обозначения таблицы использую тег &lt;<span>table</span>&gt;. Данный тег сообщает, что дальше будет идти таблица. Чтобы её было видно, нужно использовать стили (определить высоту, ширину, границу и т.д).
+		</div>
+		<div id="div_2" class="text">
+			Затем указывают сколько строк будет в нашей таблице. Делается это при помощи тега &lt;<span>tr</span>&gt;.
+		</div>
+		<div id="div_3" class="text">
+			Каждая строка состоит из ячеек. За эти ячейки отвечает тег &lt;<span>td</span>&gt;. Один тег &lt;<span>td</span>&gt; обозначает одну ячейку.
+		</div>
+		<div id="div_4" class="text">
+			Помимо обычных ячеек имеются ячейки-заголовки, которые обозначаются тегом &lt;<span>th</span>&gt;. В таких ячейках текст выделен жирным и располагается по центру ячейки. Ячейки-заголовки используют в самой первой строке таблицы, тем самым называя столбец.
+		</div>
+		<div id="div_5" class="text">
+			Самый последний шаг при создании таблицы - её название. В этом нам поможет тег &lt;<span>caption</span>&gt;. Он указывается сразу после открывающего тега &lt;<span>table</span>&gt;.
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>table</span>&gt;
+				</br>
+			&emsp;&lt;<span>caption</span>&gt; *Название таблицы* &lt;/<span>caption</span>&gt;
+				</br>
+			&emsp;&lt;<span>tr</span>&gt;
+				<br>
+			&emsp;&emsp;&lt;<span>th</span>&gt; Ячейка 1 &lt;/<span>th</span>&gt; 
+				<br>
+			&emsp;&emsp;&lt;<span>th</span>&gt; Ячейка 2 &lt;/<span>th</span>&gt; 
+				<br>
+			&emsp;&emsp;&lt;<span>th</span>&gt; Ячейка 3 &lt;/<span>th</span>&gt;
+				<br>
+			&emsp;&lt;/<span>tr</span>&gt;
+				</br>
+			&emsp;&lt;<span>tr</span>&gt;
+				<br>
+			&emsp;&emsp;&lt;<span>td</span>&gt; Ячейка 4 &lt;/<span>td</span>&gt; 
+				<br>
+			&emsp;&emsp;&lt;<span>td</span>&gt; Ячейка 5 &lt;/<span>td</span>&gt;
+				<br> 
+			&emsp;&emsp;&lt;<span>td</span>&gt; Ячейка 6 &lt;/<span>td</span>&gt;
+				<br>
+			&emsp;&lt;/<span>tr</span>&gt; 
+				</br>
+			&emsp;&lt;<span>tr</span>&gt;
+				<br>
+			&emsp;&emsp;&lt;<span>td</span>&gt; Ячейка 4 &lt;/<span>td</span>&gt; 
+				<br>
+			&emsp;&emsp;&lt;<span>td</span>&gt; Ячейка 5 &lt;/<span>td</span>&gt;
+				<br> 
+			&emsp;&emsp;&lt;<span>td</span>&gt; Ячейка 6 &lt;/<span>td</span>&gt;
+				<br>
+			&emsp;&lt;/<span>tr</span>&gt;
+				</br>
+			&lt;/<span>table</span>&gt;
+
+			<img src="../../img/table.png" width="35%">
+		</div>
+		<div id="div_6" class="text">
+				В HTML имеются теги, предназначенные для группировки информации. Тег &lt;<span>header</span>&gt; отвечает за "<span">шапку</span>" сайта. Тег &lt;<span>nav</span>&gt; задает <span>навигационное меню</span>. Тег &lt;<span>main</span>&gt; отвечает за <span>основное содержимое</span> сайта. Тег &lt;<span>footer</span>&gt; задает "<span>подвал</span>" сайта.
+		</div>
+		<div id="div_7" class="text">
+				Если вы напишите какую-либо страницу, а потом добавите в код эти теги, то ваша страница останется без изменений, потому что они не настраивают содержимое. Эти теги сообщают браузеру, что данный блок кода относится к определенной части сайта. Браузер всё равно отобразит страницу какой она была, но будет иметь в виду какой элемент к какой части сайта относится.
+		</div>
+		<div id="div_8" class="text">
+				Часто для группировки информации используют тег &lt;<span>div</span>&gt;. Данный тег является блочным. Его отличительная особенность состоит в том, что он не отступает от соседних элементов. На основе этого свойства даже существует целый вид вёрстки.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

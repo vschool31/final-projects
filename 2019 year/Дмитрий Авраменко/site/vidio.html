@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+				<div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+
+<section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+
+
+
+	<div class="container2">
+        <h1 class="html12"> HTML5-видео</h1>            
+        		    <div>
+          <img width="250" height="250" src="\сайтик\img\html5_video.png" class="tuturu">		    </div>
+                     
+        <p>Раньше, если вы хотели добавить видео на веб-страницу, вам приходилось использовать элемент <kbd>&lt;object&gt;</kbd>, представляющий собой универсальный контейнер для внешних объектов. Подобные приложения были в малой степени интерактивными и слабо взаимодействовали с окружающими их элементами на веб-странице. </p>
+<p>Второй подход заключался в использовании подключаемого модуля браузера, например <b>Silverlight</b> или <b>Flash</b>. И хотя технология <b>Flash</b> позволяла использовать готовый видеоплеер или создавать собственный, но её использование порождало большое нагромождение HTML-разметки, а видеофайлы нужно было кодировать в требуемый формат.</p>
+<p><b>HTML5-видео</b> — новый стандарт для размещения мультимедийных файлов в сети с оригинальным программным интерфейсом без привлечения подключаемых модулей. С помощью элемента <kbd>&lt;video&gt;</kbd> появилась возможность добавлять видеосодержимое на веб-страницы, а также стилизовать внешний вид видеоплеера при помощи css-стилей. </p>
+<figure><img src="\сайтик\img\video_pleer.png" alt="video_pleer" width="672" height="319"><figcaption>Рис. 1. Внешний вид видеоплеера в основных браузерах</figcaption></figure>
+
+<h4>Как добавить HTML5-видео на веб-страницу</h4>
+<ul class="textatr">
+
+
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="#glava1">1. Элемент <kbd>&lt;video&gt;</kbd></a></li>
+<li><a href="#glava2">2. Встраиваемый интерактивный контент <kbd>&lt;embed&gt;</kbd></a></li>
+<li><a href="#glava3">3. Видеокодеки</a></li>
+<li><a href="#glava4">4. Видеоконтейнеры</a></li>
+<li><a href="#glava5">5. Альтернативные медиа-ресурсы <kbd>&lt;source&gt;</kbd></a></li>
+<li><a href="#glava6">6. Добавление субтитров и заголовков <kbd>&lt;track&gt;</kbd></a></li>
+<li><a href="#glava7">7. Пример: размещаем видео на сайте</a></li>
+<li><a href="#glava8">8. Видеоконвертеры</a></li>
+</ul>
+
+<h1 id="glava1" class="html">1. Элемент &lt;video&gt;</h1>
+<h4>Поддержка браузерами</h4>
+<blockquote><p>
+<b>IE:</b> 9.0, атрибут muted — с 10.0<br>
+<b>Edge:</b> 12.0<br>
+<b>Firefox:</b> 3.5<br>
+<b>Chrome:</b> 4.0, атрибут muted — с 30.0<br>
+<b>Safari:</b> 4.0, атрибут muted — с 5.0<br>
+<b>Opera:</b> 11.5<br>
+<b>iOS Safari:</b> 3.2<br>
+<b>Android Browser:</b> 2.3<br>
+<b>Chrome for Android:</b> 44</p></blockquote>
+<p>В простом варианте HTML-разметка для размещения видеофайла на странице имеет следующий вид:</p>
+<pre>&lt;video src="video.ogv" controls&gt;&lt;/video&gt;</pre>
+<p>Атрибут <kbd>controls</kbd> отвечает за появление элементов управления видеоплеером. Вы можете добавить изображение с помощью атрибута <kbd>poster</kbd>, которое браузер будет использовать, пока загружается видео или пока пользователь не нажмет на кнопку воспроизведения, а также задать высоту и ширину видео.</p>
+<p>Как и в случае с аудиофайлами, рекомендуется перечислять в <kbd>&lt;source&gt;</kbd> все форматы, начиная с более предпочтительного. Также нужно указывать MIME-тип для каждого видеофайла.</p>
+<pre>&lt;video controls width="400" height="300"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;&lt;!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 --&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;&lt;!-- WebM/VP8 для Firefox4, Opera, и Chrome --&gt;
+  &lt;source src="video.ogv" type="video/ogg"&gt;&lt;!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera --&gt;
+  &lt;object data="video.swf" type="application/x-shockwave-flash"&gt;&lt;!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video --&gt;
+    &lt;param name="movie" value="video.swf"&gt;
+  &lt;/object&gt;
+&lt;/video&gt;</pre>
+<table class="t3">
+<caption>Таблица 1. Атрибуты тега &lt;video&gt;</caption>
+<tbody><tr>
+<th style="width:20%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>autoplay</kbd></td>
+<td>Автоматическое воспроизведение видеоофайла сразу же после загрузки страницы.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>controls</kbd></td>
+<td>Указывает браузеру, что нужно отобразить базовые элементы управления воспроизведением (воспроизведение, пауза, громкость).</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>height</kbd></td>
+<td>Задает высоту окна для отображения видеоданных, возможные значения: <kbd>px</kbd> или <kbd>%</kbd></td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>loop</kbd></td>
+<td>Циклическое воспроизведение видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>muted</kbd></td>
+<td>Выключает звук при воспроизведении видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>poster</kbd></td>
+<td>URL файла изображения, которое будет отображаться во время загрузки видеофайла или до тех пор, пока пользователь не нажмет на кнопку PLAY. Если атрибут не задан, то будет отображаться первый кадр видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>preload</kbd></td>
+<td>Атрибут, отвечающий за предварительную загрузку видеоконтента. Не является обязательным, некоторые браузеры игнорируют его. Возможные значения:<br>
+<kbd>auto</kbd> — браузер загружает видеофайл полностью, чтобы он был доступен, когда пользователь начнет его воспроизведение.<br>
+<kbd>metadata</kbd> — браузер загружает первую небольшую часть видеофайла, чтобы определить его основные характеристики.<br>
+<kbd>none</kbd> — отсутствие автоматической загрузки видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>src</kbd></td>
+<td>Содержит абсолютный или относительный URL-адрес видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>width</kbd></td>
+<td>Задает ширину окна для отображения видеоданных, возможные значения: <kbd>px</kbd> или <kbd>%</kbd></td>
+</tr>
+</tbody></table>
+
+
+
+<h1 id="glava2" class="html">2. Встраиваемый интерактивный контент</h1>
+<p>Элемент <kbd>&lt;embed&gt;</kbd> определяет контейнер для внешнего приложения или интерактивного содержимого (другими словами, плагина). Большинство браузеров поддерживало данный элемент на протяжении долгого времени. Тем не менее, данный тег не был включен в спецификацию HTML4, его добавили в спецификацию HTML5. С помощью <kbd>&lt;embed&gt;</kbd> на веб-страницы можно добавлять не только видеофайлы, но и векторные изображения в формате <kbd>swf</kbd>:</p>
+<pre>&lt;embed src="movie.mov" type="video/quicktime" width="640" height="480"&gt;
+&lt;embed src="helloworld.swf"&gt;</pre>
+<table class="t3">
+<caption>Таблица 2. Атрибуты тега &lt;embed&gt;</caption>
+<tbody><tr>
+<th style="width:20%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>height</kbd></td>
+<td>Определяет высоту встраиваемого контента в <kbd>px</kbd> или <kbd>%</kbd>.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>src</kbd></td>
+<td>Содержит абсолютный или относительный URL-адрес медиафайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>type</kbd></td>
+<td>Определяет MIME-тип  встраиваемого файла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>width</kbd></td>
+<td>Определяет ширину встраиваемого контента в <kbd>px</kbd> или <kbd>%</kbd>.</td>
+</tr>
+</tbody></table>
+<h1 id="glava3" class="html">3. Видеокодеки</h1>
+<p>При просмотре видео проигрыватель должен его декодировать. Одни проигрыватели используют программное декодирование видеопотока, другие используют аппаратное декодирование.</p>
+<p><em style="color:#E85625; font-weight:900;">Важно!</em> Поскольку каждый браузер поддерживает определенный кодек, поэтому, чтобы обеспечить воспроизведение видео-контента во всех браузерах, видео-файл нужно размещать в нескольких форматах.</p>
+<p><strong class="first">H.264</strong> — высококачественный кодек от фирмы MPEG, делится на профили для поддержки как устройств с минимальными возможностями, так и устройств высокого разрешения.</p>
+<p><strong class="first">Ogg Theora</strong> — открытый бесплатный стандарт для видео, качество и производительность несколько ниже стандарта H.264.</p>
+<!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+<div style="float: none; margin:0px;">
+<div style="margin: 0 0 20px 0;clear:both;"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ADAPT -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4906567094890032" data-ad-slot="5808407100" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div>
+
+<p><strong class="first">VP8</strong> — открытый бесплатный кодек, сходный по качеству с H.264. Поддерживается в Firefox, Chrome и Opera.</p>
+
+
+
+<h1 id="glava4" class="html">4. Видеоконтейнеры</h1>
+<figure><img src="\сайтик\img\videocont.png" alt="videocont" width="503" height="410"><figcaption>Рис. 2. Видеоконтейнер</figcaption></figure>
+<p>Любой видеофайл является файловым контейнером, в котором хранятся другие файлы. Аудио- и видеодорожки объединяются для воспроизведения видеоролика. Метаданные содержат информацию о данном видеоролике — изображение обложки, субтитры и пр. К популярным форматам видеоконтейнеров относятся следующие:</p>
+<p><strong class="first">Ogg</strong> (.ogv, .oga, .ogx, .ogg) — формат-контейнер с открытым исходным кодом для видеокодека Theora и аудио Vorbis. Работает в Firefox, Chrome и Opera.<br>
+MIME-тип: <kbd>video/ogg</kbd>.</p>
+<p><strong class="first">MPEG 4</strong> (.mp4) — формат-контейнер для видеокодека H.264 и аудиокодека AAC. Работает в Safari и Chrome. Кодирует видео, в том числе высокой четкости, для полного спектра устройств, таких как iPhone, iPod и iPad.<br>
+MIME-тип: <kbd>video/mp4</kbd>.</p>
+<p><strong class="first">WebM</strong> (.webm) — формат-контейнер с открытым исходным кодом для видеокодека VP8 от Google и аудиокодека Ogg Vorbis. Работает в Firefox, Chrome, Opera и Adobe Flash Player.<br>
+MIME-тип: <kbd>video/webm</kbd>.</p>
+<p><strong class="first">Audio Video Interleave</strong> (.avi) — формат предназначен для записи звука и движущихся изображений, соответствует спецификации RIFF.<br>
+MIME-тип: <kbd>video/vnd.avi, video/avi, video/msvideo, video/x-msvideo</kbd>.</p>
+<p><strong class="first">Matroska</strong> (.mkv) — популярный видеоконтейнер, может содержать видео в формате H.264, VP8 или Theora.<br>
+MIME-тип: <kbd>video/x-matroska, audio/x-matroska</kbd>. </p>
+<p><strong>На данный момент браузеры поддерживают три основных видео формата:</strong></p>
+<table class="t3">
+<tbody><tr>
+<th>Формат</th>
+<th style="border-right:1px solid white">Видеокодек</th>
+<th>Аудиокодек</th>
+</tr>
+<tr>
+<td>.mp4</td>
+<td>H.264</td>
+<td>AAC</td>
+</tr>
+<tr>
+<td>.ogg/.ogv</td>
+<td>Theora</td>
+<td>Vorbis</td>
+</tr>
+<tr>
+<td>.webm</td>
+<td>VP8</td>
+<td>Vorbis</td>
+</tr>
+</tbody></table>
+<p><strong>Видео в формате <kbd>.avi</kbd> на сайте средствами HTML5 не воспроизводится</strong>. Поэтому его необходимо перекодировать в эти три формата с соответствующими видео и аудиокодеками для вывода на сайте. Для этого можно использовать видеоконвертеры, указанные на странице ниже.</p>
+<h1 id="glava5" class="html">5. Альтернативные медиа-ресурсы</h1>
+<p>Элемент <kbd>&lt;source&gt;</kbd> используется для указания нескольких медиа-ресурсов для <kbd>&lt;audio&gt;</kbd> и <kbd>&lt;video&gt;</kbd>. Добавляет альтернативные видео/аудио файлы, которые браузер может выбрать из предложенных на основании поддерживаемого им типа носителя или кодека.</p>
+<table class="t3">
+<caption>Таблица 3. Атрибуты тега &lt;source&gt;</caption>
+<tbody><tr>
+<th style="width:20%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>media</kbd></td>
+<td>Определяет тип медиа-устройства (т.е. для каких устройств оптимизирован файл).</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>src</kbd></td>
+<td>Содержит абсолютный или относительный URL-адрес медиафайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>type</kbd></td>
+<td>Определяет MIME-тип медиафайла.</td>
+</tr>
+</tbody></table>
+<h1 id="glava6" class="html">6. Добавление субтитров и заголовков</h1>
+<p>Элемент <kbd>&lt;track&gt;</kbd> используется в качестве дочернего элемента <kbd>&lt;audio&gt;</kbd> и <kbd>&lt;video&gt;</kbd>. Добавляет текстовую дорожку для субтитров, заголовков медиафайлов или другой текстовой информации, которая должна быть видна во время воспроизведения медиа-ресурса.</p>
+<table class="t3">
+<caption>Таблица 4. Атрибуты тега &lt;track&gt;</caption>
+<tbody><tr>
+<th style="width:20%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>default</kbd></td>
+<td>Указывает, что данная дорожка воспроизводится по умолчанию. Только один элемент <kbd>&lt;track&gt;</kbd> может содержать данный атрибут.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>kind</kbd></td>
+<td>Указывает тип текстовой дорожки, по умолчанию выводятся субтитры (<kbd>subtitles</kbd>). Принимаемые значения:<br>
+<kbd>captions</kbd> — перевод диалогов и звуковых эффектов, отображаемый в виде текста поверх видео (для глухих пользователей).<br>
+<kbd>chapters</kbd> — добавляет названия глав в виде списка для навигации по медиафайлу.<br>
+<kbd>descriptions</kbd> — добавляет звуковое описание происходящего в видео (для невидящих пользователей).<br>
+<kbd>metadata</kbd> — метаданные, используемые скриптами, не отображаются для пользователей.<br>
+<kbd>subtitles</kbd> — текстовое дублирование звуковой дорожки видео, отображается в виде субтитров к видео.
+</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>label</kbd></td>
+<td>Добавляет название дорожки. Если этот атрибут не задан, браузер применит значение по умолчанию.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>src</kbd></td>
+<td>Содержит абсолютный или относительный URL-адрес аудио- или видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><kbd>srclang</kbd></td>
+<td>Язык воспроизводимой дорожки.</td>
+</tr>
+</tbody></table>
+<h1 id="glava7" class="html">7. Пример: размещаем видео на сайте</h1>
+<p><span>1.</span> Декодируем видео в три файла с соответствующими видео и аудиокодеками:<br>
+для <b>.mp4</b> — H.264/AAC,<br>
+для <b>.webm</b> — VP8/Vorbis,<br>
+для <b>.ogv</b> — Theora/Vorbis.<br>
+<span >2.</span> Размещаем код для вставки видео на сайт с помощью HTML5-разметки, используя атрибуты для задания видео требуемых параметров:</p>
+<pre >&lt;video controls width="710" height="538" poster="/examples/media/martynko.png" preload="none"&gt;
+  &lt;source src="/examples/media/martynko.mp4" type="video/mp4"&gt;
+  &lt;source src="/examples/media/martynko.webm" type="video/webm"&gt;
+  &lt;source src="/examples/media/martynko.ogv" type="video/ogg"&gt;
+&lt;/video&gt;</pre>
+
+<span>4.</span> Если вы хотите выровнять видеоплеер на странице, нужно обернуть элемент <kbd>&lt;video&gt;</kbd> в контейнер <kbd>&lt;div&gt;</kbd> с присвоенным классом, для которого задаются ширина и высота, соответствующие размерам вашего видео. Далее, с помощью css-свойств можно задать отступы, выравнивание на странице и т.д.
+
+	<div class="qwqw">
+	<video controls="" width="660" height="500" poster="" autoplay>
+	<source src="img/martynko.mp4" type="video/mp4">
+	<source src="img/martynko.mp4" type="video/webm">
+	</video>
+	</div>
+
+<h1 id="glava8" class="html">8. Видеоконвертеры</h1>
+<p><b>Movavi</b> — позволяет конвертировать видео и аудио в необходимый вам формат. Сохраняет медиафайлы для проигрывания на мобильных устройствах. «Умные» готовые профили позволяют добиваться максимального качества.</p>
+<p><img src="\сайтик\img\movavi.png" alt="movavi"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://www.movavi.ru">Перейти на сайт</a></p>
+
+<p><b>ONLINE-CONVERT</b> — бесплатный онлайн-конвертер, позволяющий конвертировать любые медиа-файлы из одного формата в другой.</p>
+<p><img src="\сайтик\img\video-convert-online.png" alt="video-convert-online"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://www.movavi.ru/videoconverter/">Перейти на сайт</a></p>
+
+<p><b>Firefogg</b> — модуль расширения для Firefox, может создавать видеофайлы <b>Theora</b> и <b>WebM</b>. Работает непосредственно в браузере, но вся работа выполняется локально без обращения к веб-серверу.</p>
+<p><img src="\сайтик\img\firefogg.png" alt="firefogg"
+	width="680" height="400"><br>
+<a target="_blank" class="atri" rel="nofollow" href="http://firefogg.org">Перейти на сайт</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

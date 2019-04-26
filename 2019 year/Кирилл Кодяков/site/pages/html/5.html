@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Изображение</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ИЗОБРАЖЕНИЕ
+		</div>
+	</div>
+	<a href="6.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Чтобы вставить картинку в свой сайт вам потребуется тег &lt;<span>img</span>&gt;. Но одного тега будет недостаточно. Вам нужно указать путь к картинке. Для этого используется атрибут <span>src</span>.
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>img</span> <span>src</span> = "путь к картинке"&gt;
+		</div>
+		<div id="div_2" class="text">
+			Свою картинку вы можете превратить в карту. Это будет таже самая картинка, но в зависимости от места клика, будут будут активироваться разные ссылки. Для этого тегу &lt;<span>img</span>&gt; нужно указать атрибут <span>usemap</span>. Нужно придумать имя карты и написать в этот атрибут (обязательно с <span>#</span> перед именем).
+		</div>
+		<div id="code_2" class="text code">
+			&lt;<span>img</span> <span>src</span> = "путь к картинке" <span>usemap</span> = "#имя"&gt;
+		</div>
+		<div id="div_3" class="text">
+			Далее тегом &lt;<span>map</span>&gt; вы создаете карту. Чтобы связать карту с изображением, в теги map нужно написать атрибут <span>name</span> (значение должно совпадать с атрибутом <span>usemap</span> тега &lt;<span>img</span>&gt;, но уже без <span>#</span>).
+		</div>
+		<div id="code_3" class="text code">
+			&lt;<span>map</span> <span>name</span> = "имя"&gt;&lt;/<span>map</span>&gt;
+		</div>
+		<div id="div_4" class="text">
+			На карту надо нанести зоны. Осуществляется это тегами &lt;<span>area</span>&gt;. Каждый тег обозначает одну зону на карте. Настройка зоны происходит слудующими атрибутами.
+		</div>
+		<div id="div_5" class="text">
+			Атрибут <span>shape</span> указывает форму зоны. У него есть 3 значения: <span>circle</span> (форма в виде окружности), <span>poly</span> (в виде многоугольника), <span>rect</span> (в виде прямоугольника).
+		</div>
+		<div id="div_6" class="text">
+			Атрибут <span>coords</span> определяет координаты точек зоны. Координаты точки обозначаются двумя числами: первое координата по оси X, вторая координата по оси Y. Численное значение координат представляет из себя количество пикселей, которое нужно отступить (по оси X и Y соответственно). Перечисляются координаты через запятую. Количество координат зависит от фигуры: <span>circle</span> - 3 (две координаты центра и радиус), <span>rect</span> - 4 (координаты верхнего левого угла и нижнего правого), <span>poly</span> - в зависимости от вида многоугольника (координаты для каждой вершины).
+		</div>
+		<div id="div_7" class="text">
+			Атрибут <span>href</span> указывает ссылку на объект
+		</div>
+		<div id="code_4" class="text code">
+			&lt;<span>map</span> <span>name</span> = "имя"&gt;
+				<br>
+			&lt;<span>area</span> <span>shape</span> = "circle" <span>coords</span>= "X, Y, R" <span>href</span> = "ссылка №1"&gt; &lt;!--Круглая зоны--&gt;
+				<br>
+			&lt;<span>area</span> <span>shape</span> = "rect" <span>coords</span> = "X1, Y1, X2, Y2" <span>href</span> = "ссылка №2"&gt;  &lt;!--Прямоугольная зоны --&gt;
+				<br>
+			&lt;<span>area</span> <span>shape</span> = "poly" <span>coords</span> = "X1, Y1, X2, Y2, X3, Y3" <span>href</span> = "ссылка №3"&gt;  &lt;!--Треугольная зона--&gt;
+				<br>
+			&lt;/<span>map</span>&gt;
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

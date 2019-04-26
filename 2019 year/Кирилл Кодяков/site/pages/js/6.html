@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Конструкция switch</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			КОНСТРУКЦИЯ SWITCH
+		</div>
+	</div>
+	<a href="7.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Конструкция <span>switch</span> заменяет собой сразу несколько if. Она представляет собой более наглядный способ сравнить выражение сразу с несколькими вариантами. Синтаксис таков:
+		</div>
+		<div id="code_1" class="text code">
+			<span>switch</span>(переменная) {
+				<br>
+			&emsp;<span>case</span> значение:
+				<br>
+			&emsp;&emsp;...
+				<br>
+			&emsp;break;
+				<br><br>
+			&emsp;<span>case</span> значение:
+				<br>
+			&emsp;&emsp;...
+				<br>
+			&emsp;break;
+				<br><br>
+			&emsp;<span>default</span>:
+				<br>
+			&emsp;&emsp;...
+				<br>
+			&emsp;break;
+				<br>
+			}
+		</div>
+		<div id="div_2" class="text">
+			После switch указывается переменная, которую мы будем сравнивать. После <span>case</span> указывается проверяемое значение. Указанная нами переменная строго сравнивается с этим значением. Если они равны, выполняется дальнейший код до break (дальнийшие проверки не осуществляются). Если ни одна из проверок не прошла, выполняется код после <span>default</span> (если он указан). Пример программы:
+		</div>
+		<div id="code_2" class="text code">
+			<span>var</span> a = 3;
+				<br>
+			<span>var</span> b;
+				<br><br>
+			<span>switch</span>(a) {
+				<br>
+			&emsp;<span>case</span> 2: // if(a===2){...}
+				<br>
+			&emsp;&emsp;b = a;
+				<br>
+			&emsp;break;
+				<br><br>
+			&emsp;<span>case</span> 3: // if(a===3){...}
+				<br>
+			&emsp;&emsp;b = a; //выполнится это выражение
+				<br>
+			&emsp;break;
+				<br>
+			}
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container"> 
+      <a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+			<nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+            <li><a href="kontakt.html">Контакты</a></li>
+            <li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+<section>
+	<div class="container2">
+
+		<h1 class="html12">Семантические элементы HTML5</h1>
+					
+					<img width="250" height="250" src="\сайтик\img\html5.png" class="tuturu">
+
+
+					<p><strong>Семантические элементы HTML5</strong> доступно описывают свой смысл или назначение как для браузеров, так и для веб-разработчиков.<br>
+До появления стандарта HTML5 вся разметка страниц осуществлялась преимущественно с помощью элементов <kbd>&lt;div&gt;</kbd>, которым присваивали классы <kbd>class</kbd> или идентификаторы <kbd>id</kbd> для наглядности разметки (например, <kbd>&lt;div id="header"&gt;</kbd>). С их помощью в HTML-документе размещали верхние и нижние колонтитулы, боковые панели, навигацию и многое другое. </p>
+<p>Стандарт HTML5 предоставил новые элементы для структурирования, группировки контента и разметки текстового содержимого. Новые семантические элементы позволили улучшить структуру веб-страницы, добавив смысловое значение заключенному в них содержимому (было <kbd>&lt;div id="header"&gt;</kbd>, стало <kbd>&lt;header&gt;</kbd>). Для отображения внешнего вида элементов не задано никаких правил, поэтому элементы можно стилизовать по своему усмотрению. Для всех элементов доступны <a href="atribyt.html" class="site" target="_blank"> ‎глобальные атрибуты</a>.</p>
+<p>Согласно спецификации HTML5 каждый элемент принадлежит к определенной (ноль или более) категории. Каждая из них группирует элементы со схожими характеристиками. Выделяют следующие общие категории:</p>
+<ul style="list-style:circle;margin-bottom:20px;margin-left:20px">
+<li>Мета содержимое</li>
+<li>Потоковое содержимое</li>
+<li>Секционное содержимое</li>
+<li>Заголовочное содержимое</li>
+<li>Текстовое содержимое</li>
+<li>Встроенное содержимое</li>
+<li>Интерактивное содержимое</li>
+</ul>
+		<div>
+<p><h2>Описание HTML5-элементов</h2></p>
+			<ul class="textatr">
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="#glava1">1. Элемент <kbd>&lt;header&gt;</kbd></a></li>
+<li><a href="#glava2">2. Элемент <kbd>&lt;nav&gt;</kbd></a></li>
+<li><a href="#glava3">3. Элемент <kbd>&lt;article&gt;</kbd></a></li>
+<li><a href="#glava4">4. Элемент <kbd>&lt;section&gt;</kbd></a></li>
+<li><a href="#glava5">5. Элемент <kbd>&lt;aside&gt;</kbd></a></li>
+<li><a href="#glava6">6. Элемент <kbd>&lt;footer&gt;</kbd></a></li>
+<li><a href="#glava7">7. Элемент <kbd>&lt;address&gt;</kbd></a></li>
+<li><a href="#glava8">8. Элемент <kbd>&lt;main&gt;</kbd></a></li>
+<li><a href="#glava9">9. Элемент <kbd>&lt;figure&gt;</kbd></a></li>
+<li><a href="#glava10">10. Элемент <kbd>&lt;figcaption&gt;</kbd></a></li>
+<li><a href="#glava11">11. Элемент <kbd>&lt;time&gt;</kbd></a></li>
+<li><a href="#glava11">12. Элемент <kbd>&lt;mark&gt;</kbd></a></li>
+<li><a href="#glava13">13. Элемент <kbd>&lt;bdi&gt;</kbd></a></li>
+<li><a href="#glava14">14. Элемент <kbd>&lt;wbr&gt;</kbd></a></li>
+<li><a href="#glava15">15. Элементы для описания Восточно-Азиатских символов</a></li>
+</ul>
+		</div>
+
+	<h1 id="glava1" class="html">1. Элемент &lt;header&gt;</h1>
+	<p><b>Категории контента:</b> потоковое содержимое.<br>
+Группирует вводные и навигационные элементы, не является обязательным. Может содержать заголовки, оборачивать содержание раздела страницы, форму поиска или логотип. В HTML-документе может содержаться одновременно несколько элементов <kbd>&lt;header&gt;</kbd> и они могут располагаться в любой части страницы. </p>
+<pre class="lang:default decode:true ">&lt;header&gt;
+  &lt;h1&gt;Site description&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=""&gt;About&lt;/a&gt;
+      &lt;li&gt;&lt;a href=""&gt;Forum&lt;/a&gt;
+      &lt;li&gt;&lt;a href=""&gt;Download&lt;/a&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</pre>
+<p>Элемент <kbd>&lt;header&gt;</kbd> нельзя помещать внутрь элементов <kbd>&lt;footer&gt;</kbd>, <kbd>&lt;address&gt;</kbd> или другого элемента <kbd>&lt;header&gt;</kbd>.</p>
+
+<h1 id="glava2" class="html">2. Элемент &lt;nav&gt;</h1>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Предназначен для создания блока навигации веб-страницы или всего веб-сайта, при этом не обязательно должен находиться внутри <kbd>&lt;header&gt;</kbd>. На странице может быть несколько элементов <kbd>&lt;nav&gt;</kbd>. Не заменяет теги <kbd>&lt;ul&gt;</kbd> или <kbd>&lt;оl&gt;</kbd>, он просто их обрамляет. Не все группы ссылок на странице должны быть обёрнуты <kbd>&lt;nav&gt;</kbd>, этот элемент предназначен в первую очередь для разделов, которые состоят из главных навигационных блоков. </p>
+<pre class="lang:default decode:true ">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+<p>В качестве элементов панели навигации можно использовать не только элементы списков:</p>
+<pre class="lang:default decode:true ">&lt;nav&gt;
+  &lt;p&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/p&gt;
+&lt;/nav&gt;</pre>
+<p>Также можно добавлять заголовки внутрь элемента:</p>
+<pre class="lang:default decode:true ">&lt;nav&gt;
+  &lt;h2&gt;...&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+
+
+<h1 id="glava3" class="html">3. Элемент &lt;article&gt;</h1>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Используется для группировки записей — публикаций, статей, записей блога, комментариев. Представляет собой независимый обособленный блок, предназначенный для многократного использования, как правило, начинается с заголовка. Может дублироваться на других страницах сайта и содержать внутри другие элементы <kbd>&lt;article&gt;</kbd>, которые по содержанию имеют близкое отношение к содержанию внешней статьи. Если на странице присутствует только одна статья с заголовком и текстовым содержимым, она не нуждается в обёртке элементом <kbd>&lt;article&gt;</kbd>. Элемент рекомендуется использовать только в том случае, если содержимое элемента будет явно указано в схеме документа.</p>
+<pre class="lang:default decode:true ">&lt;article&gt;
+  &lt;header&gt;
+    &lt;h2&gt;...&lt;/h2&gt;
+  &lt;/header&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;footer&gt;
+  Опубликовано в категории&lt;a href=""&gt;Музыка&lt;/a&gt;.
+    &lt;a href=""&gt;0 комментариев&lt;/a&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;</pre>
+
+
+<h1 id="glava4" class="html">4. Элемент &lt;section&gt;</h1>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Элемент представляет собой универсальный раздел документа. Группирует тематическое содержимое и обычно содержит заголовок. Не является блоком-оберткой, для этих целей уместнее использовать элемент <kbd>&lt;div&gt;</kbd>. В качестве содержимого может выступать оглавление, разделы научных публикаций, программа мероприятия. Домашняя страница сайта также может быть поделена на секции — блок вводной информации, новости и контакты. Элемент рекомендуется использовать только в том случае, если содержимое элемента будет явно указано в схеме документа.</p>
+<pre class="lang:default decode:true ">&lt;article&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+    &lt;section&gt;
+      &lt;h2&gt;...&lt;/h2&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h2&gt;...&lt;/h2&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;p&gt;...&lt;/p&gt;
+&lt;/article&gt;</pre>
+<h4>&lt;article&gt; внутри &lt;section&gt;</h4>
+
+<p>Можно создавать родительские элементы <kbd>&lt;section&gt;</kbd> с вложенными элементами <kbd>&lt;article&gt;</kbd>, в которых есть один или несколько элементов <kbd>&lt;article&gt;</kbd>. Не все страницы должны быть устроены именно так, но это допустимый способ вложения элементов. Например, основная область контента страницы содержит два блока со статьями разной тематики. Можно сделать на этом акцент, поместив каждую статью одной тематики внутрь элемента <kbd>&lt;section&gt;</kbd></p>
+<pre class="lang:default decode:true ">&lt;section&gt;
+  &lt;h1&gt;Заметки о природе&lt;/h1&gt;
+    &lt;article&gt;
+      &lt;h2&gt;...&lt;/h2&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article&gt;
+      &lt;h2&gt;...&lt;/h2&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h1&gt;Исторические заметки&lt;/h1&gt;
+    &lt;article&gt;
+      &lt;h2&gt;...&lt;/h2&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article&gt;
+      &lt;h2&gt;...&lt;/h2&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;</pre>
+
+
+
+
+
+
+
+
+
+</div>
+<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

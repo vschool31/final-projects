@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ссылки и якоря</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ССЫЛКИ И ЯКОРЯ
+		</div>
+	</div>
+	<a href="7.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Одним из самых важных тегов являеется тег ссылки &lt;<span>a</span>&gt;, так как благодаря этому тегу можно создавать сайты, состоящие из нескольких страниц.
+		</div>
+		<div id="div_2" class="text">
+			Ссылкой можно сделать любой объект на вашей странице: для этого нужно обернуть его в тег &lt;<span>a</span>&gt;, у которого есть атрибут <span>href</span>. В <span>href</span> указывается ссылка на объект или другую страницу.
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>a</span> <span>href</span> = "ссылка"&gt;
+				<br>
+			&emsp;&lt;<span>img</span>&gt; &lt;!--Картинка-ссылка--&gt;
+				<br>
+			&lt;/<span>a</span>&gt;
+		</div>
+		<div id="div_3" class="text">
+			Но тег &lt;<span>a</span>&gt; также может выполнять роль якоря. <span>Якорь</span> - это какой-либо элемент на веб-странице, на который можно переходить по ссылке. Очень часто якоря применяют на больших страницах для быстрого доступа к навигационному меню, расположенному в самом верху. Когда пользователь прокручивает страницу далеко вниз, появляется ссылка, по нажатию на которую вся страница прокручивается обратно вверх.
+		</div>
+		<div id="div_4" class="text">
+			Для осуществления этого вам потребуется два тега &lt;<span>a</span>&gt; и атрибут <span>name</span>. Тому элементу, который будет являться якорем, вы придумываете имя и записываете его в атрибут <span>name</span>, а тому элементу, который будет ссылаться на этот якорь, Вы в атрибут <span>name</span> вписываете тоже самое имя, но с <span>#</span> в начале.
+		</div>
+		<div id="code_2" class="text code">
+			&lt;<span>a</span> <span>name</span> = "anchor"&gt;&lt;<span>img</span>&gt;&lt;/<span>a</span>&gt; &lt;!--Картинка-якорь--&gt;
+			<br>
+			&lt;<span>a</span> <span>name</span> = "#anchor"&gt;&lt;<span>img</span>&gt;&lt;/<span>a</span>&gt; &lt;!--Картинка, которая перекидывает нас на якорь--&gt;
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

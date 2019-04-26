@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container"> 
+      <a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+        <div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+            <li><a href="kontakt.html">Контакты</a></li>
+            <li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+				<li><a href="tests.html">Тесты</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+	<section>
+		<div class="container2">
+			<div>
+			<ul class="textatr">
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="#glava1">1. Как создать таблицу</kbd></a></li>
+<li><a href="#glava2">2. Как создать строки (ряды) таблицы</a></li>
+<li><a href="#glava3">3. Как сделать ячейку заголовка столбца таблицы</a></li>
+<li><a href="#glava4">4. Как сделать ячейку тела таблицы</a></li>
+<li><a href="#glava5">5. Как добавить подпись (заголовок) к таблице</a></li>
+<li><a href="#glava6">6. Группирование строк и столбцов таблицы <kbd>&lt;colgroup&gt;</kbd> и <kbd>&lt;col&gt;</kbd></a></li>
+<li><a href="#glava7">7. Группировка разделов таблицы <kbd>&lt;thead&gt;</kbd>, <kbd>&lt;tbody&gt;</kbd> и <kbd>&lt;tfoot&gt;</kbd></a></li>
+<li><a href="#glava8">8. Как объединить ячейки таблицы</a></li>
+<li><a href="#glava9">9. Атрибуты элементов таблицы</a></li>
+<li><a href="#glava10">10. Пример создания таблицы</a></li>
+</ul>
+		</div>
+
+		<h1 id="glava1" class="html">1. Как создать таблицу</h1>
+<p>
+	Таблица создаётся при помощи парного тега <kbd>&lt;tabled&gt;&lt;/tabled&gt;</kbd>. Данный тег является контейнером для элементов таблицы и все элементы должны находиться внутри него. <br>Например, с помощью данной разметки можно создать таблицу, состоящую из <strong>двух столбцов и двух строк:</strong>
+	<pre>
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;текст заголовка&lt;/th&gt;&lt;th>текст заголовка&lt;/th&gt;&lt;/tr&gt; &lt;!--ряд с ячейками заголовков--&gt;
+&lt;tr&gt;&lt;td>данные&lt;/td&gt;&lt;td&gt;данные&lt;/td&gt;;&lt;/tr&gt; &lt;!--ряд с ячейками тела таблицы--&gt;
+&lt;/table&gt;
+	</pre>
+
+<table style="margin-bottom:20px;">
+<tbody><tr>
+<th>текст заголовка</th>
+<th>текст заголовка</th>
+</tr>
+<tr>
+<td>данные</td>
+<td>данные</td>
+</tr>
+</tbody></table>
+<figcaption>Рис.1. Внешний вид таблицы без форматирования css-свойствами</figcaption>
+</p>
+
+<p>
+	По умолчанию таблица и ячейки не имеют видимых границ. <strong>Границы</strong> задаются с помощью свойства <kbd>border</kbd>:
+	<pre>
+/* внешние границы таблицы серого цвета толщиной 1px */
+table {border: 1px solid grey;} 
+/* границы ячеек первого ряда таблицы */
+th {border: 1px solid grey;}
+/* границы ячеек тела таблицы */
+td {border: 1px solid grey;} 
+	</pre>
+</p>
+<p>
+	<strong>Промежутки между ячейками таблицы</strong> убираются с помощью свойства <kbd>table {border-collapse: collapse;}</kbd>.
+	<br><strong>Ширина</strong> таблицы по умолчанию равна ширине её внутреннего содержимого. Чтобы установить ширину, нужно задать значение для свойства <kbd>width</kbd>:
+	<pre>
+/* сделает ширину таблицы равной ширине блока контейнера, в котором она находится */
+table {width: 100%;}
+/* задаст фиксированную ширину для таблицы */
+table {width: 600px;}
+	</pre>
+</p>
+<p>
+Если для ячеек таблицы заданы внутренние отступы и границы, то ширина таблицы будет включать в себя следующие значения:
+<br><kbd>padding-left</kbd> и <kbd>padding-right</kbd>, ширина <kbd>border-left</kbd> плюс ширина <kbd>border-right</kbd> последней ячейки в ряду. Если заданы ширина и границы ячеек, то ширина таблицы будет складываться из ширины ячеек плюс ширина <kbd>border-left</kbd> и ширина <kbd>border-right</kbd> последней ячейки в ряду.
+</p>
+<h1 id="glava2" class="html">2. Как создать строки (ряды) таблицы</h1>
+<p>
+	Строки или ряды таблицы создаются с помощью тега <kbd>&lt;tr&gt;</kbd>. Количество горизонтальных строк таблицы определяется количеством парных тегов <kbd>&lt;tr&gt;&lt;/tr&gt;</kbd>.
+</p>
+<h1 id="glava3" class="html">3. Как сделать ячейку заголовка столбца таблицы</h1>
+<p>
+	Элемент <kbd>&lt;th&gt;</kbd> создаёт заголовок столбца — специальную ячейку, текст в которой выделяется полужирным. Количество ячеек заголовка определяется количеством пар тегов <kbd>&lt;th&gt;&lt;/th&gt;</kbd>. Для элемента доступны атрибуты <kbd>colspan</kbd>, <kbd>rowspan</kbd>, <kbd>headers</kbd>.
+	<pre>
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;ячейка заголовка&lt;/th&gt;&lt;th>ячейка заголовка&lt;/th&gt;&lt;/tr&gt;
+&lt;/table&gt;
+	</pre>
+</p>
+<h1 id="glava4" class="html">4. Как сделать ячейку тела таблицы</h1>
+<p>
+	Элемент <kbd>&lt;td&gt;</kbd> создаёт ячейки таблицы, внутрь которых помещаются данные таблицы. <br>Парные теги <kbd>&lt;td&gt;&lt;/td&gt;</kbd>, расположенные в одном ряду, определяют количество ячеек в строке таблицы. Количество пар ячеек <kbd>&lt;td&gt;</kbd> должно быть равно количеству пар ячеек <kbd>&lt;th&gt;</kbd>. Для элемента доступны атрибуты <kbd>colspan</kbd>, <kbd>rowspan</kbd>, <kbd>headers</kbd>.
+<pre>
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;ячейка заголовка&lt;/th&gt;&lt;th>ячейка заголовка&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td>ячейка тела таблицы&lt;/td&gt;&lt;td>ячейка тела таблицы&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</p>
+<h1 id="glava5" class="html">5. Как добавить подпись (заголовок) к таблице</h1>
+<p>
+Элемент <kbd>&lt;caption&gt;</kbd> создает подпись таблицы. Добавляется непосредственно после тега <kbd>&lt;table&gt;</kbd>, вне строки или ячейки.
+<pre>
+&lt;table&gt;
+&lt;caption&gt;Перечень продуктов&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование товара&lt;/th&gt;
+    &lt;th&gt;Ед. изм.&lt;/th&gt;
+    &lt;th&gt;Количество&lt;/th&gt;
+    &lt;th&gt;Цена за ед. изм., руб.&lt;/th&gt;
+    &lt;th&gt;Стоимость, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;Томаты свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;15,20&lt;/td&gt;&lt;td&gt;69,00&lt;/td&gt;&lt;td&gt;1048,80&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2.&lt;/td&gt;
+    &lt;td&gt;Огурцы свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;2,50&lt;/td&gt;&lt;td&gt;48,00&lt;/td&gt;&lt;td&gt;120,00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="5" style="text-align:right">ИТОГО:&lt;/td&gt;&lt;td&gt;1168,80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</p>
+<h1 id="glava6" class="html">6. Группирование строк и столбцов таблицы</h1>
+<p>
+	Элемент <kbd>&lt;colgroup&gt;</kbd> создает структурную группу столбцов, выделяя логически однородные ячейки. Группирует один или более столбцов для единого форматирования, позволяя применить стили к столбцам вместо того, чтобы повторять стили для каждой ячейки и для каждой строки. Добавляется непосредственно после тегов <kbd>&lt;table&gt;</kbd> и <kbd>&lt;caption&gt;</kbd>.
+</p>
+<p>
+	Элемент <kbd>&lt;col&gt;</kbd> формирует группы столбцов, которые делят таблицу на разделы, не относящиеся к общей структуре, т.е. не содержащие информацию одного типа. Позволяет задавать свойства столбцов для каждого столбца в пределах элемента <kbd>&lt;colgroup&gt;</kbd>. С помощью атрибута <kbd>style</kbd> можно изменить основной цвет фона ячеек. Для элемента <kbd>&lt;col&gt;</kbd> доступен атрибут <kbd>span</kbd>, задающий количество столбцов для объединения.
+</p>
+<pre>
+	&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col span="2" style="background:Khaki"&gt; &lt;!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы--&gt;
+    &lt;col style="background-color:LightCyan" &gt;&lt;!-- Задаем цвет фона для следующего (одного) столбца таблицы--&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п<&lt;th&gt;
+    <&lt;h>Наименование&lt;/th&gt;
+    &lt;th>Цена, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Карандаш цветной&lt;/td&gt;
+    &lt;td&gt;20,00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;Линейка 20 см&lt;/td&gt;
+    &lt;td&gt;30,00&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+<table>
+  <colgroup>
+    <col span="2" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+    <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+  </colgroup>
+  <tr>
+    <th>№ п/п</th>
+    <th>Наименование</th>
+    <th>Цена, руб.</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Карандаш цветной</td>
+    <td>20,00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Линейка 20 см</td>
+    <td>30,00</td>
+  </tr>
+</table>
+<figcaption>Рис. 2. Выделение столбцов таблицы другим цветом с использованием тегов &lt;col&gt; и &lt;colgroup&gt;</figcaption>
+<h1 id="glava7" class="html">7. Группировка разделов таблицы</h1>
+
+<p>Элемент <kbd>&lt;thead&gt;</kbd> создает группу заголовков для строк таблицы с целью задания единого оформления. Используется в сочетании с элементами <kbd>&lt;tbody&gt;</kbd> и <kbd>&lt;tfoot&gt;</kbd> для указания каждой части таблицы.
+
+<br>Элемент должен быть использован в следующем порядке: как дочерний элемент <kbd>&lt;table&gt;</kbd>, после <kbd>&lt;caption&gt;</kbd> и <kbd>&lt;colgroup&gt;</kbd>, и перед <kbd>&lt;tbody&gt;</kbd>, <kbd>&lt;tfoot&gt;</kbd> и <kbd>&lt;tr&gt;</kbd>элементами. В пределах одной таблицы можно использовать один раз.
+
+<br>Элемент <kbd>&lt;tbody&gt;</kbd> группирует основное содержимое таблицы. Используется в сочетании с элементами <kbd>&lt;thead&gt;</kbd> и <kbd>&lt;tfoot&gt;</kbd>.
+
+<br>Элемент <kbd>&lt;tfoot&gt;</kbd> создает группу строк для представления информации о суммах или итогах, расположенную в нижней части таблицы. Используется в таблице один раз. Располагается после тега <kbd>&lt;thead&gt;</kbd>, перед тегами <kbd>&lt;tbody&gt;</kbd> и <kbd>&lt;tr&gt;</kbd>.
+</p>
+<pre>
+	&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование товара&lt;/th&gt;
+     &lt;th&gt;Ед. изм.&lt;/th&gt;
+     &lt;th&gt;Количество&lt;/th&gt;
+     &lt;th&gt;Цена за ед. изм., руб.&lt;/th&gt;
+     &lt;th&gt;Стоимость, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tfoot&gt;
+  &lt;tr&gt;
+    &lt;td colspan="5" style="text-align:right">ИТОГО:&lt;/td&gt;&lt;td>1168,80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;Томаты свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;15,20&lt;/td&gt;&lt;td&gt;69,00&lt;/td&gt;&lt;td&gt;1048,80&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2.&lt;/td&gt;
+    &lt;td&gt;Огурцы свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;2,50&lt;/td&gt;&lt;td&gt;48,00&lt;/td&gt;&lt;td&gt;120,00&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;  
+&lt;/table&gt;
+</pre>
+<p>
+	<i>Такая группировка строк была заложена в стандарте в расчете на то, что обозреватели при отображении длинных таблиц обеспечат прокрутку строк данных при сохранении надзаголовка и подзаголовка неподвижными, а при их выводе на принтер смогут использовать надзаголовок и подзаголовок в качестве колонтитулов страницы. Однако, современные обозреватели этого не делают и либо просто отображают <kbd>&lt;thead&gt;</kbd> и <kbd>&lt;tfoot&gt;</kbd> как строки данных, либо, в лучшем случае, просто помещают соответствующие строки в начало и конец таблицы.</i>
+</p>
+
+
+<h1 id="glava8" class="html">8. Как объединить ячейки таблицы</h1>
+<p>
+	Атрибуты <kbd>colspan</kbd> и <kbd>rowspan</kbd> объединяют ячейки таблицы. Атрибут <kbd>colspan</kbd> задает количество ячеек, объединенных по горизонтали, а <kbd>rowspan</kbd> — по вертикали.
+</p>
+<pre>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование товара&lt;/th&gt;
+     &lt;th&gt;Ед. изм.&lt;/th&gt;
+     &lt;th&gt;Количество&lt;/th&gt;
+     &lt;th&gt;Цена за ед. изм., руб.&lt;/th&gt;
+     &lt;th&gt;Стоимость, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;Томаты свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;15,20&lt;/td&gt;&lt;td&gt;69,00&lt;/td&gt;&lt;td&gt;1048,80&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2.&lt;/td&gt;
+    &lt;td&gt;Огурцы свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;2,50&lt;/td&gt;&lt;td&gt;48,00&lt;/td&gt;&lt;td&gt;120,00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="5" style="text-align:right"&gt;ИТОГО:&lt;/td&gt;&lt;td&gt;1168,80&lt;/td&gt;&lt;!-- Задаем количество ячеек по горизонтали для объединения--&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+<figure>
+
+
+  <img src="https://html5book.ru/wp-content/uploads/2014/06/table_primer2.png" alt="table_primer2" width="750" height="246" class="alignleft size-full wp-image-2338" srcset="https://html5book.ru/wp-content/uploads/2014/06/table_primer2.png 818w, https://html5book.ru/wp-content/uploads/2014/06/table_primer2-768x231.png 768w, https://html5book.ru/wp-content/uploads/2014/06/table_primer2-300x90.png 300w">
+  <figcaption>Рис. 3. Пример объединения ячеек таблицы по горизонтали при помощи атрибута colspan
+  </figcaption>
+
+</figure>
+
+<h1 id="glava9" class="html">9. Атрибуты элементов таблицы</h1>
+
+
+<table class="t3">
+<caption>Таблица 1. Атрибуты элементов таблицы</caption>
+<tbody><tr>
+<th style="width:20%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td><kbd>colspan</kbd></td>
+<td>Количество ячеек в строке для объединения по горизонтали.<br>
+<kbd>&lt;td colspan="3"&gt;</kbd><br>
+Возможные значения: число от 1 до 999.</td>
+</tr>
+<tr>
+<td><kbd>headers</kbd></td>
+<td>Задает список ячеек заголовка, содержащих информацию о заголовке текущей ячейки данных. Предназначен для речевых браузеров.<br>
+<kbd>&lt;th id="идентификатор"&gt;...&lt;/th&gt;<br>
+&lt;th headers="идентификатор"&gt;...&lt;/th&gt;</kbd><br>
+Принимаемые значения: список имен ячеек, разделенных пробелами; эти имена должны быть присвоены ячейкам через их атрибут <kbd>id</kbd>.</td>
+</tr>
+<tr>
+<td><kbd>rowspan</kbd></td>
+<td>Количество ячеек в столбце для объединения по вертикали.<br>
+<kbd>&lt;td rowspan="2"&gt;</kbd><br>
+Возможные значения: число от 1 до 999.</td>
+</tr>
+<tr>
+<td><kbd>span</kbd></td>
+<td>Количество колонок, объединяемых для задания единого стиля, по умолчанию равно 1.<br>
+<kbd>&lt;col span="2"&gt;</kbd><br>
+Принимаемые значения: любое целое положительное число.</td>
+</tr>
+</tbody></table>
+
+<h1 id="glava10" class="html">10. Пример создания таблицы</h1>
+<figure><img src="https://html5book.ru/wp-content/uploads/2015/03/table-html.png" alt="table-html" width="100%"><figcaption>Рис. 4. Создание меню ресторана с помощью HTML-таблицы</figcaption></figure>
+<p><b>Разметка HTML</b></p>
+<pre>&lt;table&gt;
+  &lt;caption&gt;Меню ресторана "Ромашка"&lt;/caption&gt; 
+  &lt;tr&gt;
+    &lt;th rowspan="2" class="first"&gt;Кухня&lt;/th&gt;
+    &lt;th colspan="2"&gt;Холодные блюда&lt;/th&gt;
+    &lt;th colspan="2"&gt;Горячие блюда&lt;/th&gt;
+    &lt;th rowspan="2"&gt;Десерты&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class="first"&gt;Салаты&lt;/td&gt;
+    &lt;td class="first"&gt;Закуски&lt;/td&gt;
+    &lt;td class="first"&gt;Первые блюда&lt;/td&gt;
+    &lt;td class="first"&gt;Вторые блюда&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="3" class="first"&gt;Русская&lt;/td&gt;
+    &lt;td&gt;Винегрет&lt;/td&gt;
+    &lt;td&gt;Язык с хреном&lt;/td&gt;
+    &lt;td&gt;Щи с квашеной капустой&lt;/td&gt;
+    &lt;td&gt;Вареники с картошкой&lt;/td&gt;
+    &lt;td&gt;Печеные яблоки с медом&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Оливье&lt;/td&gt;
+    &lt;td&gt;Студень говяжий&lt;/td&gt;
+    &lt;td&gt;Рассольник домашний&lt;/td&gt;
+    &lt;td&gt;Караси запеченые в сметане&lt;/td&gt;
+    &lt;td&gt;Блинчатый пирог&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Сельдь под "шубой"&lt;/td&gt;
+    &lt;td&gt;Судак заливной&lt;/td&gt;
+    &lt;td&gt;Мясная солянка&lt;/td&gt;
+    &lt;td&gt;Котлеты "Пожарские"&lt;/td&gt;
+    &lt;td&gt;Пирожное "Картошка"&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="3" class="first"&gt;Испанская&lt;/td&gt;
+    &lt;td&gt;Севиче из гребешков&lt;/td&gt;
+    &lt;td&gt;Эмпанадас&lt;/td&gt;
+    &lt;td&gt;Хлебный суп с чесноком&lt;/td&gt;
+    &lt;td&gt;Паэлья с морепродуктами&lt;/td&gt;
+    &lt;td&gt;Чуррос&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Тимбал из авокадо и тунца&lt;/td&gt;
+    &lt;td&gt;Ахотомате&lt;/td&gt;
+    &lt;td&gt;Астурийская фабада&lt;/td&gt;
+    &lt;td&gt;Свиное раксо&lt;/td&gt;
+    &lt;td&gt;Альмойшавена&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Фасоль с ветчиной&lt;/td&gt;
+    &lt;td&gt;Чанфайна&lt;/td&gt;
+    &lt;td&gt;Рыбный суп с манными клецками &lt;/td&gt;
+    &lt;td&gt;Тортилья картофельная&lt;/td&gt;
+    &lt;td&gt;Бунуэлос&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="3" class="first"&gt;Французская&lt;/td&gt;
+    &lt;td&gt;Вогезский салат&lt;/td&gt;
+    &lt;td&gt;Рийет из курицы&lt;/td&gt;
+    &lt;td&gt;Баклажанный крем-суп "Ренуар"&lt;/td&gt;
+    &lt;td&gt;Картофель огратен&lt;/td&gt;
+    &lt;td&gt;Бриоши&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Салат "Панзанелла"&lt;/td&gt;
+    &lt;td&gt;Делисьез из сыра&lt;/td&gt;
+    &lt;td&gt;Французский тыквенный суп&lt;/td&gt;
+    &lt;td&gt;Гратин из птицы&lt;/td&gt;
+    &lt;td&gt;Лигурийский лимонный пирог&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Тар-тар&lt;/td&gt;
+    &lt;td&gt;Маринованный лосось&lt;/td&gt;
+    &lt;td&gt;Суп "Конти"&lt;/td&gt;
+    &lt;td&gt;Тартифлетт&lt;/td&gt;
+    &lt;td&gt;Саварен "Триумф"&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;</pre>
+  <p><b>Стили CSS</b></p>
+  <pre>body {
+  margin: 0;
+  background: #F4F1F8;
+}
+table {
+  border-collapse: collapse; 
+  line-height: 1.1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background:  radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+  color: #0C213B;
+}
+caption {
+  font-family: annabelle, cursive;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px; 
+  color: #F3CD26;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+ }
+caption:before, caption:after {
+  content: "\274B";
+  color: #A9E2CC;
+  margin: 0 10px;
+}
+th {
+  padding: 10px; 
+  border: 1px solid #A9E2CC;
+}
+td {
+  font-size: 0.8em;
+  padding: 5px 7px;
+  border: 1px solid #A9E2CC;
+}
+.first {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}</pre>
+
+
+
+
+	<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

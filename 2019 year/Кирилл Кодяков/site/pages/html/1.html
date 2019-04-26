@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Структура</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			СТРУКТУРА HTML-КОДА
+		</div>
+	</div>
+	<a href="2.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Прежде чем знакомиться со структурой HTML-кода, разберёмся что же такое <span>HTML</span>.
+		</div>
+		<div id="div_2" class="text">
+			<span>HTML</span>(HyperText Markup Language — язык гипертекстовой разметки) — стандартизированный язык разметки документов во Всемирной паутине. Из понятие следует, что HTML используется для разметки веб-страниц. Разметка происходит с помощью тегов. Каждый тег выполняют какую-либо функцию. Теги бывают парные и одиночные. Сейчас мы рассмотрим самые первые и основные теги.
+		</div>
+		<div id="div_3" class="text">
+			Любая веб-страница содержит в себе типичные элементы, которые не меняются от вида и направленности сайта. Любая страница состоит из 3 тегов: &lt;<span>html</span>&gt;, &lt;<span>head</span>&gt;, &lt;<span>body</span>&gt;. Располагаются они следующим образом.
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>html</span>&gt;
+				<br>
+			&emsp;&lt;<span>head</span>&gt;
+				<br><br>
+			&emsp;&emsp;&lt;!--Этот раздел предназначен для заголовка страницы и технической информации--&gt;
+				<br><br>
+			&emsp;&lt;<span>/head</span>&gt;
+				<br>
+			&emsp;&lt;<span>body</span>&gt;
+				<br><br>
+			&emsp;&emsp;&lt;!--А здесь надо размещать все, что хочется увидеть на странице--&gt;
+				<br><br>
+			&emsp;&lt;<span>/body</span>&gt;
+				<br>
+			&lt;<span>/html</span>&gt;
+		</div>
+		<div id="div_4" class="text">
+			Тег &lt;<span>html</span>&gt; является контейнером, который заключает в себе все содержимое веб-страницы. Открывающий и закрывающий теги &lt;<span>html</span>&gt; 
+			в документе необязательны, но хороший тон диктует непременное их использование. Закрывающий тег &lt;<span>html</span>&gt; должен всегда стоять в документе последним.
+		</div>
+		<div id="div_5" class="text">
+			Тег &lt;<span>head</span>&gt; предназначен для хранения других элементов, цель которых — помочь браузеру в работе с данными. Внутри контейнера &lt;<span>head</span>&gt; находятся метатеги, которые используются для хранения информации предназначенной для браузеров и поисковых систем. Например, механизмы поисковых систем обращаются к метатегам для получения описания сайта, ключевых слов и других данных. Содержимое тега &lt;<span>head</span>&gt; не отображается напрямую на веб-странице.
+		</div>
+		<div id="div_6" class="text">
+			Элемент &lt;<span>body</span>&gt; предназначен для хранения содержания веб-страницы (контента), отображаемого в окне браузера. Информацию, которую следует выводить в документе, следует располагать именно внутри контейнера &lt;<span>body</span>&gt;. К такой информации относится текст, изображения, теги, скрипты JavaScript и т.д. Как и в случае с тегом &lt;<span>html</span>&gt;, тег &lt;<span>body</span>&gt; не является обязательным.
+		</div>
+		<div id="div_7" class="text">
+			Сразу стоит отметить, что у тегов есть <span>атрибуты</span>. Атрибуты тега - это свойства этого тега. С помощью атрибутов теги настраиваются или получают какие-либо возможности.
+		</div>
+		<div id="code_2" class="text code">
+			&lt;body <span>*атрибуты тега*</span>&gt;&lt;body&gt;
+		</div>
+		<div id="div_8" class="text">
+			У некоторых атрибутов можно указать значение. Осуществляется это таким способом.
+		</div>
+		<div id="code_3" class="text code">
+			&lt;тег атрибут =<span>"значение"</span>&gt;
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

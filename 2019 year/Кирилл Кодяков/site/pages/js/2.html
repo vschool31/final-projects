@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Типы данных</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ТИПЫ ДАННЫХ
+		</div>
+	</div>
+	<a href="3.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			В JavaScript существует шесть основных типов данных: <span>число</span>, <span>строка</span>, <span>логический тип</span>, специальные значения <span>null</span> и <span>undefined</span>, <span>объекты</span>.
+		</div>
+		<div id="code_1" class="text code">
+			<span>var</span> num = 123; // числовая переменная
+				<br><br>
+			// комментарии в JS казываются через двойной слеш
+		</div>
+		<div id="div_2" class="text">
+			Числа могут быть как целыми, так и дробными. Существуют специальные числовые значения <span>Infinity</span> (бесконечность) и <span>NaN</span> (ошибка вычислений). Например, Infinity получается при делении на ноль, а NaN будет результатом некорректной математической операции (например, умножение числовой переменной на строчную).
+		</div>
+		<div id="code_2" class="text code">
+			<span>var</span> str = "Какая-то строка";
+			<br>
+			<span>var</span> str = 'Тоже строка, но в одинарных кавычках';
+		</div>
+		<div id="div_3" class="text">
+			В JavaScript одинарные и двойные кавычки равноправны. Можно использовать и те, и другие.
+		</div>
+		<div id="code_3" class="text code">
+			<span>var</span> checked = true;
+				<br>
+			<span>var</span> checked = false; 
+		</div>
+		<div id="div_4" class="text">
+			Логический тип содержит только два значения: правда (<span>true</span>) и ложь (<span>false</span>). Этот тип будет обсуждаться более подробно в теме условных операторов.
+		</div>
+		<div id="code_4" class="text code">
+			<span>var</span> age = null;
+		</div>
+		<div id="div_5" class="text">
+			Значение <span>null</span> не относится ни к одному из типов выше, а образует свой отдельный тип, состоящий из единственного значения null. В JavaScript null - это специальное значение, которое имеет смысл «<span>ничего</span>» или «значение неизвестно». В частности, код выше говорит о том, что возраст age неизвестен. Значение <span>undefined</span>, как и null, образует свой собственный тип, состоящий из одного этого значения. Оно имеет смысл «<span>значение не присвоено</span>». Если переменная объявлена, но в неё ничего не записано, то её значение как раз и есть undefined. Можно присвоить undefined и в явном виде, хотя это делается редко, так как это противоречит его смыслу. Для записи в переменную «пустого» или «неизвестного» значения используется null.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

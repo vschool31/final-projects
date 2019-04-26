@@ -1,0 +1,1305 @@
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+				<div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+	<section>
+		<div class="container2">
+					<h1 id="glava8" class="html">Спецсимволы HTML</h1>
+					<p>
+					<img class="tuturu" src="https://html5book.ru/wp-content/uploads/2014/05/html-symbols.png"><strong>Спецсимволы HTML</strong>, или символы-мнемоники, представляют собой конструкцию SGML (англ. Standard Generalized Markup Language — стандартный обобщённый язык разметки), ссылающуюся на определенные символы из символьного набора документа. В основном они используются для указания символов, которых нет в стандартной компьютерной клавиатуре, либо которые не поддерживает кодировка HTML-страницы (Windows-1251, UTF-8 и т.д.).
+
+<p><p>Чтобы разместить символ на веб-странице, необходимо указать HTML-код или мнемонику.</p></p>
+
+<p>Спецсимволы чувствительны к регистру, поэтому их необходимо прописывать точно так, как указано в таблице. Спецсимволы, не имеющие мнемоники, могут не отображаться вовсе или же некорректно отображаться в тех или иных браузерах.</p>
+<p>
+	Для вставки символов внутрь тегов воспользуйтесь HTML-кодом символа, а для использования символов в таблицах стилей, например, в качестве значения свойства <kbd>content</kbd> — CSS-код.
+</p>
+<p>
+	Спецсимвол наследует <strong>цвет</strong> от цвета текста родительского элемента. Чтобы изменить цвет спецсимвола, можно поместить HTML-код внутрь тега <kbd>&lt;span&gt;</kbd> или задать нужное значение свойства <kbd>color</kbd>(при вставке спецсимволов через свойство <kbd>content</kbd>).
+</p>
+					</p>
+	<font size="6">Популярные спецсимволы HTML</font>
+	<div>
+<p>
+
+	<ul class="textatr">
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="#glava1">1. Полезные знаки и символы</a></li>
+<li><a href="#glava2">2. Знаки пунктуации</a></li>
+<li><a href="#glava3">3. Стрелки</a></li>
+<li><a href="#glava4">4. Карточные масти</a></li>
+<li><a href="#glava5">5. Деньги</a></li>
+<li><a href="#glava6">6. Знаки зодиака</a></li>
+</ul>
+</p>
+		</div>
+<div>
+			<h1 id="glava1" class="html1">1. Полезные знаки и символы</h1>
+<table id="part1" class="t4">
+<tbody><tr>
+<th style="width:10%">Вид</th>
+<th style="width:20%">HTML-код</th>
+<th style="width:15%">CSS-код</th>
+<th style="width:55%">Описание</th>
+</tr>
+<tr>
+<td>☃</td>
+<td>&amp;#9731;</td>
+<td>\2603</td>
+<td>Снеговик</td>
+</tr>
+<tr>
+<td>☦</td>
+<td>&amp;#9766;</td>
+<td>\2626</td>
+<td>Православный крест</td>
+</tr>
+<tr>
+<td>⚓</td>
+<td>&amp;#9875;</td>
+<td>\2693</td>
+<td>Якорь</td>
+</tr>
+<tr>
+<td>✆</td>
+<td>&amp;#9990;</td>
+<td>\2706</td>
+<td>Знак телефона</td>
+</tr>
+<tr>
+<td>☎</td>
+<td>&amp;#9742;</td>
+<td>\260E</td>
+<td>Телефон</td>
+</tr>
+<tr>
+<td>☕</td>
+<td>&amp;#9749;</td>
+<td>\2615</td>
+<td>Горячие напитки</td>
+</tr>
+<tr>
+<td>✎</td>
+<td>&amp;#9998;</td>
+<td>\270E</td>
+<td>Карандаш, направленный вправо-вниз</td>
+</tr>
+<tr>
+<td>✏</td>
+<td>&amp;#9999;</td>
+<td>\270F</td>
+<td>Карандаш</td>
+</tr>
+<tr>
+<td>✐</td>
+<td>&amp;#10000;</td>
+<td>\2710</td>
+<td>Карандаш, направленный вправо-вверх</td>
+</tr>
+<tr>
+<td>✑</td>
+<td>&amp;#10001;</td>
+<td>\2711</td>
+<td>Незакрашенное острие пера</td>
+</tr>
+<tr>
+<td>✒</td>
+<td>&amp;#10002;</td>
+<td>\2712</td>
+<td>Закрашенное острие пера</td>
+</tr>
+<tr>
+<td>⚜</td>
+<td>&amp;#9884;</td>
+<td>\269C</td>
+<td>Геральдическая лилия</td>
+</tr>
+<tr>
+<td>⛑</td>
+<td>&amp;#9937;</td>
+<td>\26D1</td>
+<td>Шлем с белым крестом</td>
+</tr>
+<tr>
+<td>⚝</td>
+<td>&amp;#9885;</td>
+<td>\269D</td>
+<td>Начерченная белая звезда</td>
+</tr>
+<tr>
+<td>❄</td>
+<td>&amp;#10052;</td>
+<td>\2744</td>
+<td>Снежинка</td>
+</tr>
+<tr>
+<td>❤</td>
+<td>&amp;#10084;</td>
+<td>\2764</td>
+<td>Закрашенное жирное сердце</td>
+</tr>
+<tr>
+<td>❅</td>
+<td>&amp;#10053;</td>
+<td>\2745</td>
+<td>Зажатая трилистниками снежинка</td>
+</tr>
+<tr>
+<td>❆</td>
+<td>&amp;#10054;</td>
+<td>\2746</td>
+<td>Жирная остроугольная снежинка</td>
+</tr>
+<tr>
+<td>★</td>
+<td>&amp;#9733;</td>
+<td>\2605</td>
+<td>Закрашенная звезда</td>
+</tr>
+<tr>
+<td>☆</td>
+<td>&amp;#9734;</td>
+<td>\2606</td>
+<td>Незакрашенная звезда</td>
+</tr>
+<tr>
+<td>✪</td>
+<td>&amp;#10026;</td>
+<td>\272A</td>
+<td>Незакрашенная звезда в закрашенном круге</td>
+</tr>
+<tr>
+<td>✫</td>
+<td>&amp;#10027;</td>
+<td>\272B</td>
+<td>Закрашенная звезда с незакрашенным кругом внутри</td>
+</tr>
+<tr>
+<td>✯</td>
+<td>&amp;#10031;</td>
+<td>\272F</td>
+<td>Вращающаяся звезда</td>
+</tr>
+<tr>
+<td>❉</td>
+<td>&amp;#10057;</td>
+<td>\2749</td>
+<td>Звёздочка с шарообразными окончаниями</td>
+</tr>
+<tr>
+<td>❋</td>
+<td>&amp;#10059;</td>
+<td>\274B</td>
+<td>Жирная восьмиконечная каплеобразная звёздочка-пропеллер</td>
+</tr>
+<tr>
+<td>✲</td>
+<td>&amp;#10034;</td>
+<td>\2732</td>
+<td>Звёздочка с незакрашенным центром</td>
+</tr>
+<tr>
+<td>☀</td>
+<td>&amp;#9728;</td>
+<td>\2600</td>
+<td>Закрашенное солнце с лучами</td>
+</tr>
+<tr>
+<td>☁</td>
+<td>&amp;#9729;</td>
+<td>\2601</td>
+<td>Облака</td>
+</tr>
+<tr>
+<td>☂</td>
+<td>&amp;#9730;</td>
+<td>\2602</td>
+<td>Зонтик</td>
+</tr>
+<tr>
+<td>☑</td>
+<td>&amp;#9745;</td>
+<td>\2611</td>
+<td>Галочка в квадрате</td>
+</tr>
+<tr>
+<td>☒</td>
+<td>&amp;#9746;</td>
+<td>\2612</td>
+<td>Крестик в квадрате</td>
+</tr>
+<tr>
+<td>☹</td>
+<td>&amp;#9785;</td>
+<td>\2639</td>
+<td>Нахмуренный смайлик</td>
+</tr>
+<tr>
+<td>☺</td>
+<td>&amp;#9786;</td>
+<td>\263A</td>
+<td>Улыбающийся смайлик</td>
+</tr>
+<tr>
+<td>☻</td>
+<td>&amp;#9787;</td>
+<td>\263B</td>
+<td>Закрашенный улыбающийся смайлик</td>
+</tr>
+<tr>
+<td>☭</td>
+<td>&amp;#9773;</td>
+<td>\262D</td>
+<td>Серп и молот</td>
+</tr>
+<tr>
+<td>⚑</td>
+<td>&amp;#9873;</td>
+<td>\2691</td>
+<td>Закрашенный флаг</td>
+</tr>
+<tr>
+<td>⚐</td>
+<td>&amp;#9872;</td>
+<td>\2690</td>
+<td>Незакрашенный флаг</td>
+</tr>
+<tr>
+<td>☰</td>
+<td>&amp;#9776;</td>
+<td>\2630</td>
+<td>Триграмма</td>
+</tr>
+<tr>
+<td>✿</td>
+<td>&amp;#10047;</td>
+<td>\273f</td>
+<td>Закрашенный цветок</td>
+</tr>
+<tr>
+<td>❀</td>
+<td>&amp;#10048;</td>
+<td>\2740</td>
+<td>Незакрашенный цветок</td>
+</tr>
+<tr>
+<td>✾</td>
+<td>&amp;#10046;</td>
+<td>\273E</td>
+<td>Цветок с шестью лепестками</td>
+</tr>
+<tr>
+<td>❁</td>
+<td>&amp;#10049;</td>
+<td>\2741</td>
+<td>Закрашенный обведённый цветок</td>
+</tr>
+<tr>
+<td>❂</td>
+<td>&amp;#10050;</td>
+<td>\2742</td>
+<td>Цветок из точек</td>
+</tr>
+<tr>
+<td>✉</td>
+<td>&amp;#9993;</td>
+<td>\2709</td>
+<td>Конверт</td>
+</tr>
+<tr>
+<td>❦</td>
+<td>&amp;#10086;</td>
+<td>\2766</td>
+<td>Сердце в виде цветка</td>
+</tr>
+<tr>
+<td>❶</td>
+<td>&amp;#10102;</td>
+<td>\2776</td>
+<td>Номер 1</td>
+</tr>
+<tr>
+<td>❷</td>
+<td>&amp;#10103;</td>
+<td>\2777</td>
+<td>Номер 2</td>
+</tr>
+<tr>
+<td>❸</td>
+<td>&amp;#10104;</td>
+<td>\2778</td>
+<td>Номер 3</td>
+</tr>
+<tr>
+<td>❹</td>
+<td>&amp;#10105;</td>
+<td>\2779</td>
+<td>Номер 4</td>
+</tr>
+<tr>
+<td>❺</td>
+<td>&amp;#10106;</td>
+<td>\277A</td>
+<td>Номер 5</td>
+</tr>
+<tr>
+<td>❻</td>
+<td>&amp;#10107;</td>
+<td>\277B</td>
+<td>Номер 6</td>
+</tr>
+<tr>
+<td>❼</td>
+<td>&amp;#10108;</td>
+<td>\277C</td>
+<td>Номер 7</td>
+</tr>
+<tr>
+<td>❽</td>
+<td>&amp;#10109;</td>
+<td>\277D</td>
+<td>Номер 8</td>
+</tr>
+<tr>
+<td>➒</td>
+<td>&amp;#10130;</td>
+<td>\2792</td>
+<td>Номер 9</td>
+</tr>
+<tr>
+<td>➓</td>
+<td>&amp;#10131;</td>
+<td>\2793</td>
+<td>Номер 10</td>
+</tr>
+<tr>
+<td>✖</td>
+<td>&amp;#10006;</td>
+<td>\2716</td>
+<td>Жирный знак умножения</td>
+</tr>
+<tr>
+<td>✘</td>
+<td>&amp;#10008;</td>
+<td>\2718</td>
+<td>Жирный крестик</td>
+</tr>
+<tr>
+<td>✔</td>
+<td>&amp;#10004;</td>
+<td>\2714</td>
+<td>Жирная отметка галочкой</td>
+</tr>
+<tr>
+<td>✚</td>
+<td>&amp;#10010;</td>
+<td>\271A</td>
+<td>Жирный крест</td>
+</tr>
+<tr>
+<td>⚛</td>
+<td>&amp;#9883;</td>
+<td>\269B</td>
+<td>Символ атома</td>
+</tr>
+<tr>
+<td>♺</td>
+<td>&amp;#9850;</td>
+<td>\267A</td>
+<td>Символ переработки</td>
+</tr>
+<tr>
+<td>❑</td>
+<td>&amp;#10065;</td>
+<td>\2751</td>
+<td>Незакрашенный квадрат с правой нижней тенью</td>
+</tr>
+<tr>
+<td>❒</td>
+<td>&amp;#10066;</td>
+<td>\2752</td>
+<td>Незакрашенный квадрат с правой верхней тенью</td>
+</tr>
+<tr>
+<td>◈</td>
+<td>&amp;#9672;</td>
+<td>\25C8</td>
+<td>Алмаз в оправе</td>
+</tr>
+<tr>
+<td>◐</td>
+<td>&amp;#9680;</td>
+<td>\25D0</td>
+<td>Круг с левой закрашенной половиной</td>
+</tr>
+<tr>
+<td>◑</td>
+<td>&amp;#9681;</td>
+<td>\25D1</td>
+<td>Круг с закрашенной правой половиной</td>
+</tr>
+<tr>
+<td>⁂</td>
+<td>&amp;#8258;</td>
+<td>\2042</td>
+<td>Три звездочки</td>
+</tr>
+</tbody></table>
+
+<h1 id="glava2" class="html1">2. Знаки пунктуации</h1>
+<table id="part2" class="t4">
+<tbody><tr>
+<th style="width:10%">Вид</th>
+<th style="width:20%">HTML-код</th>
+<th style="width:15%">CSS-код</th>
+<th style="width:55%">Описание</th>
+</tr>
+<tr>
+<td><span style="background:#dcdcdc">&nbsp;</span></td>
+<td>&amp;nbsp;</td>
+<td>\00A0</td>
+<td>Неразрывный пробел</td>
+</tr>
+<tr>
+<td>­</td>
+<td>&amp;shy;</td>
+<td>\00AD</td>
+<td>Место возможного переноса</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&amp;lt;</td>
+<td>\003C</td>
+<td>Знак "меньше чем" (начало тега)</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&amp;gt;</td>
+<td>\003E</td>
+<td>Знак "больше чем" (конец тега)</td>
+</tr>
+<tr>
+<td>«</td>
+<td>&amp;laquo;</td>
+<td>\00AB</td>
+<td>Левая двойная угловая скобка</td>
+</tr>
+<tr>
+<td>»</td>
+<td>&amp;raquo;</td>
+<td>\00BB</td>
+<td>Правая двойная угловая скобка</td>
+</tr>
+<tr>
+<td>‹</td>
+<td>&amp;lsaquo;</td>
+<td>\2039</td>
+<td>Левая угловая одиночная кавычка</td>
+</tr>
+<tr>
+<td>›</td>
+<td>&amp;rsaquo;</td>
+<td>\203A</td>
+<td>Правая угловая одиночная кавычка</td>
+</tr>
+<tr>
+<td>"</td>
+<td>&amp;quot;</td>
+<td>\0022</td>
+<td>Двойная кавычка</td>
+</tr>
+<tr>
+<td>′</td>
+<td>&amp;prime;</td>
+<td>\2032</td>
+<td>Одиночный штрих</td>
+</tr>
+<tr>
+<td>″</td>
+<td>&amp;Prime;</td>
+<td>\2033</td>
+<td>Двойной штрих</td>
+</tr>
+<tr>
+<td>‘</td>
+<td>&amp;lsquo;</td>
+<td>\2018</td>
+<td>Левая одиночная кавычка</td>
+</tr>
+<tr>
+<td>’</td>
+<td>&amp;rsquo;</td>
+<td>\2019</td>
+<td>Правая одиночная кавычка</td>
+</tr>
+<tr>
+<td>‚</td>
+<td>&amp;sbquo;</td>
+<td>\201A</td>
+<td>Нижняя одиночная кавычка</td>
+</tr>
+<tr>
+<td>“</td>
+<td>&amp;ldquo;</td>
+<td>\201C</td>
+<td>Левая двойная кавычка</td>
+</tr>
+<tr>
+<td>”</td>
+<td>&amp;rdquo;</td>
+<td>\201D</td>
+<td>Правая двойная кавычка</td>
+</tr>
+<tr>
+<td>„</td>
+<td>&amp;bdquo;</td>
+<td>\201E</td>
+<td>Нижняя двойная кавычка</td>
+</tr>
+<tr>
+<td>❜</td>
+<td>&amp;#10076;</td>
+<td>\275C</td>
+<td>Жирная одинарная верхняя запятая</td>
+</tr>
+<tr>
+<td>❛</td>
+<td>&amp;#10075;</td>
+<td>\275B</td>
+<td>Жирная одинарная повёрнутая верхняя запятая</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>&amp;amp;</td>
+<td>\0026</td>
+<td>Амперсанд</td>
+</tr>
+<tr>
+<td>'</td>
+<td>&amp;apos;</td>
+<td>\0027</td>
+<td>Апостроф (одинарная кавычка)</td>
+</tr>
+<tr>
+<td>§</td>
+<td>&amp;sect;</td>
+<td>\00A7</td>
+<td>Параграф</td>
+</tr>
+<tr>
+<td>©</td>
+<td>&amp;copy;</td>
+<td>\00A9</td>
+<td>Знак copyright</td>
+</tr>
+<tr>
+<td>¬</td>
+<td>&amp;not;</td>
+<td>\00AC</td>
+<td>Знак отрицания</td>
+</tr>
+<tr>
+<td>®</td>
+<td>&amp;reg;</td>
+<td>\00AE</td>
+<td>Знак зарегистрированной торговой марки</td>
+</tr>
+<tr>
+<td>¯</td>
+<td>&amp;macr;</td>
+<td>\00AF</td>
+<td>Знак долготы над гласным</td>
+</tr>
+<tr>
+<td>°</td>
+<td>&amp;deg;</td>
+<td>\00B0</td>
+<td>Градус</td>
+</tr>
+<tr>
+<td>±</td>
+<td>&amp;plusmn;</td>
+<td>\00B1</td>
+<td>Плюс-минус</td>
+</tr>
+<tr>
+<td>¹</td>
+<td>&amp;sup1;</td>
+<td>\00B9</td>
+<td>Верхний индекс "1"</td>
+</tr>
+<tr>
+<td>²</td>
+<td>&amp;sup2;</td>
+<td>\00B2</td>
+<td>Верхний индекс "2"</td>
+</tr>
+<tr>
+<td>³</td>
+<td>&amp;sup3;</td>
+<td>\00B3</td>
+<td>Верхний индекс "3"</td>
+</tr>
+<tr>
+<td>¼</td>
+<td>&amp;frac14;</td>
+<td>\00BC</td>
+<td>Одна четверть</td>
+</tr>
+<tr>
+<td>½</td>
+<td>&amp;frac12;</td>
+<td>\00BD</td>
+<td>Одна вторая</td>
+</tr>
+<tr>
+<td>¾</td>
+<td>&amp;frac34;</td>
+<td>\00BE</td>
+<td>Три четверти</td>
+</tr>
+<tr>
+<td>´</td>
+<td>&amp;acute;</td>
+<td>\00B4</td>
+<td>Знак ударения</td>
+</tr>
+<tr>
+<td>µ</td>
+<td>&amp;micro;</td>
+<td>\00B5</td>
+<td>Микро</td>
+</tr>
+<tr>
+<td>¶</td>
+<td>&amp;para;</td>
+<td>\00B6</td>
+<td>Знак абзаца</td>
+</tr>
+<tr>
+<td>·</td>
+<td>&amp;middot;</td>
+<td>\00B7</td>
+<td>Знак умножения</td>
+</tr>
+<tr>
+<td>¿</td>
+<td>&amp;iquest;</td>
+<td>\00BF</td>
+<td>Перевернутый вопросительный знак</td>
+</tr>
+<tr>
+<td>ƒ</td>
+<td>&amp;fnof;</td>
+<td>\0192</td>
+<td>Знак флорина</td>
+</tr>
+<tr>
+<td>™</td>
+<td>&amp;trade;</td>
+<td>\2122</td>
+<td>Знак торговой марки</td>
+</tr>
+<tr>
+<td>•</td>
+<td>&amp;bull;</td>
+<td>\2022</td>
+<td>Маркер списка</td>
+</tr>
+<tr>
+<td>…</td>
+<td>&amp;hellip;</td>
+<td>\2026</td>
+<td>Многоточие</td>
+</tr>
+<tr>
+<td>‾</td>
+<td>&amp;oline;</td>
+<td>\203E</td>
+<td>Надчеркивание</td>
+</tr>
+<tr>
+<td>–</td>
+<td>&amp;ndash;</td>
+<td>\2013</td>
+<td>Среднее тире</td>
+</tr>
+<tr>
+<td>—</td>
+<td>&amp;mdash;</td>
+<td>\2014</td>
+<td>Длинное тире</td>
+</tr>
+<tr>
+<td>‰</td>
+<td>&amp;permil;</td>
+<td>\2030</td>
+<td>Промилле</td>
+</tr>
+<tr>
+<td>}</td>
+<td>&amp;#125;</td>
+<td>\007D</td>
+<td>Правая фигурная скобка</td>
+</tr>
+<tr>
+<td>{</td>
+<td>&amp;#123;</td>
+<td>\007B</td>
+<td>Левая фигурная скобка</td>
+</tr>
+<tr>
+<td>=</td>
+<td>&amp;#61;</td>
+<td>\003D</td>
+<td>Знак равенства</td>
+</tr>
+<tr>
+<td>≠</td>
+<td>&amp;ne;</td>
+<td>\2260</td>
+<td>Знак неравенства</td>
+</tr>
+<tr>
+<td>≅</td>
+<td>&amp;cong;</td>
+<td>\2245</td>
+<td>Конгруэнтность (геометрическое равенство)</td>
+</tr>
+<tr>
+<td>≈</td>
+<td>&amp;asymp;</td>
+<td>\2248</td>
+<td>Почти равно</td>
+</tr>
+<tr>
+<td>≤</td>
+<td>&amp;le;</td>
+<td>\2264</td>
+<td>Меньше чем или равно</td>
+</tr>
+<tr>
+<td>≥</td>
+<td>&amp;ge;</td>
+<td>\2265</td>
+<td>Больше чем или равно</td>
+</tr>
+<tr>
+<td>∠</td>
+<td>&amp;ang;</td>
+<td>\2220</td>
+<td>Угол</td>
+</tr>
+<tr>
+<td>⊥</td>
+<td>&amp;perp;</td>
+<td>\22A5</td>
+<td>Перпендикулярно (кнопка вверх)</td>
+</tr>
+<tr>
+<td>√</td>
+<td>&amp;radic;</td>
+<td>\221A</td>
+<td>Квадратный корень</td>
+</tr>
+<tr>
+<td>∑</td>
+<td>&amp;sum;</td>
+<td>\2211</td>
+<td>N-ичное суммирование</td>
+</tr>
+<tr>
+<td>∫</td>
+<td>&amp;int;</td>
+<td>\222B</td>
+<td>Интеграл</td>
+</tr>
+<tr>
+<td>※</td>
+<td>&amp;#8251;</td>
+<td>\203B</td>
+<td>Знак сноски</td>
+</tr>
+<tr>
+<td>÷</td>
+<td>&amp;divide;</td>
+<td>\00F7</td>
+<td>Знак деления</td>
+</tr>
+<tr>
+<td>∞</td>
+<td>&amp;infin;</td>
+<td>\221E</td>
+<td>Знак бесконечности</td>
+</tr>
+<tr>
+<td>@</td>
+<td>&amp;#64;</td>
+<td>\0040</td>
+<td>Символ собака</td>
+</tr>
+<tr>
+<td>[</td>
+<td>&amp;#91;</td>
+<td>\005B</td>
+<td>Левая квадратная скобка</td>
+</tr>
+<tr>
+<td>]</td>
+<td>&amp;#93;</td>
+<td>\005D</td>
+<td>Правая квадратная скобка</td>
+</tr>
+</tbody></table>
+
+<h1 id="glava3" class="html1">3. Стрелки</h1>
+
+<table id="part3" class="t4">
+<tbody><tr>
+<th style="width:10%">Вид</th>
+<th style="width:20%">HTML-код</th>
+<th style="width:15%">CSS-код</th>
+<th style="width:55%">Описание</th>
+</tr>
+<tr>
+<td>←</td>
+<td>&amp;larr;</td>
+<td>\2190</td>
+<td>Стрелка влево</td>
+</tr>
+<tr>
+<td>↑</td>
+<td>&amp;uarr;</td>
+<td>\2191</td>
+<td>Стрелка вверх</td>
+</tr>
+<tr>
+<td>→</td>
+<td>&amp;rarr;</td>
+<td>\2192</td>
+<td>Стрелка вправо</td>
+</tr>
+<tr>
+<td>↓</td>
+<td>&amp;darr;</td>
+<td>\2193</td>
+<td>Стрелка вниз</td>
+</tr>
+<tr>
+<td>↔</td>
+<td>&amp;harr;</td>
+<td>\2194</td>
+<td>Стрелка влево-вправо</td>
+</tr>
+<tr>
+<td>↵</td>
+<td>&amp;crarr;</td>
+<td>\21B5</td>
+<td>Стрелка вниз и влево – знак возврата каретки</td>
+</tr>
+<tr>
+<td>⇐</td>
+<td>&amp;lArr;</td>
+<td>\21D0</td>
+<td>Двойная стрелка налево</td>
+</tr>
+<tr>
+<td>⇑</td>
+<td>&amp;uArr;</td>
+<td>\21D1</td>
+<td>Двойная стрелка вверх</td>
+</tr>
+<tr>
+<td>⇒</td>
+<td>&amp;rArr;</td>
+<td>\21D2</td>
+<td>Двойная стрелка направо</td>
+</tr>
+<tr>
+<td>⇓</td>
+<td>&amp;dArr;</td>
+<td>\21D3</td>
+<td>Двойная стрелка вниз</td>
+</tr>
+<tr>
+<td>⇔</td>
+<td>&amp;hArr;</td>
+<td>\21D4</td>
+<td>Двойная стрелка влево-вправо</td>
+</tr>
+<tr>
+<td>➠</td>
+<td>&amp;#10144;</td>
+<td>\27A0</td>
+<td>Летящая стрела</td>
+</tr>
+<tr>
+<td>➤</td>
+<td>&amp;#10148;</td>
+<td>\27A4</td>
+<td>Наконечник стрелы</td>
+</tr>
+<tr>
+<td>➥</td>
+<td>&amp;#10149;</td>
+<td>\27A5</td>
+<td>Изогнутая стрела, указывающая вниз и вправо</td>
+</tr>
+<tr>
+<td>➦</td>
+<td>&amp;#10150;</td>
+<td>\27A6</td>
+<td>Изогнутая стрела, указывающая вверх и вправо</td>
+</tr>
+<tr>
+<td>➳</td>
+<td>&amp;#10163;</td>
+<td>\27B3</td>
+<td>Стрела направо</td>
+</tr>
+<tr>
+<td>↺</td>
+<td>&amp;#8634;</td>
+<td>\21BA</td>
+<td>Круглая стрелка с наконечником против часовой стрелки</td>
+</tr>
+<tr>
+<td>↻</td>
+<td>&amp;#8635;</td>
+<td>\21BB</td>
+<td>Круглая стрелка с наконечником по часовой стрелке</td>
+</tr>
+<tr>
+<td>⇧</td>
+<td>&amp;#8679;</td>
+<td>\21E7</td>
+<td>Толстая полая стрелка вверх</td>
+</tr>
+<tr>
+<td>↩</td>
+<td>&amp;#8617;</td>
+<td>\21A9</td>
+<td>Стрелка налево с крючком</td>
+</tr>
+<tr>
+<td>➫</td>
+<td>&amp;#10155;</td>
+<td>\27AB</td>
+<td>Наклонённая вниз объёмная стрелка</td>
+</tr>
+<tr>
+<td>⬇</td>
+<td>&amp;#11015;</td>
+<td>\2B07</td>
+<td>Закрашенная стрелка вниз</td>
+</tr>
+<tr>
+<td>⬆</td>
+<td>&amp;#11014;</td>
+<td>\2B06</td>
+<td>Закрашенная стрелка вверх</td>
+</tr>
+</tbody></table>
+
+<h1 id="glava4" class="html1">4. Карточные масти</h1>
+<table id="part4" class="t4">
+<tbody><tr>
+<th style="width:10%">Вид</th>
+<th style="width:20%">HTML-код</th>
+<th style="width:15%">CSS-код</th>
+<th style="width:55%">Описание</th>
+</tr>
+<tr>
+<td>♠</td>
+<td>&amp;spades;</td>
+<td>\2660</td>
+<td>"Пики"</td>
+</tr>
+<tr>
+<td>♣</td>
+<td>&amp;clubs;</td>
+<td>\2663</td>
+<td>"Трефы"</td>
+</tr>
+<tr>
+<td>♥</td>
+<td>&amp;hearts;</td>
+<td>\2665</td>
+<td>"Червы"</td>
+</tr>
+<tr>
+<td>♦</td>
+<td>&amp;diams;</td>
+<td>\2666</td>
+<td>"Бубны"</td>
+</tr>
+<tr>
+<td>♡</td>
+<td>&amp;#9825;</td>
+<td>\2661</td>
+<td>Контур "Червы"</td>
+</tr>
+<tr>
+<td>♢</td>
+<td>&amp;#9826;</td>
+<td>\2662</td>
+<td>Контур "Бубны"</td>
+</tr>
+<tr>
+<td>♤</td>
+<td>&amp;#9828;</td>
+<td>\2664</td>
+<td>Контур "Пики"</td>
+</tr>
+<tr>
+<td>♧</td>
+<td>&amp;#9831;</td>
+<td>\2667</td>
+<td>Контур "Трефы"</td>
+</tr>
+</tbody></table>
+
+<h1 id="glava5" class="html1">5. Деньги</h1>
+<table id="part5" class="t4">
+<tbody><tr>
+<th style="width:10%">Вид</th>
+<th style="width:20%">HTML-код</th>
+<th style="width:15%">CSS-код</th>
+<th style="width:55%">Описание</th>
+</tr>
+<tr>
+<td>¢</td>
+<td>&amp;cent;</td>
+<td>\FFE0</td>
+<td>Цент</td>
+</tr>
+<tr>
+<td>£</td>
+<td>&amp;pound;</td>
+<td>\FFE1</td>
+<td>Фунт стерлингов</td>
+</tr>
+<tr>
+<td>₽</td>
+<td>&amp;#8381;</td>
+<td>\20BD</td>
+<td>Российский рубль</td>
+</tr>
+<tr>
+<td>¥</td>
+<td>&amp;yen;</td>
+<td>\00A5</td>
+<td>Йена или юань</td>
+</tr>
+<tr>
+<td>€</td>
+<td>&amp;euro;</td>
+<td>\20AC</td>
+<td>Евро</td>
+</tr>
+<tr>
+<td>$</td>
+<td>&amp;#36;</td>
+<td>\0024</td>
+<td>Доллар</td>
+</tr>
+<tr>
+<td>₴</td>
+<td>&amp;#8372;</td>
+<td>\20B4</td>
+<td>Знак гривны</td>
+</tr>
+<tr>
+<td>₹</td>
+<td>&amp;#8377;</td>
+<td>\20B9</td>
+<td>Индийская рупия</td>
+</tr>
+<tr>
+<td>圓</td>
+<td>&amp;#22291;</td>
+<td>\5713</td>
+<td>Китайский юань</td>
+</tr>
+<tr>
+<td>₸</td>
+<td>&amp;#8376;</td>
+<td>\20B8</td>
+<td>Казахстанский тенге</td>
+</tr>
+</tbody></table>
+
+<h1 id="glava6" class="html1">6. Знаки зодиака</h1>
+<table id="part6" class="t4">
+<tbody><tr>
+<th style="width:10%">Вид</th>
+<th style="width:20%">HTML-код</th>
+<th style="width:15%">CSS-код</th>
+<th style="width:55%">Описание</th>
+</tr>
+<tr>
+<td>♈</td>
+<td>&amp;#9800;</td>
+<td>\2648</td>
+<td>Овен</td>
+</tr>
+<tr>
+<td>♉</td>
+<td>&amp;#9801;</td>
+<td>\2649</td>
+<td>Телец</td>
+</tr>
+<tr>
+<td>♊</td>
+<td>&amp;#9802;</td>
+<td>\264A</td>
+<td>Близнецы</td>
+</tr>
+<tr>
+<td>♋</td>
+<td>&amp;#9803;</td>
+<td>\264B</td>
+<td>Рак</td>
+</tr>
+<tr>
+<td>♌</td>
+<td>&amp;#9804;</td>
+<td>\264C</td>
+<td>Лев</td>
+</tr>
+<tr>
+<td>♍</td>
+<td>&amp;#9805;</td>
+<td>\264D</td>
+<td>Дева</td>
+</tr>
+<tr>
+<td>♎</td>
+<td>&amp;#9806;</td>
+<td>\264E</td>
+<td>Весы</td>
+</tr>
+<tr>
+<td>♏</td>
+<td>&amp;#9807;</td>
+<td>\264F</td>
+<td>Скорпион</td>
+</tr>
+<tr>
+<td>♐</td>
+<td>&amp;#9808;</td>
+<td>\2650</td>
+<td>Стрелец</td>
+</tr>
+<tr>
+<td>♑</td>
+<td>&amp;#9809;</td>
+<td>\2651</td>
+<td>Козерог</td>
+</tr>
+<tr>
+<td>♒</td>
+<td>&amp;#9810;</td>
+<td>\2652</td>
+<td>Водолей</td>
+</tr>
+<tr>
+<td>♓</td>
+<td>&amp;#9811;</td>
+<td>\2653</td>
+<td>Рыбы</td>
+</tr>
+</tbody></table>
+
+
+</section>
+	<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

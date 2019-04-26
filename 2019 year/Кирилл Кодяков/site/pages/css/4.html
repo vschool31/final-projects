@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Размеры</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			РАЗМЕРЫ
+		</div>
+	</div>
+	<a href="5.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Размеры элементов определяются свойствами <span>height</span> (высота) и <span>width</span> (ширина). Иногда размеры элемента могут быть больше размеров родительского элемента. В таком случае с помощью свойства <span>overflow</span> вы можете настроить как будет отображаться элемент.
+		</div>
+		<div id="div_2" class="text">
+			Значение <span>visible</span> (overflow = "visible") указывает, что элемент просто выйдет за границы родительского элемента. Значение <span>hidden</span> указывает, что та часть элемента, которая не вошла в границы родительского элемента, будет обрезана. Значение <span>scroll</span> указывает, что та часть элемента, которая не вошла в границы родительского элемента, будет обрезана, но для просмотра обрезанной части, можно будет воспользоваться полосой прокрутки. По умолчанию, если элемент не помещается в контейнер, у него сразу появляются полосы. 
+		</div>
+		<div id="div_3" class="text">
+			Свойства width и height устанавливают фиксированные размеры, однако вы можете разрешить пользователю менять размеры блоков определив им свойство <span>resize</span>. Значение <span>both</span> (resize = "both") разрешает пользователю менять и ширину, и высоту. Значение <span>horizontal</span> разрешает пользователю менять только ширину. Значение <span>vertical</span> разрешает пользоватедю менять только высоту.
+		</div>
+		<div id="div_4" class="text">
+			Помимо обычных высоты и ширины вы можете установить максимально и минимально возможные их значения с помощью свойств <span>max-height</span>, <span>max-width</span>, <span>min-height</span> и <span>min-width</span>. Если у элементов установлены max-height и  max-width, то высота и ширина таких элементов не могут превысить установленных значений. Если у элементов установлены min-height и min-width, то высота и ширина таких элементов не могут стать меньше установленных значений.
+		</div>
+	</div>
+	
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

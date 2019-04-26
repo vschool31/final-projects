@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+<script type="text/javascript">	
+		$('a[href^="#"]').bind("click", function(e){
+  var anchor = $(this);
+  $('html, body').stop().animate({
+   scrollTop: $(anchor.attr("href")).offset().top
+  }, 1000);
+  e.preventDefault();
+ });
+ return false;﻿
+</script>
+
+	
+</head>
+<body>
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+			<div class="container1">	
+			<nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			<nav class="keke">
+			<ul>
+					<li class="html" >JS</li>
+					<li><a href="java.html">Введение</a></li>
+					<li><a href="javavv.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+	<section>
+		<div class="container2">
+			<h1 class="html12">HTML и JavaScript</h1>
+			<p>Уроки по HTML и JavaScript являются простым и полным руководством, целью которого служит помощь начинающим при обучении HTML и JavaScript. Излагая основы, это руководство проходит через все основные этапы проектирования и разработки.
+
+<br><p>Если сумеете, представьте себе время до изобретения Интернета. Сайтов не существует и книги напечатанные на бумаге были вашим основным источником информации. Требовалось приложить значительное усилие, чтобы отыскать нужный фрагмент информации, который вы уже читали.
+<p>Сегодня вы можете открыть браузер, перепрыгнуть в выбранную поисковую систему и найти требуемое. Любая часть мыслимой информации лежит на кончиках ваших пальцев. И скорее всего кто-то где-то уже сделал сайт с вашей точной поисковой фразой.	
+<p><h4>Тута вы найдёте всё нужное вам для создания качественного сайта </h4>	
+</section>
+	<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

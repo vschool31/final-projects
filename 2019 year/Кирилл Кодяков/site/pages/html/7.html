@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Списки</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			СПИСКИ
+		</div>
+	</div>
+	<a href="8.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			В HTML есть два вида списков: <span>нумерованный</span> и <span>маркированный</span>. Чтобы создать нумерованный список Вам потребуется тег &lt;<span>ol</span>&gt;, а для маркированного тег &lt;<span>ul</span>&gt;. Оба этих тега только создают контейнеры. Чтобы наполнить его записями используется тег &lt;<span>li</span>&gt; (один тег на одно положение в списке).
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>ol</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol.png" width="15%">
+		</div>
+		<br>
+		<div id="code_2" class="text code">
+			&lt;<span>ul</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ul</span>&gt;
+
+			<img src="../../img/ul.png" width="15%">
+		</div>
+		<div id="div_2" class="text">
+			Оба вида списка можно настраивать с помощью атрибутов. У тега &lt;<span>ul</span>&gt; только одна настройка - вид маркера. Отвечает за это атрибут <span>type</span>: <span>disc</span> - кружок, <span>circle</span> - окружность, <span>square</span> - квадрат.
+		</div>
+		<div id="code_3" class="text code">
+			&lt;<span>ul</span> <span>type</span> = "disc"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ul</span>&gt;
+
+			<img src="../../img/ul.png" width="15%">
+		</div>
+		<br>
+		<div id="code_4" class="text code" >
+			&lt;<span>ul</span> <span>type</span> = "circle"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ul</span>&gt;
+
+			<img src="../../img/ul_circle.png" width="15%">
+		</div>
+		<br>
+		<div id="code_5" class="text code">
+			&lt;<span>ul</span> <span>type</span> = "square"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ul</span>&gt;
+
+			<img src="../../img/ul_square.png" width="15%">
+		</div>
+		<div id="div_3" class="text">
+			Тег &lt;<span>ol</span>&gt; немного богаче на настройки. Тем же атрибутом <span>type</span> можно настраивать вид маркера: <span>A</span> - заглавные латинские буквы, <span>a</span> - строчные латинские буквы, <span>I</span> - заглавные римские цифры, <span>i</span> - строчные римские цифры, <span>1</span> - арабские цифры. Атрибут <span>reserved</span> меняет нумерацию в списке на обратный порядок. Атрибут <span>start</span> указывает число, с которого будет начинаться список.
+		</div>
+		<div id="code_6" class="text code">
+			&lt;<span>ol</span> <span>type</span> = "A"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol_A.png" width="15%">
+		</div>
+		<br>
+		<div id="code_7" class="text code">
+			&lt;<span>ol</span> <span>type</span> = "a"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+			<img src="../../img/ol_type_a.png" width="15%">
+		</div>
+		<br>
+		<div id="code_8" class="text code">
+			&lt;<span>ol</span> <span>type</span> = "I"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol_I.png" width="15%">
+		</div>
+		<br>
+		<div id="code_9" class="text code">
+			&lt;<span>ol</span> <span>type</span> = "i"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol_type_i.png" width="15%">
+		</div>
+		<br>
+		<div id="code_10" class="text code">
+			&lt;<span>ol</span> <span>type</span> = "1"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol_1.png" width="15%">
+		</div>
+		<br>
+		<div id="code_11" class="text code">
+			&lt;<span>ol</span> <span>reserved</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol_reversed.png" width="15%">
+		</div>
+		<br>
+		<div id="code_12" class="text code">
+			&lt;<span>ol</span> <span>start</span> = "4"&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 1&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 2&lt;/<span>li</span>&gt;
+				<br>
+			&emsp;&lt;<span>li</span>&gt;Пункт 3&lt;/<span>li</span>&gt;
+				<br>
+			&lt;/<span>ol</span>&gt;
+
+			<img src="../../img/ol_start.png" width="15%">
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

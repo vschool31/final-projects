@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Циклы</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ЦИКЛЫ
+		</div>
+	</div>
+	<a href="6.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Зачастую в программе какое-то действие нужно сделать <span>несколько раз</span>. Для многократного повторения одного участка кода – предусмотрены <span>циклы</span>. Их существует три вида. Первый из них - цикл <span>for</span>. Его структура:
+		</div>
+		<div id="code_1" class="text code">
+			<span>for</span>(начало; условие; шаг){
+				<br>
+			&emsp;тело цикла
+				<br>
+			}
+		</div>
+		<div id="div_2" class="text">
+			В "<span>начало</span>" помещается переменная. Оно будет выполнять роль счётчика. Затем идет <span>условие</span>. Пока это условие истинно, будет выполняться тело цикла. В блоке "<span>шаг</span>" определяются изменения, происходящие с переменной-счетчиком после каждой итерации (<span>итерация</span> - повторение тела цикла).
+		</div>
+		<div id="code_2" class="text code">
+			<span>for</span>(var i = 0; i < 3; i++){...}
+		</div>
+		<div id="div_3" class="text">
+			В данном примере тело цикла выполнится <span>3</span> раза. Почему? "Начало" выполняется один единственный раз при входе в цикл (var i = 0). Затем проверяется условие (i < 3), и, если оно истинно, выполняется тело цикла. После этого выполняется "шаг" (i++). Затем опять проверяется условие. Как только условие окажется ложным, цикл перестанет выполняться. Второй вид цикла - цикл <span>while</span>. Его структура:
+		</div>
+		<div id="code_3" class="text code">
+			<span>while</span> (условие) {
+				<br>
+			&emsp;тело цикла
+				<br>
+			} 
+		</div>
+		<div id="div_4" class="text">
+			В отличии от цикла for, в этом цикле нет счётчика, а значит нам заранее не известно количество итераций. В этом цикле сначала проверяется условие, и если оно иситинно, то выполняется тело цикла. Третий тип цикла - <span>do...while</span>. Его структура:
+		</div>
+		<div id="code_4" class="text code">
+			<span>do</span> {
+				<br>
+			&emsp;тело цикла
+				<br>
+			} <span>while</span> (условие)
+		</div>
+		<div id="div_5" class="text">
+			Отличие этого цикла от обычного while заключатся в том, что тело цикла выполнится минимум один раз, потому что условие проверяется после итерации. Также в циклах используют две директивы: <span>break</span> и <span>continue</span>. Как только интерпретатор встречает в цикле директиву <span>break</span>, он выходит из цикла.
+		</div>
+		<div id="code_5" class="text code">
+			<span>while</span> (i < 0) {
+				<br>
+			&emsp;if(i == -3){break}; //если i равно -3, выйти из цикла
+				<br>
+			&emsp;...
+				<br>
+			} 
+		</div>
+		<div id="div_6" class="text">
+			Директива <span>continue</span> похожа на директиву break, но вместо выхода из цикла она просто пропускает текущую итерацию. 
+		</div>
+		<div id="code_6" class="text code">
+			<span>while</span> (i < 0) {
+				<br>
+			&emsp;if(i == -3){continue}; //если i равно -3, пропустить итерацию
+				<br>
+			&emsp;...
+				<br>
+			}
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/*Большой прямоугольник*/ 
+
+#html_big_block, 
+#js_big_block,
+#css_big_block, 
+#video_big_block{
+	width: 50vw;
+	height: 50vh;
+
+	position: absolute;
+
+	transition-duration: 1s;
+
+	z-index: 1;
+}
+#html_big_block{
+	background-color: #E54D26;
+}
+#js_big_block{
+	background-color: #E5A227;
+	left: 50vw;
+}
+#css_big_block{
+	background-color: #0070BA;
+	left: 50vw;
+	top: 50vh;
+}
+#video_big_block{
+	background-color: #63A712;
+	top: 50vh;
+}
+
+/*Маленький прямоугольник*/
+
+#html_small_block,
+#js_small_block,
+#css_small_block,
+#video_small_block{
+	width: 40%;
+	height: 40%;
+
+	position: absolute;
+	top: 30%;
+	left: 30%;
+
+	transition-duration: 0.5s;
+
+	z-index: 1;
+}
+#html_small_block{
+	background-color: #F1672C;
+}
+#js_small_block{
+	background-color: #F1BF25;
+}
+#css_small_block{
+	background-color: #31A9DC;
+}
+#video_small_block{
+	background-color: #88CE16;
+}
+
+/*Текст в маленьком прямоугольнике*/
+
+#html_text_cont,
+#js_text_cont,
+#css_text_cont,
+#video_text_cont{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: #fff;
+	font-size: 40pt;
+
+	transition-duration: 0.5s;
+}
+
+/*Наведение на блоки*/
+
+#html_small_block:hover,
+#js_small_block:hover,
+#css_small_block:hover,
+#video_small_block:hover{
+	transform: scale(1.5);
+	cursor: pointer;
+}

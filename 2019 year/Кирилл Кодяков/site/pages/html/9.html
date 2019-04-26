@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Встраиваемый контент</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ВСТРАИВАЕМЫЙ КОНТЕНТ
+		</div>
+	</div>
+	<a href="10.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Иногда вам потребуется вставить в ваш сайт какой-либо видео- или аудиоматериал. Для этого существую специальные теги. Начнём с <span>видео</span>.
+		</div>
+		<div id="div_2" class="text">
+			Для вставки видео используют тег &lt;<span>video</span>&gt;. С помощью атрибута <span>src</span> задается ссылка на видео (или путь к видеофайлу).
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>video</span> <span>src</span> = "ссылка">&gt;&lt;/<span>video</span>&gt;
+		</div>
+		<div id="div_3" class="text">
+			Изначально у видео отсутствует <span>панель управления</span>. Чтобы её добавить используется атрибут <span>controls</span>.
+		</div>
+		<div id="code_2" class="text code">
+			&lt;<span>video</span> <span>src</span> = "ссылка" <span>controls</span> = "controls"&gt;&lt;/<span>video</span>&gt;
+		</div>
+		<div id="div_4" class="text">
+			Также в видео можно добавить <span>картинку</span>, которая будет отображаться пока видео недоступно или не воспроизводится. Осуществляется это атрибутом <span>poster</span> со значение ссылки на картинку.
+		</div>
+		<div id="code_3" class="text code">
+			&lt;<span>video</span> <span>src</span> = "ссылка" <span>controls</span> = "controls" <span>poster</span> = "ссылка"</span>&gt;&lt;/<span>video</span>&gt;
+		</div>
+		<div id="div_5" class="text">
+			Для вставки аудиоконтента используется тег &lt;<span>audio</span>&gt;. Как и в случае с видео, для указания ссылки на аудиофайл используют атрибут <span>src</span>, а для добавления панели атрибут <span>controls</span>.
+		</div>
+		<div id="code_4" class="text code">
+			&lt;<span>audio</span> <span>src</span> = "ссылка" <span>controls</span> = "controls"</span>&gt;&lt;/<span>audio</span>&gt;
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

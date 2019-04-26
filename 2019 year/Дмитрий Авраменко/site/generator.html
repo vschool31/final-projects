@@ -1,0 +1,128 @@
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+			<nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+<section>
+		<div class="container13">
+			<h1 id="glava1" class="html12">HTML-генераторы</h1>
+					<p>
+					<img class="tuturu" src="https://html5book.ru/wp-content/uploads/2014/03/html5-generators.png"><p><b>HTML-генераторы</b> и полезные сервисы облегчат работу с HTML-кодом, протестируют отображение вашего сайта в разных браузерах, а также дадут информацию о поддержке браузерами тех или иных тегов и технологий.</p>
+		</div>
+		<div class="container2">
+		<h2 style="clear:both">Подборка HTML-генераторов</h2>
+		<p><b>Image-Maps</b> — сервис для создания карт-изображений.</p>
+		<p><img src="https://html5book.ru/wp-content/uploads/2014/03/image-maps-com.png" alt="image-maps-com"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://www.image-maps.com/">Перейти на сайт</a></p>
+
+<p><b>Mobirise</b> — оффлайн приложение для Windows и Mac, с помощью которого можно создавать небольшие веб-сайты, лендинги, онлайн-резюме и портфолио, промо-сайты для приложений, событий, продуктов и услуг.</p>
+<p><img src="https://html5book.ru/wp-content/uploads/2014/03/mobirise.png" alt="mobirise"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://mobirise.com/ru/">Перейти на сайт</a></p>
+
+<p><b>FREE Banner Maker</b> — сервис для HTML5-баннеров. </p>
+<p><img src="https://html5book.ru/wp-content/uploads/2014/03/html5-maker.png" alt="html5-maker"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://banner.fotor.com/">Перейти на сайт</a></p>
+<p><b>HTML minifier</b> — сервис для минимизации HTML-кода. </p>
+<p><img src="https://html5book.ru/wp-content/uploads/2014/03/html-minifier.png" alt="html-minifier"><br>
+<a target="_blank" class="atri" rel="nofollow" href="http://minifycode.com/html-minifier/" class="external-link">Перейти на сайт</a></p>
+<p><b>Mobile HTML5</b> таблица совместимости HTML5 API на мобильных и планшетных браузерах с тестированием на реальных устройствах.</p>
+<p><img src="https://html5book.ru/wp-content/uploads/2014/03/mobile-html.png" alt="mobile-html"><br>
+<a target="_blank" class="atri" href="https://html5book.ru/goto/http://mobilehtml5.org" >Перейти на сайт</a></p>
+<p><b>Initializr</b> — генератор HTML5-шаблонов, которые помогут начать работу над вашим новым проектом. Он построен на базе HTML5 Boilerplate, мощнейшем HTML5-шаблоне, созданном Paul Irish и Divya Manian. С его помощью вы элементарно создадите HTML5-проект с необходимыми настройками по вашему выбору. По сути, это облегченная версия Boilerplate. Выбираемыми параметрами являются: структура, серверные опции (.htaccess, nginx.conf, web.config), подключение jquery, аналитики google, выбор между css и less и тд. Как только вы настроите конфигурацию шаблона, нажмите Download  и вы получите набор файлов, согласно сделанному выбору.</p>
+<p><img src="https://html5book.ru/wp-content/uploads/2014/03/initializr.png" alt="initializr"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://html5book.ru/goto/http://www.initializr.com/" class="external-link">Перейти на сайт</a></p>
+<p>Сервис <b>Can I use…</b> тестирует поддержку основных возможностей HTML5 для всех версий всех браузеров. Он позволяет выделить именно те возможности, которые требуются вам. Для работы с сервисом нужно выбрать вкладку <b>Tables</b>, затем вкладку <b>Compatibility tables</b>, после чего выбрать требуемую возможность (возможности), установив флажок. Также можно производить поиск через поле <b>Search</b>.</p><p><img src="https://html5book.ru/wp-content/uploads/2014/03/canius.png" alt="canius"><br>
+<a target="_blank" class="atri" rel="nofollow" href="https://html5book.ru/goto/http://caniuse.com/" class="external-link">Перейти на сайт</a></p>
+
+
+				</div>
+</section>
+	<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Границы, тени, прозрачность</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text" style="font-size: 4vh">
+			ГРАНИЦЫ, ТЕНИ, ПРОЗРАЧНОСТЬ
+		</div>
+	</div>
+	<a href="8.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			У любых границ есть три свойства: цвет (<span>border-color</span>), ширина (<span>border-width</span>) и стиль (<span>border-style</span>). Для отображения границ должны быть заданы все 3 свойства. Цвет и ширина задаются любым известным способом. В border-style можно передать значения <span>solid</span> (сплошная), <span>dotted</span> (точечная), <span>dashed</span> (пунктирная), <span>double</span> (двойная), <span>groove</span> (объемная рифленая вдавленная), <span>ridge</span> (объемная рефленая выпуклая), <span>inset</span> (объемная вдавленная) или <span>outset</span> (объемная выпуклая).
+		</div>
+		<div id="code_1" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;border-color: #ffffff;
+				<br>
+			&emsp;border-width: 12px;
+				<br>
+			&emsp;border-style: dashed;
+				<br>
+			}
+		</div>
+		<div id="div_2" class="text">
+			Чтобы каждый раз не прописывать все три свойства можно использовать свойство <span>border</span>, в которое передаются значения border-color, border-width и border-style в любой последовательности без разделителей.
+		</div>
+		<div id="code_2" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;border: dashed #ffffff 12px;
+				<br>
+			}
+		</div>
+		<div id="div_3" class="text">
+			Помимо этих трех свойств существуют и другие. Например, свойство <span>border-radius</span> позволяет скруглить углы элемента. В это свойство передается значение (в пикселях, процентах и т.д.), на которое надо скруглить углы (чем больше значение, тем больше скругление). Задавать <span>border-radius</span> можно несколькими способами: передавая одно значение или несколько. В первом случае все углы скруглятся одинаково, а во втором - в зависимости от количества переданных значений (минимум одно, максимум четыре).
+		</div>
+		<div id="code_3" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;border-radius: 10%;
+				<br>
+			}
+		</div>
+		<div id="div_4" class="text">
+			Необязательно задавать все границы элемента. В CSS существует возможность отображать отдельные границы элементы. Например, запись <span>border-top-width</span> отвечает за ширину верхней границы. По аналогии с этой записью можно обращаться ко всем четырем границам и их свойствам.
+		</div>
+		<div id="code_4" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;border-bottom: 13px solid red; 
+				<br>
+			}
+		</div>
+		<div id="div_5" class="text">
+			Перейдем к теням и прозрачности. За прозрачность элементов отвечает свойство <span>opacity</span>, которое принимает значения в диапазоне от <span>0.0</span> (полностью прозрачный) до <span>1.0</span> (полностью непрозрачный). Значения между этими границами соответствуют разным уровням прозрачности. 
+		</div>
+		<div id="code_5" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;opacity: 0.5; //полупрозрачный элемент
+				<br>
+			}
+		</div>
+		<div id="div_6" class="text">
+			Тень можно добавить либо к элементу (<span>box-shadow</span>), либо к тексту (<span>text-shadow</span>). В <span>box-shadow</span> можно передать от 2 до 6 параметров. У первых двух параметров должны быть числовые значения. Они будут указывать <span>смещение</span> тени от элемента по координатам x (первый параметр) и y (второй параметр). Положительные значения сместят элемент вправо и вниз, отрицательные значения сместят элемент влево и вверх. 
+		</div>
+		<div id="code_6" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;box-shadow: 10px -10px; // Смещение тени на 10px вправо и 10px вверх
+				<br>
+			}
+		</div>
+		<div id="div_7" class="text">
+			Третий и четвертый параметры также принимают числовые значения. Третий параметр отвечает за <span>размытость</span> тени. Чем больше значение этого парметра, тем сильнее размытость - тень становится больше и светлее. Отрицательные значения не допускаются.
+		</div>
+		<div id="code_7" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;box-shadow: 10px -10px 20px;
+				<br>
+			}
+		</div>
+		<div id="div_8" class="text">
+			Четвертый параметр отвечает за <span>размер</span> тени: отрицательные значения уменьшают размеры со всех сторон, нулевое значение оставляет тень без изменений (тень будет того же размера, что и элемента), положительные значения увеличивают тень со всех сторон.
+		</div>
+		<div id="code_8" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;box-shadow: 10px -10px 20px 35px; 
+				<br>
+			}
+		</div>
+		<div id="div_9" class="text">
+			Пятый параметр отвечает за <span>цвет</span> тени. Указывать цвет можно любым удобным способом. Шестой параметр принимает только значение <span>inset</span>. Если он есть, то тень будет располагаться внутри элемента.
+		</div>
+		<div id="code_9" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;box-shadow: 10px -10px 20px 35px black inset;
+				<br>
+			}
+		</div>
+		<div id="div_10" class="text">
+			Первые два параметры обязательны для этого свойства. Остальные 4 - нет. Стоит отметить одну вещь: если вы хотите указать цвет или сделать тень внутренней, вам необязательно для этого указывать третий и четвертый параметры. Например, можно просто указать координаты смещения и цвет.
+		</div>
+		<div id="code_10" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;box-shadow: 10px -10px black;
+				<br>
+			}
+		</div>
+		<div id="div_11" class="text">
+			Как уже было сказано, <span>text-shadow</span> отвечает за тень текста. У него 4 параметра: два обязательных(смещение по x и смещение по y) и два необязательных (размытость и цвет).
+			Работает всё так же, как и у box-shadow.
+		</div>
+		<div id="code_11" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;text-shadow: 13px -12px 34px white;
+				<br>
+			}
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

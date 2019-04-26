@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Объекты</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ОБЪЕКТЫ
+		</div>
+	</div>
+	<a href="10.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Объекты и манипуляции с ними невозможно полностью описать в одном уроке. Здесь представлен небольшой пласт информации, который послужит основой в изучении объектов в языке JavaScript. <span>Объект</span> — структура данных, в которой можно хранить любые данные в формате ключ-значение. Для понимания можно представить шкаф с подписанными ящиками. В этих ящиках хранятся данные. По имени можно легко найти ящик и взять то значение, которое в нём лежит. Структура объекта:
+		</div>
+		<div id="code_1" class="text code">
+			<span>var</span> имя_объекта{
+				<br>
+			&emsp;ключ: значение,
+				<br>
+			&emsp;ключ: значение,
+				<br>
+			&emsp;...
+				<br>
+			}
+		</div>
+		<div id="div_2" class="text">
+			В отличии от массивов, в объектах можно хранить <span>разные</span> типы данных. Например:
+		</div>
+		<div id="code_2" class="text code">
+			<span>var</span> human = {
+				<br>
+			&emsp;name: "Витя",
+				<br>
+			&emsp;age: 45
+				<br>
+			}
+		</div>
+		<div id="div_3" class="text">
+			Обращения к <span>ключам</span> (их еще называют свойствами) происходит через точку. Например, следующий код выведет значение свойства <span>age</span>:
+		</div>
+		<div id="code_3" class="text code">
+			<span>alert</span>(human.age)
+		</div>
+		<div id="div_4" class="text">
+			К объекту можно добавлять новые свойства и удалять уже имеющиеся.
+		</div>
+		<div id="code_4" class="text code">
+			human.gender = "male"; //добавление нового свойства
+				<br>
+			delete human.gender; //удаление свойства
+		</div>
+		<div id="div_5" class="text">
+			Помимо свойств у объектов могут <span>методы</span>. Методы - это функции, имеющиеся у объекта.
+		</div>
+		<div id="code_5" class="text code">
+			<span>var</span> calculator = {
+				<br>
+			&emsp;sum: function(a,b){
+				<br>
+			&emsp;&emsp;return a+ b;
+				<br>
+			&emsp;}
+				<br>
+			}
+		</div>
+		<div id="div_6" class="text">
+			Вызов методов аналогичен вызову свойств
+		</div>
+		<div id="code_6" class="text code">
+			<span>alert</span>(calculator.sum(1,2)); // 3
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

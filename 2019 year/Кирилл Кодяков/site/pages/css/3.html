@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Расположение</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			РАСПОЛОЖЕНИЕ
+		</div>
+	</div>
+	<a href="4.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Правильно расположить элементы на своем сайте - это целая наука. В CSS существует огромное количество стилей, отвечающих за <span>позиционирование</span>, с помощью которых вы сможете расположить нужный вам элемент так, как вы хотите.
+		</div>
+		<div id="div_2" class="text">
+			Прежде чем указать положение элемента, вам нужно определить метод позиционирование элемента относительно других элементов. Оcуществляется это с помощью свойства <span>position</span> со значениями <span>absolute</span>, <span>fixed</span>, <span>relative</span>, <span>static</span> или <span>inherit</span>. 
+		</div>
+		<div id="div_3" class="text">
+			При значении <span>absolute</span> элемент становится абсолютно позиционированным. Это значит, что данный элемент отображается на странице так, будто он на ней единственный. В свою очередь все остальные элементы отображаются так, будто абсолютно позиционированного элемента нет. С помощью этого можно располагать объекты на странице независимо друг от друга.
+		</div>
+		<div id="div_4" class="text">
+			При значении <span>fixed</span> элемент ведет себя так же, как и со значением absolute,  за исключением того, что он привязывается к определенному ему месту. При прокрутке странице он никуда не переместится.
+		</div>
+		<div id="div_5" class="text">
+			При значении <span>relative</span> объект будет смещаться относительно своего первоначального расположения.
+		</div>
+		<div id="div_6" class="text">
+			При значении <span>static</span> элемент располагается как обычно (точно так же, если бы мы не прописывали свойство position с этим значением).
+		</div>
+		<div id="div_7" class="text">
+			Элемент со значением <span>inherit</span> наследует значение своего родительского элемента.
+		</div>
+		<div id="code_1" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;position: absolute;
+				<br>
+			}
+		</div>
+		<div id="div_8" class="text">
+			После определения метода позиционирования можно смещать элемент с помощью свойств <span>top</span>, <span>left</span>, <span>right</span>, <span>bottom</span>. Численное значение показывает на сколько нужно сместить объект от выбранной границы.
+		</div>
+		<div id="code_2" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;position: absolute;
+				<br>
+			&emsp;top: 20px; /*смещение всех div на 20 пикселей сверху*/
+				<br>
+			}
+		</div>
+		<div id="div_9" class="text">
+			Но элементы можно перемещать не только по осям <span>X</span> и <span>Y</span>. Вам может понадобится перекрывать одни элементы другими. В таком случае у вас должна быть возможность изменять порядок отображение этих элементов. Для этого существует свойство <span>z-index</span>. Чем больше его значение, тем "выше" лежит объект. 
+		</div>
+		<div id="code_3" class="text code">
+			<span>#elem</span>{
+				<br>
+			&emsp;z-index: 1;
+				<br>
+			}
+				<br>
+			<span>#obj</span>{
+				<br>
+			&emsp;z-index: 2; /*Этот объект отобразится первым*/
+				<br>
+			}
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

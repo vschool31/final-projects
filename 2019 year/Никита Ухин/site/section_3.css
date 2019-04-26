@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Amatic SC';
+	src: url('AmaticSC-Regular.ttf');
+}
+
+.themes {
+	width: 100%;
+	height: 107vh;
+	background-color: #fafafa;
+}
+
+.hello {
+	position: absolute;
+	display: block;
+	font-size: 6vh;
+	width: 40vw;
+	height: 10vh;
+	margin-top: 5vh;
+	margin-left: 30vw;
+	text-align: center;
+	line-height: 10vh;
+}
+
+.glasnye {
+	position: absolute;
+	background-color: #FF6666;
+	width: 35vw;
+	height: 60vh;
+	margin-top: 25vh;
+	margin-left: 7.5vw;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.pravglas {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	display: block;
+	width: 20vw;
+	height: 5vh;
+	margin-left: 1vw;
+	position: relative;
+	z-index: 2;
+	color: #fafafa;
+}
+
+.classif {
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	display: block;
+	width: 15vw;
+	height: 6vh;
+	margin-top: 8vh;
+	margin-left: 2vw;
+	font-size: 2.5vh;	
+	line-height: 3vh;
+}
+
+.temy {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1vh;
+	font-size: 2.5vh;
+	margin-left: 2vw;		
+}
+
+.imgtheme {
+	position: absolute;
+	margin-top: 0;
+	margin-left: 20vw;
+	height: 100%;
+	filter: brightness(.8);
+}
+
+.kompot {
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	display: block;
+	width: 15vw;
+	height: 6vh;
+	font-size: 2.5vh;	
+	line-height: 3vh;
+	margin-left: 2vw;
+	margin-top: 2vh;
+}
+
+.atakje {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	display: block;
+	width: 15vw;
+	height: 8vh;
+	margin-left: 2vw;
+	font-size: 2.5vh;		
+}
+
+.soglasnye {
+	position: absolute;
+	background-color: #33ffcc;
+	width: 35vw;
+	height: 60vh;
+	margin-top: 25vh;
+	margin-left: 57.5vw;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.sogl {
+	position: absolute;
+	margin-top: 20vw;
+	margin-left: 0;
+	width: 100%;
+	filter: brightness(.8);
+}
+
+.pravsogl {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	display: block;
+	width: 20vw;
+	height: 5vh;
+	margin-left: 7.5vw;
+	position: relative;
+	color: #663333;
+}
+
+.opis {
+	font-family: 'Montserrat', sans-serif;
+	color: #663333;
+	text-align: left;
+	display: block;
+	width: 18vw;
+	height: 6vh;
+	font-size: 2.5vh;	
+	line-height: 3vh;
+	margin-left: 2vw;
+	margin-top: 6vh;
+}
+
+.priltest {
+	font-family: 'Montserrat', sans-serif;
+	color: #663333;
+	text-align: right;
+	display: block;
+	width: 18vw;
+	height: 6vh;
+	font-size: 2.5vh;	
+	line-height: 3vh;
+	margin-left: 14vw;
+	margin-top: 12vh;	
+}

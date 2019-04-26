@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container"> 
+      <a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+        <div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+            <li><a href="kontakt.html">Контакты</a></li>
+            <li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+<section>
+
+
+
+	<div class="container2">
+		<h1 class="html12"> Необязательные теги HTML5-разметки</h1>
+		<img class="tuturu" src="https://html5book.ru/wp-content/uploads/2014/08/html-optional-tags.png">
+		<p>В спецификации HTML5 некоторые правила разметки были ослаблены. В частности, использование элементов <kbd>&lt;html&gt;</kbd>, <kbd>&lt;head&gt;</kbd> и <kbd>&lt;body&gt;</kbd> уже не является обязательным для разметки HTML5. Тем не менее браузер все равно считает, что они существуют, в чем можно убедиться, просмотрев разметку веб-страницы в <b>Mоzilla Firebug</b> или в <b>Google Chrome Inspector</b>. </p>
+		<p>Эти элементы всегда «подразумеваются», но если они будут использоваться в таблице CSS-стилей или в JavaScript-сценариях, то их надо прописывать в явном виде.</p>
+		<p>Также разрешается не использовать закрывающую обратную косую черту в элементах без содержимого, их список можно увидеть в нижеприведенной <a href="#table" class="site">таблице</a>.</p>
+		<h3>1. Элемент &lt;html&gt;</h3>
+		<p>Начальный тег <kbd>&lt;html&gt;</kbd> может быть опущен, если сразу за тегом не идет комментарий:</p>
+		<pre>&lt;!DOCTYPE HTML&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Welcome to this example.&lt;/p&gt;
+  &lt;/body&gt;</pre>
+  	<p>Закрывающий тег <kbd>&lt;/html&gt;</kbd> также может быть опущен, если перед ним нет комментария.</p>
+  	<h3>2. Элемент &lt;head&gt;</h3>
+  	<p>Начальный тег <kbd>&lt;head&gt;</kbd> может быть опущен, если элемент <kbd>&lt;head&gt;</kbd> пуст, или если сразу после него идет другой HTML-элемент.<br>
+Закрывающий тег <kbd>&lt;/head&gt;</kbd> может быть опущен, если он не следует сразу за пробелом или за комментарием.</p>
+<pre>&lt;!DOCTYPE HTML&gt;
+  &lt;title&gt;Hello&lt;/title&gt;
+   &lt;body&gt;
+    &lt;p&gt;Welcome to this example.&lt;/p&gt;
+   &lt;/body&gt;</pre>
+   <p></p>
+   <h3>3. Элемент &lt;body&gt;</h3>
+   <p>Начальный тег <kbd>&lt;body&gt;</kbd> может быть опущен, если элемент пуст, или если первое, что внутри элемента не является пробелом или комментарием, за исключением случаев, когда первое, что идет за тегом <kbd>&lt;body&gt;</kbd> являются элементы <kbd>&lt;meta&gt;</kbd>, <kbd>&lt;link&gt;</kbd>, <kbd>&lt;script&gt;</kbd> или <kbd>&lt;style&gt;</kbd>.</p>
+   <p>Закрывающий тег <kbd>&lt;/body&gt;</kbd> может быть опущен, если перед ним нет комментария.</p>
+   <pre>&lt;!DOCTYPE HTML&gt;
+  &lt;title&gt;Hello&lt;/title&gt;
+   &lt;p&gt;Welcome to this example.&lt;/p&gt;</pre>
+   <p></p>
+   <h3>4. Элемент &lt;li&gt;</h3>
+   <p>Закрывающий тег <kbd>&lt;/li&gt;</kbd> может быть опущен, если элемент <kbd>&lt;li&gt;</kbd> сразу следует за другим элементом <kbd>&lt;li&gt;</kbd>, или если больше нет содержания в элементе, в который вложен тег.</p>
+   <h3>5. Элементы &lt;dt&gt; и &lt;dd&gt;</h3>
+   <p>Закрывающий тег <kbd>&lt;/dt&gt;</kbd> может быть опущен, если элемент <kbd>&lt;dt&gt;</kbd> следует сразу за еще одним элементом <kbd>&lt;dt&gt;</kbd> или <kbd>&lt;dd&gt;</kbd>.</p>
+   <h3>6. Элемент &lt;p&gt;</h3>
+   <p>Закрывающий тег <kbd>&lt;/p&gt;</kbd> может быть опущен, если <kbd>&lt;p&gt;</kbd> следует сразу за любым из перечисленных элементов:<br>
+<kbd>address, article, aside, blockquote, dir, div, dl, fieldset, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, menu, nav, ol, p, pre, section, table, ul</kbd>, или если больше нет содержания в элементе, в который вложен тег <kbd>&lt;p&gt;</kbd>, или родительским элементом не является тег <kbd>&lt;a&gt;</kbd>.</p>
+<h3>7. Элементы &lt;rt&gt; и &lt;rp&gt;</h3>
+<p>Закрывающий тег <kbd>&lt;/rt&gt;</kbd> может быть опущен, если элемент <kbd>&lt;rt&gt;</kbd> следует сразу за еще одним элементом <kbd>&lt;rt&gt;</kbd> или <kbd>&lt;rp&gt;</kbd>, или если больше нет содержания в элементе, в который вложен тег.</p>
+<p>Закрывающий тег <kbd>&lt;/rp&gt;</kbd> может быть опущен, если элемент <kbd>&lt;rp&gt;</kbd> следует сразу за еще одним  <kbd>&lt;rp&gt;</kbd> или <kbd>&lt;rt&gt;</kbd> элементом, или если больше нет содержания в элементе, в который вложен тег.</p>
+<h3>8. Элементы &lt;optgroup&gt; и &lt;option&gt;</h3>
+<p>Закрывающий тег <kbd>&lt;/optgroup&gt;</kbd> может быть опущен, если элемент <kbd>&lt;optgroup&gt;</kbd> следует сразу за еще одним элементом <kbd>&lt;optgroup&gt;</kbd>, или если нет больше содержания в родительском элементе.</p>
+<p>Закрывающий тег <kbd>&lt;/option&gt;</kbd> может быть опущен, если элемент <kbd>&lt;option&gt;</kbd> следует сразу за еще одним элементом <kbd>&lt;option&gt;</kbd>, или если он идет сразу после <kbd>&lt;optgroup&gt;</kbd>, или если нет больше содержания в родительском элементе.</p>
+<h3>9. Элемент &lt;colgroup&gt;</h3>
+<p>Начальный тег элемента <kbd>&lt;colgroup&gt;</kbd> может быть опущен, за элементом <kbd>&lt;colgroup&gt;</kbd> сразу идет элемент <kbd>&lt;col&gt;</kbd>, и если перед элементом непосредственно не предшествует другой элемент <kbd>&lt;colgroup&gt;</kbd>, закрывающий тег которого был опущен. (Он не может быть опущен, если элемент пустой.)</p>
+<h3>10. Элементы &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;td&gt;, &lt;tr&gt;</h3>
+<p>Закрывающий тег <kbd>&lt;/thead&gt;</kbd> может быть опущен, если элемент <kbd>&lt;thead&gt;</kbd> следует сразу за <kbd>&lt;tbody&gt;</kbd> или <kbd>&lt;tfoot&gt;</kbd>.</p>
+<p>Открывающий тег <kbd>&lt;tbody&gt;</kbd> может быть опущен, если за ним сразу идет элемент <kbd>&lt;tr&gt;</kbd>, и если перед элементом непосредственно не предшествует другой <kbd>&lt;tbody&gt;</kbd>, <kbd>&lt;thead&gt;</kbd>, или <kbd>&lt;tfoot&gt;</kbd>, закрывающий тег которого был опущен. (Он не может быть опущен, если элемент является пустым.)</p>
+<p>Закрывающий тег <kbd>&lt;/tbody&gt;</kbd> может быть опущен, если после элемента <kbd>&lt;tbody&gt;</kbd> сразу следует <kbd>&lt;tbody&gt;</kbd> или <kbd>&lt;tfoot&gt;</kbd>, или если больше нет содержания в родительском элементе.</p>
+<p>Закрывающий тег <kbd>&lt;/tfoot&gt;</kbd> может быть опущен, если элемент <kbd>&lt;tfoot&gt;</kbd> следует сразу же за <kbd>&lt;tbody&gt;</kbd>, или если больше нет содержания в родительском элементе.</p>
+<p>Закрывающий тег <kbd>&lt;/tr&gt;</kbd> может быть опущен, если элемент <kbd>&lt;tr&gt;</kbd> следует сразу же за еще одним элементом <kbd>&lt;tr&gt;</kbd>, или если больше нет содержания в родительском элементе.</p>
+<p>Закрывающий тег <kbd>&lt;/td&gt;</kbd> может быть опущен, если элемент <kbd>&lt;td&gt;</kbd> следует сразу же за еще одним элементом <kbd>&lt;td&gt;</kbd> или <kbd>&lt;th&gt;</kbd>, или, если нет больше содержания в родительском элементе.</p>
+<p>Закрывающий тег <kbd>&lt;/th&gt;</kbd> может быть опущен, если элемент <kbd>&lt;th&gt;</kbd> следует сразу же за <kbd>&lt;td&gt;</kbd> или <kbd>&lt;th&gt;</kbd>, или, если больше нет содержания в родительском элементе.</p>
+
+
+<pre>&lt;table&gt;
+  &lt;caption&gt;37547 TEE Electric Powered Rail Car Train Functions (Abbreviated)
+    &lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;
+  &lt;thead&gt;
+   &lt;tr&gt;&lt;th&gt;Function&lt;th&gt;Control Unit&lt;th&gt;Central Station
+ &lt;tbody&gt;
+  &lt;tr&gt;&lt;td&gt;Headlight&lt;td&gt;✔&lt;td&gt;✔
+  &lt;tr&gt;&lt;td&gt;Interior Lights&lt;td&gt;✔&lt;td&gt;✔
+  &lt;tr&gt;&lt;td&gt;Electric locomotive operating sounds&lt;td&gt;✔&lt;td&gt;✔
+  &lt;tr&gt;&lt;td&gt;Engineer's cab lighting&lt;td&gt;&lt;td&gt;✔
+  &lt;tr&gt;&lt;td&gt;Station Announcements - Swiss&lt;td&gt;&lt;td&gt;✔
+&lt;/table&gt;</pre>
+
+
+
+<div>
+<table class="t3">
+<caption>Таблица HTML-элементы</caption>
+<tr>
+<th style="width: 20%;">Тег</th>
+<th>Описание</th>
+<th>Закрывающий тег</th>
+<th>Пустой <br>тег</th>
+</tr>
+<tr>
+<td>area
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>base
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>body
+</td><td>Необязательный
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>br
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>col
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>colgroup
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>dd
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>dt
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>head
+</td><td>Необязательный
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>hr
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>html
+</td><td>Необязательный
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>img
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>input
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>li
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>link
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>meta
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>option
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>p
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>param
+</td><td>
+</td><td>Запрещен
+</td><td>Разрешен</td>
+</tr>
+<tr>
+<td>tbody
+</td><td>Необязательный
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>td
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>tfoot
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>th
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>thead
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+<tr>
+<td>tr
+</td><td>
+</td><td>Необязательный
+</td><td></td>
+</tr>
+</tbody></table>
+</div>
+
+
+	
+</div>
+
+<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

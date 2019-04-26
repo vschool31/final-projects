@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Условные операторы</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			УСЛОВНЫЕ ОПЕРАТОРЫ
+		</div>
+	</div>
+	<a href="5.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Иногда, в зависимости от условия, нужно выполнить различные действия. Для этого используется условный оператор <span>if</span>. Структура условия такова:
+		</div>
+		<div id="code_1" class="text code">
+			<span>if</span>(условие){
+				<br>
+   			&emsp;команды
+   				<br>
+			}
+		</div>
+		<div id="div_2" class="text">
+			После if следуют круглые скобки, в которых содержится какое-то <span>условие</span>. Если это условие истинно, выполняется код, написанный в фигурных скобках. Если условие не выполняется, код в фигурных скобках пропускается. Если же нам нужно, чтобы что-то происходило в случае невыполнения условия, мы должны добавить необязательный блок <span>else</span>.
+		</div>
+		<div id="code_2" class="text code">
+			<span>if</span>(условие){
+				<br>
+			&emsp;команды
+				<br>
+			} 
+				<br>
+			<span>else</span>{
+				<br>
+			&emsp;команды
+				<br>
+			}
+		</div>
+		<div id="div_3" class="text">
+			Кроме того в JavaScript имеется конструкция <span>else if</span>, с помощью которой можно осуществлять несколько проверок и вполнять определенный код при определенном условии.
+		</div>
+		<div id="code_3" class="text code">
+			<span>if</span>(условие-1){
+				<br>
+			&emsp;команды
+				<br>
+			}
+				<br>
+			<span>else if</span>(условие-2){
+				<br>
+			&emsp;команды
+				<br>
+			}
+				<br>
+			<span>else</span>{
+				<br>
+			&emsp;команды
+				<br>
+			}
+		</div>
+		<div id="div_4" class="text">
+			В JavaScript имеются специальные логические операторы <span>||</span> ('ИЛИ') и <span>&&</span>('И'), с помощью которых в if можно указывать несколько условий. Первый оператор используется, когда нас интересует одно из условий, а второй, когда нам нужно выполнение всех условий.
+		</div>
+		<div id="code_4" class="text code">
+			<span>if</span>(условие-1 || условие-2){...} // истинно, если выполняется хотя бы одно условие
+				<br>
+			<span>if</span>(условие-1 && условие-2){...} // истинно, если выполняются оба условия
+		</div>
+		<div id="div_5" class="text">
+			Какие условия могут находиться в if? Например, сравнение каких-либо переменных.
+		</div>
+		<div id="code_5" class="text code">
+			<span>if</span> (a > b){...} // если a больше b
+				<br>
+			<span>if</span> (a < b){...} // если a меньше b
+				<br>
+			<span>if</span> (a >= b){...} // если a больше или равно b
+				<br>
+			<span>if</span> (a <= b){...} // если a меньше или равно b
+				<br>
+		</div>
+		<div id="div_6" class="text">
+			Можно проверить равны ли переменные между собой. Для этого используются операторы <span>==</span> (равно), <span>===</span> (строгое равно), <span>!=</span> (не равно). Если нас интересует только равенство значений переменных, то используется обычное равно. Если же нам важно, чтобы помимо значений переменых у них были одинаковые типы, используется строгое равно. Восклицательный знак обозначает частицу "не". Таким образом конструкция != обозначает "не равно".
+		</div>
+		<div id="code_6" class="text code">
+			<span>if</span>(a == b){...} // если a равно b
+				<br>
+			<span>if</span>(a === b){...} // если a равно b и при этом у них одинаковый тип данных
+				<br>
+			<span>if</span>(a != b){...} // если a не равно b  
+				<br>
+		</div>
+	</div>
+	
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

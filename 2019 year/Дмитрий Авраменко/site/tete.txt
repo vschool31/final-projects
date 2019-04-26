@@ -1,0 +1,89 @@
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+<script src="http://makeasite.ru/wp-content/uploads/2015/05/jQuery.scrollSpeed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+
+	<header>
+		<div class="container">	
+			<img class="logo" src="img/logo4.png" alt="сайтик">
+			<nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="#">HTML</a></li>
+    				<li><a href="#">JavaS</a></li>
+    				<li><a href="#">О нас</a></li>
+    				<li><a href="#">Контакты</a></li>
+    				<li><a href="#">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<ul class="submenu">
+						<li><a href="teghtml.html">Теги</a></li>
+						<li><a href="#">Атрибуты</a></li>
+						<li><a href="#">Текст</a></li>
+						<li><a href="#">Ссылки</a></li>
+						<li><a href="#">Изображения</a></li>
+						<li><a href="#">Таблицы</a></li>
+						<li><a href="#">Списки</a></li>
+					</ul>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="#">HTML-генераторы</a></li>
+    				<li><a href="#">Семантические элементы HTML5</a></li>	
+					<li><a href="#">HTML5-видео</a></li>	
+					<li><a href="#">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="#">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>	
+				</ul>
+			</nav>
+			
+			<nav class="keke">
+			<ul>
+				<li class="html">JS</li>
+					<li><a href="#">Введение</a></li>
+					<li><a href="#">Основы JavaScript</a></li>
+						<ul class="submenu">
+							<li><a href="#">Качество кода</a></li>
+							<li><a href="#">Структуры данных</a></li>
+							<li><a href="#">Замыкания, область видимости</a></li>
+							<li><a href="#">Методы объектов и контекст вызова</a></li>
+						</ul>
+    				<li><a href="#">Некоторые другие возможности</a></li>
+						<ul class="submenu">
+							<li><a href="#">ООП в функциональном стиле</a></li>
+							<li><a href="#">ООП в прототипном стиле</a></li>
+						</ul>
+    				<li><a href="#">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>

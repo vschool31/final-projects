@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Массивы</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			МАССИВЫ
+		</div>
+	</div>
+	<a href="9.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			<span>Массив</span> - упорядоченная структура данных, состоящая из элементов одинакового типа данных. Каждый элемент в массиве имеет свой индекс. Любой массив можно сравнить со списком, в котором рядом с каждым пунктом что-то указано (например, список продуктов). Объявление массива:
+		</div>
+		<div id="code_1" class="text code">
+			<span>var</span> имя_массива = [];
+		</div>
+		<div id="div_2" class="text">
+			В квадратных скобках указываются элементы массива.
+		</div>
+		<div id="code_2" class="text code">
+			<span>var</span> mas = [1, 10, 100]; // массив, состоящий из цифр
+		</div>
+		<div id="div_3" class="text">
+			Элементы массива нумеруются с <span>нуля</span>. Чтобы получить нужный элемент из массива – указывается его номер в квадратных скобках.
+		</div>
+		<div id="code_3" class="text code">
+			<span>var</span> mas = [1, 10, 100];
+				<br>
+			mas[0]; // 1
+				<br>
+			mas[1]; // 10
+				<br>
+			mas[2]; // 100
+				<br>
+		</div>
+		<div id="div_4" class="text">
+			Можно <span>изменять</span> элементы массива и <span>добавлять</span> новые элементы:
+		</div>
+		<div id="code_4" class="text code">
+			mas[0] = 2; // изменили первый элемент
+				<br>
+			mas[3] = 1000; // добавили новый элемент
+		</div>
+		<div id="div_5" class="text">
+			Длина массива узнается с помощью свойства <span>length</span>. Вызывается это свойства следующим образом:
+		</div>
+		<div id="code_5" class="text code">
+			mas.length;
+		</div>
+		<div id="div_6" class="text">
+			Массив mas, используемый в примерах выше, называется <span>одномерный</span>. Помимо одномерных массивов существует <span>многомерные</span> массивы (массивы, состоящие из массивов). Самые популярные из многомерных массивов - <span>двумерные</span> (матрицы).
+		</div>
+		<div id="code_6" class="text code">
+			<span>var</span> matrix = [ 
+				<br>
+			&emsp;[1,2,3], 
+				<br>
+			&emsp;[4,5,6], 
+				<br>
+			&emsp;[7,8,9]
+				<br>
+			];
+		</div>
+		<div id="div_7" class="text">
+			Если вызов элементы в одномерном массиве происходит с помощью указание его номера в квадратных скобках, то в двумерном массиве нам нужно два номера. Первый указывает номер массива (<span>строка</span>), второй - номер самого элемента (<span>столбец</span>).
+		</div>
+		<div id="code_7" class="text code">
+			<span>alert</span>(matrix(1,1)) // центральный элемент - 5
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

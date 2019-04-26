@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Функции</title>
+	<link rel="shortcut icon" href="../../img/js_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_js.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text" style="font-size: 4vh">
+			ФУНКЦИИ
+		</div>
+	</div>
+	<a href="8.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+		Зачастую нам надо повторять одно и то же действие во многих частях программы. Чтобы не повторять один и тот же код несколько раз были придуманы функции. Структура функций:
+		</div>
+		<div id="code_1" class="text code">
+			<span>function</span> название_функции(параметры){
+				<br>
+			&emsp;тело функции
+				<br>
+			} 
+		</div>
+		<div id="div_2" class="text">
+			Создается функция ключевым словом <span>function</span>, после которого идет название функции. По этому имени вызывают функцию.
+		</div>
+		<div id="code_2" class="text code">
+			<span>function</span> sum(){...} // создание функции
+				<br>
+			sum(); // вызов функции
+		</div>
+		<div id="div_3" class="text">
+			Важной составляющей функции являются <span>параметры</span>. В круглых скобках можно указать какие параметры может принимать функция.
+		</div>
+		<div id="code_3" class="text code">
+			<span>function</span> sum(a, b){...}
+		</div>
+		<div id="div_4" class="text">
+			В коде выше созданная функция <span>sum</span> может принимать параметры a и b. Эти параметры могут использоваться в теле функции.
+		</div>
+		<div id="code_4" class="text code">
+			<span>function</span> sum(a, b){
+				<br>
+			&emsp;alert(a+b); // вывести на экран сумму a и b
+				<br>
+			}
+		</div>
+		<div id="div_5" class="text">
+			Теперь при вызове функции в круглые скобки указываются два числа. Их порядок соответствует порядку параметров (на место параметра <span>a</span> встанет первое число, на место параметра <span>b</span> встанет второе число).
+		</div>
+		<div id="code_5" class="text code">
+			sum(10, 12) // 22
+		</div>
+		<div id="div_6" class="text">
+			В JavaScript есть свои собственные функции. Например, функция <span>alert</span>(), которая использовалась выше (выводит на экран содержимое скобок). Эти функции можно использовать без описания. Вместо alert() в данной функции можно было бы использовать директиву <span>return</span>. Данная директива показывает, что будет возвращать функция.
+		</div>
+		<div id="code_6" class="text code">
+			<span>function</span> sum(a, b){
+				<br>
+			&emsp;return a+b;
+				<br>
+			}
+		</div>
+		<div id="div_7" class="text">
+			Например, запись <span>alert</span>(10 + sum(1,2)) будет выводить на экран число 13. В теме функций важным моментом являются локальные переменные. Локальные переменные - это переменные, объявленные внутри тела функции. Они используются только в этой функции и нигде больше.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Syit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="\сайтик\img\nan.ico" type="image/x-icon">
+
+<script type="text/javascript">	
+		$('a[href^="#"]').bind("click", function(e){
+  var anchor = $(this);
+  $('html, body').stop().animate({
+   scrollTop: $(anchor.attr("href")).offset().top
+  }, 1000);
+  e.preventDefault();
+ });
+ return false;﻿
+</script>
+
+	
+</head>
+<body>
+	<header>
+		<div class="container">	
+			<a href="main.html"><img class="logo" src="img/logo4.png" alt="сайтик"></a></div>
+				<div class="container1"><nav class="two">
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+    				<li><a href="stryktyra.html">HTML</a></li>
+    				<li><a href="javavv.html">JavaS</a></li>
+    				<li><a href="yroks.html">Уроки</a></li>
+    				<li><a href="kontakt.html">Контакты</a></li>
+    				<li><a href="avtor.html">Автор</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container8">
+			<nav class="keke">
+				<ul>
+					<li class="html">HTML</li>
+					<li><a href="osnova.html">Основы HTML</a></li>
+    				<li><a href="spetsimvol.html">Спецсимволы HTML</a></li>
+    				<li><a href="generator.html">HTML-генераторы</a></li>
+    				<li><a href="html5.html">Семантические элементы HTML5</a></li>	
+					<li><a href="vidio.html">HTML5-видео</a></li>	
+					<li><a href="neobez.html">Необязательные теги HTML5-разметки</a></li>	
+					<li><a href="forms.html">HTML5-формы</a></li>	
+					<li><a href="tests.html">Тесты</a></li>
+				</ul>
+			</nav>
+			<nav class="keke">
+			<ul>
+					<li class="html" >JS</li>
+					<li><a href="javavv.html">Введение</a></li>
+					<li><a href="java.html">Основы JavaScript</a></li>
+    				<li><a href="vrobote.html">Некоторые другие возможности</a></li>
+    				<li><a href="vrobote.html">Современные возможности ES-2015</a></li>	
+				</ul>
+				</nav>
+			</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<div ID = "toTop"> Наверх </div>
+	<section>
+		<div class="container2">
+		<div>
+			<ul class="textatr">
+<li style="color:white; background:#00c097;">Содержание:</li>
+<li><a href="№">1. Структура ссылки</a></li>
+<li><a href="№">2. Абсолютный и относительный путь</a></li>
+<li><a href="№">3. Якорь</a></li>
+<li><a href="№">4. Как сделать изображение-ссылку</a></li>
+<li><a href="№">5. Атрибуты ссылок</a></li>
+</ul>
+		</div>	
+<div class="rere">
+		<h1 id="glava1" class="html">1. Структура ссылки</h1>
+		</div>
+	Гиперссылки создаются с помощью парного тега <kbd>&lt;a&gt;&lt;/a&gt;</kbd> Внутрь тега помещается текст, который будет отображаться на веб-странице. Текст ссылки отображается в браузере с подчёркиванием, цвет шрифта — синий, при наведении на ссылку курсор мыши меняет вид.
+<br>Обязательным параметром тега <kbd>&lt;a&gt;</kbd> является атрибут <kbd>href</kbd>, который задает URl-адрес веб-страницы.
+<pre id="lalala">
+&lt;a href="http://site.ru"&gt;указатель ссылки &lt;/a&gt;;
+</pre>
+
+Ссылка состоит из двух частей —<strong>указателя</strong> и <strong>адресной части.</strong> <br> <strong>Указатель ссылки</strong> представляет собой фрагмент текста или изображение, видимые для пользователя. <br>	<strong>Адресная часть</strong> ссылки пользователю не видна, она представляет собой адрес ресурса, к которому необходимо перейти.
+
+Адресная часть ссылки состоит из URl. URl (Uniform Resource Locator) — унифицированный адрес ресурса. При создании адресов для разделения слов между собой рекомендуется использовать дефис, а не символ подчёркивания. В общем виде URl имеющий следующий формат:
+<pre id="lalala">
+метод доступа://имя сервера:порт/путь
+</pre>
+<strong>Метод доступа</strong>, или протокол, осуществляет обмен данными между рабочими станциями в разных сетях. Наиболее распространенные протоколы передачи данных:
+<br><kbd>file</kbd> обеспечивает чтение файла с локального диска:
+<pre>
+	file:/gallery/pictures/summer.html
+</pre>
+<kbd>http</kbd> предоставляет доступ к веб-странице по протоколу HTTP:
+<pre>
+	http://site.ru/
+</pre>
+<kbd>http</kbd>s — специальная реализация протокола HTTP, использующая шифрование (как правило, SSL или TLS)
+<pre>
+	https://site.ru/
+</pre>
+<kbd>ftp</kbd> осуществляет запрос к FTP-серверу на получение файла:
+<pre>
+	ftp://pgu/directory/library
+</pre>
+<kbd>mailto</kbd> запускает сеанс почтовой связи с указанным адресатом и хостом:
+<pre>
+	mailto: nika@gmail.com
+</pre>
+<br>
+<strong>Имя сервера</strong> описывает полное имя машины в сети, например, <kbd>site.ru</kbd>. Если имя сервера не указано, то ссылка считается локальной, т.е. она относится к той же машине, на которой находится HTML-документ, содержащий ссылку.
+<strong>Номер порта ТСР</strong>, на котором функционирует веб-сервер. Представляет собой число, которое необходимо указывать, если метод требует номер порта (отдельные сервера могут иметь свой отличительный номер порта). Если порт не указан, по умолчанию используется порт 80. <br>Стандартными портами являются:
+<br>21 — FTP
+<br>70 — Gopher
+<br>80 — HTTP
+
+<br><strong>Путь</strong> содержит имя папки, в которой находится файл.
+<h1 id="glava2" class="html">2. Абсолютный и относительный путь</h1>
+Когда в ссылке указывается только имя файла, браузер предполагает, что файл находится в той же папке, что и документ, содержащий гиперссылку. На практике веб-сайты содержат сотни документов, которые размещают в отдельные папки, чтобы ими было легче управлять. Чтобы создать ссылку на файл, находящийся вне папки, содержащей текущий документ, необходимо указать расположение файла или путь. HTML поддерживает два вида пути: абсолютный и относительный.
+
+
+
+
+
+
+
+
+
+</section>
+	<footer>
+		<div class="footer">	
+				Все права защищены &copy; 2018
+		</div>
+	</footer>
+</body>
+</html>

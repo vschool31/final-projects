@@ -1,0 +1,13 @@
+body{
+	overflow: hidden;
+}
+#header{
+	border-top: 1vh solid #88CE16;
+	border-bottom: 1vh solid #88CE16;
+}
+#title, #back, #next, #back_lesson_10, .question, #button{
+	background-color: #88CE16;
+}
+span{
+	color: #63A712;
+}

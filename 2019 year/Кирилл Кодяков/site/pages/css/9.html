@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Трансформация</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ТРАНСФОРМАЦИЯ
+		</div>
+	</div>
+	<a href="10.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			<span>Трансформация</span> - это какие-либо преобразования элемента. За трансформацию отвечает свойство <span>transform</span>. Это свойство применяет 2D или 3D преобразование к элементу. Оно позволяет смещать, вращать, масштабировать, наклонять любой элемент на странице.
+		</div>
+		<div id="div_2" class="text">
+			В качестве значений свойства transform выступает одна или несколько функций (разделяемых пробелами), которые будут применяться в том порядке, в котором они определены.
+		</div>
+		<div id="div_3" class="text">
+			Функция <span>translate</span> позволяет смещать элементы. Принимает два числовых значения: смещение по оси <span>X</span> и смещение по оси <span>Y</span>. Ведет себя подобно смещению элемента со свойством <span>position: relative</span>. Важная особенность функции translate в том, что при передаче в неё процентных значений проценты будут рассчитываться от размеров элемента.
+		</div>
+		<div id="code_1" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;transform: translate(50%, 50%);
+				<br>
+			}
+				<br><br>
+			/* Смещение элемента на половину своей высоты и ширины вниз и вправо */
+		</div>
+		<div id="div_4" class="text">
+			Функция <span>scale</span> масштабирует элемент горизонтально и вертикально. Принимает два числовых значения без единиц измерения. Например, <span>scale(2,2)</span> увеличит размеры элемента в два раза. Можно передать только одно значение(оно будет использоваться сразу и для горизонтального масштабирования и для вертикального). Значения меньше единицы будут уменьшать размеры элемента, а значения больше единицы увеличивать (scale(1) не приведет к какому-нибудь результату).
+		</div>
+		<div id="code_2" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;transform: scale(0.5); // уменьшение размеров элемента в два раза
+				<br>
+			}
+		</div>
+		<div id="div_5" class="text">
+			Функция <span>rotate</span> поворачивает элемент. Положительное значение поворачивает элемент по часовой стрелке, а отрицательное против часовой. Функция <span>skew</span> определяет наклон элемента. Принимает два числовых значения: наклон по оси <span>X</span> и по оси <span>Y</span>. Если передать только одно значение, наклон будет только по оси <span>X</span>.
+		</div>
+		<div id="code_3" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;transform: rotate(180grad) skew(10grad);
+				<br>
+			}
+				<br><br>
+			/* Поворот элемента на 180 градусов и небольшой его наклон */
+		</div>
+		<div id="div_6" class="text">
+			Все эти функции преобразуют элемент относительно точки, которая изначально находиться в центре этого элемента, но с помощью свойства <span>transform-origin</span> эту точку можно сместить. Свойство принимает два числовых значения: смещение точки по оси <span>X</span> и по оси <span>Y</span>.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

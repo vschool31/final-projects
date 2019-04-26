@@ -1,0 +1,10 @@
+#header{
+	border-top: 1vh solid #31A9DC;
+	border-bottom: 1vh solid #31A9DC;
+}
+#title, #back, #next, #back_lesson_10, .question, #button{
+	background-color: #31A9DC;
+}
+span{
+	color: #0070BA;
+}

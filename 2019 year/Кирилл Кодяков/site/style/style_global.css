@@ -1,0 +1,22 @@
+@font-face{
+	font-family: 'ubuntu';
+	src: url('../fonts/ubuntu.ttf');
+}
+@font-face{
+	font-family: 'Inconsolata-LGC';
+	src: url('../fonts/Inconsolata-LGC.otf');
+}
+html{
+	font-family: ubuntu;
+	user-select: none;
+	overflow: hidden;
+}
+body{
+	margin: 0;
+}
+a:visited{
+	color: black;
+}
+a:link{
+	color: black;
+}

@@ -1,0 +1,123 @@
+html{
+	overflow-y: scroll;
+}
+#header{
+	width: 100vw;
+	height: 8vh;
+	
+	background-color: #fff;
+	position: fixed;
+
+	z-index: 1;
+
+	transition-duration: 0.2s;
+}
+#title{
+	height: 10vh;
+	width: 55vw;
+	
+	clip-path: polygon(0 0, 87% 0, 100% 100%, 0% 100%);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: 1;
+
+	transition-duration: 0.2s;
+}
+#title_text{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	width: inherit;
+	height: inherit;
+	
+	color: #fff;
+	font-size: 4vh;
+
+	z-index: 1;
+
+	transition-duration: 0.2s;
+}
+#back{
+	height: 10vh;
+	width: 35vw;
+
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%);
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	z-index: 1;
+
+	transition-duration: 0.2s;
+
+}
+#back_text{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	width: inherit;
+	height: inherit;
+	
+	color: #fff;
+	font-size: 4vh;
+
+	z-index: 1;
+
+	transition-duration: 0.2s;
+}
+#main{
+	position: absolute;
+	top: 13vh;
+
+	width: 100vw;
+}
+#button{
+	width: 100vw;
+
+	padding: 3vh;
+	margin-bottom: 3vh;
+	color: #fff;
+	font-size: 4vh;
+	transition-duration: 0.3s;
+}
+#button div{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	width: inherit;
+	height: inherit;
+	
+	color: #fff;
+	font-size: 4vh;
+}
+#result{
+	font-size: 3vh;
+	color: #000;
+}
+.question{
+	height: 7vh;
+}
+.question div{
+	text-indent: 1vh;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	width: inherit;
+	height: inherit;
+	
+	color: #fff;
+	font-size: 4vh;
+}
+.answers{
+	font-size: 3vh;
+	margin: 1vh;
+	padding: 1vh;
+}

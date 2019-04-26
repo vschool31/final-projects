@@ -1,0 +1,104 @@
+@font-face {
+	font-family: 'Amatic SC';
+	src: url('AmaticSC-Regular.ttf');
+}
+
+body {
+	margin: 0;
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.img2 {
+	width: 100%;
+	position: absolute;
+	top: -40vh;
+	filter: hue-rotate(270deg);
+}
+
+.img {
+	width: 100%;
+	position: absolute;
+	top: -60vh;
+}
+
+.center {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+.h1 {
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	display: block;
+	width: 48vw;
+	height: 15vh;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
+	font-size: 10vh;
+	text-align: center;
+	margin-top: 27vh;
+	margin-left: 26vw; 
+}
+
+.firstp {
+	font-family: 'Amatic SC';
+	color: white;
+	display: block;
+	width: 36vw;
+	height: 20vh;
+	text-align: center;
+	margin-left: 32vw;
+	font-size: 4.5vh;
+}
+
+
+
+.footer {
+	position: absolute;
+	margin-top: 100vh;
+	width: 100%;
+	height: 7vh;
+	background-color: #ffb74d;
+	padding-bottom: 1vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.copyright {
+	display: block;
+	position: relative;
+	width: 15vw;
+	height: 5vh;
+	margin-left: 3vw;
+}
+
+.vk {
+	display: block;
+	position: relative;
+	width: 10vw;
+	height: 5vh;
+	text-decoration: none;
+	color: black;
+	margin-top: -7.5vh;
+	margin-left: 70vw;
+	text-align: center;
+}
+
+.youtube {
+	display: block;
+	position: relative;
+	width: 12vw;
+	height: 5vh;
+	text-decoration: none;
+	color: black;
+	margin-top: -5vh;
+	margin-left: 80vw;
+	text-align: center;
+}

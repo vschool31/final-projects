@@ -1,0 +1,261 @@
+.mainmenu {
+	background-color: #fff;
+	height: 100vh;
+	width: 30%; /*0*/
+	position: fixed;
+	margin-left: -30%;
+	z-index: 4;
+	transition: .3s;
+}
+
+.zagreyevanie {
+	background-color: #000; /*#000*/
+	opacity: 0.65; /*0.65*/
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3; /*3*/
+	transition: .4s;
+}
+
+.burgerbutton {
+	position: fixed;
+	width: 24px;
+	height: 24px;
+	margin-top: -40px; /*22px*/ 
+	margin-left: 20px;
+	z-index: 5; /*5*/
+	transform: rotate(0deg); /*90deg*/
+	transition: .4s;
+}
+
+.bar1 {
+	position: absolute;
+	width: inherit;
+	margin-top: 0px;
+	background-color: #000;
+	height: 4px;
+}
+
+.bar2 {
+	position: absolute;
+	width: inherit;
+	margin-top: 10px;
+	background-color: #000;
+	height: 4px;
+}
+
+.bar3 {
+	position: absolute;
+	width: inherit;
+	margin-top: 20px;
+	background-color: #000;
+	height: 4px;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	height: 7vh;
+	z-index: 2;
+}
+
+.memutext {
+	font-family:  'Montserrat', sans-serif;
+	display: block;
+	width: 6vw;
+	height: 4vh;
+	color: #000;
+	margin-left: 4vw;
+	user-select: none;
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	margin-top: 2vh;
+	line-height: 4vh;
+	text-align: center;
+	transition-duration: .3s;
+}
+
+.memutext:hover {
+	background-color: rgba(111,111,111,0.4);
+	color: #fff;
+}
+
+
+.mainmenu a {
+	text-decoration: none;
+	display: block;
+	height: 8vh;
+	position: relative;
+	font-family:  'Montserrat', sans-serif;
+	color: #000;
+}
+
+.onmain {
+	width: 20vw;
+	margin-top: 22px;
+	margin-left: 5vw;
+	background-color: #ffab40;
+	text-align: center;
+	line-height: 8vh;
+	font-size: 3vh;
+}
+
+.linkglas {
+	width: 20vw;
+	margin-top: 5vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 5;	
+	border-top: 2px solid #ff3d00; 
+	border-bottom: 2px solid #ff3d00; 
+	border-right: 2px solid #ff3d00;
+	transition: .4s; 
+}
+
+.linkglas:hover {
+	background-color: #ffd180;
+}
+
+.pri1 {
+	width: 20vw;
+	margin-top: -8vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;	
+	z-index: 4;
+	transition: .4s;
+	margin-left: 0;
+	box-shadow: 2px 0px 0 #ff3d00 inset, 0px -2px 0 #ff3d00 inset;
+}
+
+.pri1:hover {
+	background-color: #ffd180;
+}
+
+.cor1 {
+	width: 20vw;
+	margin-top: -8vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 3;
+	transition: .4s;
+	margin-left: 0;
+	box-shadow: 2px 0px 0 #ff3d00 inset, 0px -2px 0 #ff3d00 inset;	
+}
+
+.cor1:hover {
+	background-color: #ffd180;
+}
+
+.suf1 {
+	width: 20vw;
+	margin-top: -8vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 2;
+	transition: .4s;
+	margin-left: 0;
+	box-shadow: 2px 0px 0 #ff3d00 inset, 0px -2px 0 #ff3d00 inset;	
+}
+
+.suf1:hover {
+	background-color: #ffd180;
+}
+
+.okn1 {
+	width: 20vw;
+	margin-top: -8vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 1;
+	transition: .4s;
+	margin-left: 0;
+	box-shadow: 2px 0px 0 #ff3d00 inset, 0px -2px 0 #ff3d00 inset;	
+}
+
+.okn1:hover {
+	background-color: #ffd180;
+}
+
+.buttondown {
+	width: 5vw;
+	height: 8vh;
+	position: absolute;
+	margin-top: -8vh;
+	margin-left: 21vw;
+	padding-top: calc(4vh - 16px);
+}
+
+.arrow {
+	transform: rotate(270deg);
+	transition: .4s;
+}
+
+.linksogl {
+	width: 20vw;
+	margin-top: 3vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 3;
+	border-top: 2px solid #ff3d00; 
+	border-bottom: 2px solid #ff3d00; 
+	border-right: 2px solid #ff3d00;
+	transition: .4s;			
+}
+
+.linksogl:hover {
+	background-color: #ffd180;
+}
+
+.pri2 {
+	width: 20vw;
+	margin-top: -8vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 2;
+	transition: .4s;
+	margin-left: 0;
+	box-shadow: 2px 0px 0 #ff3d00 inset, 0px -2px 0 #ff3d00 inset;	
+}
+
+.pri2:hover {
+	background-color: #ffd180;
+}
+
+.suf2 {
+	width: 20vw;
+	margin-top: -8vh;
+	background-color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	z-index: 1;
+	transition: .4s;
+	margin-left: 0;	
+	box-shadow: 2px 0px 0 #ff3d00 inset, 0px -2px 0 #ff3d00 inset;
+}
+
+.suf2:hover {
+	background-color: #ffd180;
+}
+
+.buttondown2 {
+	width: 5vw;
+	height: 8vh;
+	position: absolute;
+	margin-top: -8vh;
+	margin-left: 21vw;
+	padding-top: calc(4vh - 16px);
+}
+
+.arrow2 {
+	transform: rotate(270deg);
+	transition: .4s;
+}

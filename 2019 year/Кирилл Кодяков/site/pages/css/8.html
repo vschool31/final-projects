@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Псевдоклассы</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ПСЕВДОКЛАССЫ
+		</div>
+	</div>
+	<a href="9.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			<span>Псевдоклассы</span> определяют динамическое состояние элементов, которое изменяется с помощью действий пользователя (например изменение цвета блока при наведении мыши на него). При использовании псевдоклассов браузер не перегружает текущий документ, поэтому с помощью псевдоклассов можно получить разные динамические эффекты на странице. Синтаксис применения псевдоклассов такой:
+		</div>
+		<div id="code_1" class="text code">
+			Селектор<span>:Псевдокласс</span>{
+				<br>
+			&emsp;Описание правил стиля; 
+				<br>
+			}
+				<br><br>
+			/* Селектор - элемент или группы элементов, к которым применяются стили */
+		</div>
+		<div id="div_2" class="text">
+			В CSS существует более 30 псевдоклассов. Например, псевдоклассы <span>link</span>, <span>active</span> и <span>visited</span> определяют свойства ссылок в трех разных состояниях (ещё не посещенные, в момент клика и уже посещенные). 
+		</div>
+		<div id="div_3" class="text">
+			Псевдокласс <span>cheked</span> Применяется к элементам интерфейса, таким как переключатели (<span>checkbox</span>) и флажки (<span>radio</span>), когда они находятся в положение «включено».
+		</div>
+		<div id="div_4" class="text">
+			Псевдоклассы <span>disabled</span> и <span>enabled</span> используются для определения стилей к заблокированым и не заблокированным элементам соответственно.
+		</div>
+		<div id="div_5" class="text">
+			Псевдокласс <span>hover</span> определяет стиль элемента при наведении на него курсора мыши, но при этом по элементу еще не кликнули. Псевдокласс <span>focus</span> определяет стиль для элемента получающего фокус (элемент находится в фокусе, если по ниму кликнули мышкой).
+		</div>
+		<div id="div_6" class="text">
+			Псевдокласс <span>not</span> задает правила стилей для элементов, которые не содержат указанный селектор. В качестве селектора могут указываться псевдоклассы (кроме самого псевдокласса not), теги, идентификаторы, классы и селекторы атрибутов.
+		</div>
+		<div id="code_2" class="text code">
+			input<span>:not</span>([type="submit"]){
+				<br>
+    		&emsp;border: 1px solid #ccc; 
+    			<br>
+   			}
+   				<br><br>
+   			/* Стиль применится ко всем input без атрибута type="submit" */
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

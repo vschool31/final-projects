@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Формы</title>
+	<link rel="shortcut icon" href="../../img/html_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_html.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ФОРМЫ
+		</div>
+	</div>
+	<a href="9.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			Формы предназначены для обмена данными между пользователем и сервером. Любые ваши действия на сайте обрабатываются сервером. Например, открытие сайта, переходы между страницами, ввод какой-либо информации. Если для первых двух пунктов за вас уже всё сделано (вам не нужно прописывать дополнительный код, чтобы ваш сайт можно было открыть), то для ввода информации и отправки её на сервер нужно использовать формы. Установка формы осуществляется тегом &lt;<span>form</span>&gt; с атрибутом <span>action</span>. В <span>action</span> указывается URL программы, которой передаётся управление данными (то есть, всё, что вы укажите между тегами &lt;<span>form</span>&gt; &lt;/<span>form</span>&gt;, отправится в программу, указанную в атрибуте <span>action</span>).
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>form</span> <span>action</span> = "программа"&gt;
+				<br>
+			&emsp;...
+				<br>
+			&lt;/<span>form</span>&gt;
+		</div>
+		<div id="div_2" class="text">
+			Для сбора информации с пользователя используется тег &lt;<span>input</span>&gt;. Без атрибутов этот тег представляет собой <span>текстовое поле</span>.
+		</div>
+		<div id="code_2" class="text code">
+			<div class="code">
+				&lt;<span>input</span>&gt;
+				<br>
+				<br>
+				<input>
+			</div>
+		</div>
+		<div id="div_3" class="text">
+			Однако, с помощью атрибута <span>type</span>, вид этого тега можно изменить.
+		</div>
+		<div id="div_4" class="text">
+			Значение <span>checkbox</span> устанавливает вид флажка. Флажки позволяют выбрать из списка более одного варианта. Чтобы флажки были из одной группы, каждому &lt;<span>input</span>&gt; нужно указать атрибут <span>name</span> (он должен совпадать у каждого &lt;<span>input</span>&gt;).
+		</div>
+		<div id="code_3" class="text code">
+			&lt;<span>input</span> <span>type</span> = "checkbox" <span>name</span> = "ar"</span>&gt; Первый элемент
+			<br>
+			&lt;<span>input</span> <span>type</span> = "checkbox" <span>name</span> = "ar"</span>&gt; Второй элемент
+			<br>
+			&lt;<span>input</span> <span>type</span> = "checkbox" <span>name</span> = "ar"</span>&gt; Третий элемент
+			<br>
+			<br>
+			<input type="checkbox" name="ar"> Первый элемент 
+			<br>
+			<input type="checkbox" name="ar"> Второй элемент 
+			<br>
+			<input type="checkbox" name="ar"> Третий элемент
+		</div>
+		<div id="div_5" class="text">
+			Значение <span>radio</span> устаналивает вид переключателя. Из всех переключатель в списке одновременно может быть выбран только <span>один</span>. Как и в случае с <span>checkbox</span>, чтобы все переключатели относились к одной группе, у всех должны быть одинаковые атрибуты <span>name</span>.
+		</div>
+		<div id="code_4" class="text code">
+			&lt;<span>input</span> <span>type</span> = "radio" <span>name</span> = "ar"</span>&gt; Первый элемент
+			<br>
+			&lt;<span>input</span> <span>type</span> = "radio" <span>name</span> = "ar"</span>&gt; Второй элемент
+			<br>
+			&lt;<span>input</span> <span>type</span> = "radio" <span>name</span> = "ar"</span>&gt; Третий элемент
+			<br>
+			<br>
+			<input type="radio" name="lol"> Первый элемент 
+			<br>
+			<input type="radio" name="lol"> Второй элемент 
+			<br>
+			<input type="radio" name="lol"> Третий элемент
+		</div>
+		<div id="div_6" class="text">
+			Значение <span>file</span> превратит &lt;<span>input</span>&gt; в кнопку, по которой мы сможем выбрать файл.
+		</div>
+		<div id="code_5" class="text code">
+			&lt;<span>input</span> <span>type</span> = "file"&gt;
+			<br>
+			<br>
+			<input type="file">
+		</div>
+		<div id="div_7" class="text">
+			Значение <span>button</span> превращает тег в кнопку. Но стоит отметить, что для этого имеется отдельный тег &lt;<span>button</span>&gt; (главное отличие только в том, что для &lt;<span>button</span>&gt; отображаемое имя кнопки вписывается между открывающим и закрывающим тегами, а для &lt;<span>input</span>&gt; в атрибут <span>value</span>).
+		</div>
+		<div id="code_6" class="text code">
+			&lt;<span>input</span> <span>type</span>= "button" <span>value</span> = "Кнопка"&gt;
+			<br>
+			<br>
+			<button>Кнопка</button>
+		</div>
+		<div id="div_8" class="text">
+			Но обмен данными между пользователем и сервером происходит не только с помощью &lt;<span>input</span>&gt;. В <span>HTML</span> имеется тег &lt;<span>textarea</span>&gt;, который представляет из себя область для ввода многострочного текста. От обычного &lt;<span>input</span>&gt; он отличается тем, что в нем допустимы перенос строк (которые сохраняются при отправке).
+		</div>
+		<div id="code_7" class="text code">
+			&lt;<span>textarea</span>&gt;Сюда можно вписать многострочный текст&lt;/<span>textarea</span>&gt;
+			<br>
+			<br>
+			<textarea>Сюда можно вписать многострочный текст</textarea>
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

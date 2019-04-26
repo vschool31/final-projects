@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>HTML (HYPER TEXT MARKUP LANGUAGE) является:</h3>",
+        answers: [
+            "Графическим редактором",
+            "Одним из средств при создании Webстраниц",
+            "Системой программирования",
+			"Системой управления базами данных",
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Webстраница (документ HTML) представляет собой:</h3>",
+        answers: [
+            "Текстовый файл с расширением txt или doc ",
+            "Текстовый файл с расширением htm или html ",
+            " Двоичный файл с расширением com или exe ",
+			"Графический файл с расширением gif или jpg "
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Программа для просмотра гипертекстовых страниц называется:</h3>",
+        answers: [
+            "Сервер",
+            "Протокол",
+            "Браузер"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Jpg, gif, png, tiff - это...</h3>",
+        answers: [
+            "Названия различных файловых систем",
+            "Расширения графических файлов",
+            "Расширения текстовых файлов"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Гипертекст  это: </h3>",
+        answers: [
+            " Текст очень большого размера",
+            " Текст, в котором используется шрифт большого размера",
+            "Структурированный текст, где возможны переходы по выделенным меткам ",
+			"Текст, в который вставлены объекты с большим объемом информации"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какие теги определяют видимую часть документа?</h3>",
+        answers: [
+            "&lt;body&gt;&lt;/body&gt;",
+            " &lt;p&gt;&lt;/p&gt;",
+            " &lt;html&gt;&lt;/html&gt;",
+			" &lt;title&gt;&lt;/title&gt;"
+        ],
+        correct: [1]
+    },
+	{
+        type: "choose",
+        question: "<h3>В какой тэг помещают название webдокумента?</h3>",
+        answers: [
+            "&lt;body&gt;&lt;/body&gt;",
+            " &lt;title&gt;&lt;/title&gt;",
+            "&lt;h1&gt;&lt;/h1&gt;",
+			"&lt;img src=”name”&gt;"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какие тэги задают размер заголовка?</h3>",
+        answers: [
+            "&lt;p&gt;&lt;/p&gt;",
+            " &lt;img src=”name”&gt;",
+			" &lt;body&gt;&lt;/body&gt;",
+			"&lt;h1&gt;&lt;/h1&gt;"
+        ],
+        correct: [4]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какой вариант является правильно организованной гиперссылкой?</h3>",
+        answers: [
+            " &lt;body&gt;&lt;/body&gt;",
+            " &lt;a href=”URL”&gt;&lt;a&gt;",
+            " &lt;a =”URL”&gt;",
+			" &lt;a href=”URL”&gt;&lt;/a&gt;"
+        ],
+        correct: [4]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какие тэги создают абзац в документе?</h3>",
+        answers: [
+            "&lt;p&gt;&lt;/p&gt;",
+            " &lt;body&gt;&lt;/body&gt;",
+            "&lt;img src=”name”&gt;",
+			"&lt;html&gt;&lt;/html&gt;"
+        ],
+        correct: [1]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какой тэг указывает браузеру, что это HTML документ?</h3>",
+        answers: [
+            "&lt;body&gt;&lt;/body&gt;",
+            " &lt;title&gt;&lt;/title&gt;",
+            "&lt;html&gt;&lt;/html&gt;",
+			"&lt;p&gt;&lt;/p&gt;"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какие теги способны изменить цвет шрифта документа?</h3>",
+        answers: [
+            " &lt;HTML&gt;… &lt;/HTML&gt;",
+            "&lt;FONT&gt;…&lt;/FOND&gt;",
+            " &lt;P&gt;…&lt;/P&gt;",
+			" &lt;BODY&gt;..&lt;/BODY&gt;"
+        ],
+        correct: [2]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Тест на тему: "Основы HTML"</h3>
+		<p><img src="images/html_structure.png" /></p>
+        <button class="btn btn-large">Начать тест</button>
+    </div>
+</body>
+</html>

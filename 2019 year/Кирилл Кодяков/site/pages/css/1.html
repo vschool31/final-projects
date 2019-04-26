@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Общее</title>
+	<link rel="shortcut icon" href="../../img/css_logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../style/style_global.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_all.css">
+	<link rel="stylesheet" type="text/css" href="../../style/style_lesson_css.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="title">
+		<div id="title_text">
+			ОБЩЕЕ
+		</div>
+	</div>
+	<a href="2.html">
+		<div id="next">
+			<div id="next_text">
+				СЛЕДУЮЩИЙ УРОК
+			</div>
+		</div>	
+	</a>
+	<a href="../../index.html">
+		<div id="back">
+			<div id="back_text">
+				К РАЗДЕЛАМ
+			</div>
+		</div>	
+	</a>
+	<div id="main">
+		<div id="div_1" class="text">
+			<span>CSS</span> - это каскадные таблицы стилей (Cascading Style Sheets). С их помощью осуществляется оформление вашей страницы. CSS позволяет настраивать цвета, смещать объекты, управлять переходами, создавать анимации и многое другое.
+		</div>
+		<div id="div_2" class="text">
+			Есть <span>три</span> способа подключения CSS к вашей странице. <span>Во-первых</span>, вы можете прописывать стили отдельно в каждом теги. Для этого в теги нужно написать атрибут style и в его значении указывать свойства.
+		</div>
+		<div id="code_1" class="text code">
+			&lt;<span>div</span> <span>style</span> = "background-color: black"&gt;&lt;/<span>div</span>&gt; &lt;!--Задали тегу div черный фон--&gt;
+		</div>
+		<div id="div_4" class="text">
+			<span>Во-вторых</span>, вы можете прописывать стили для всей страницы в самом её начале. В этом случае style нужно использовать как тег (свойства указываются между открывающим и закрывающим тегами), который нужно поместить между тегами &lt;head&gt;&lt;/head&gt;.
+		</div>
+		<div id="code_2" class="text code">
+			&lt;<span>head</span>&gt;
+				<br>
+			&emsp;&lt;<span>style</span>&gt;
+				<br>
+			&emsp;&emsp;div{
+				<br>
+			&emsp;&emsp;&emsp;background-color: black; /* У всех div черный фон */
+				<br>
+			&emsp;&emsp;}
+				<br>
+			&emsp;&lt;<span>/style</span>&gt;
+				<br>
+			&lt;<span>/head</span>
+				<br><br>
+			/*Кстати, в CSS комментарии указываются таким способом*/
+		</div>
+		<div id="div_5" class="text">
+			<span>В-третьих</span> можно создать отдельный документ, в котором будут находиться все стили (или несколько таких документов). В документ вы сразу записываете свойства.
+		</div>
+		<div id="code_3" class="text code">
+			<span>div</span>{
+				<br>
+			&emsp;background-color: black;
+				<br>
+			}
+				<br>
+			<span>p</span>{
+				<br>
+			&emsp;background-color: black;
+				<br>
+			}
+		</div>
+		<div id="div_6" class="text">
+			Далее вы сохраняете документ с расширением <span>.css</span> (обычно этот файл называют style). Затем вам надо подключить этот документ к вашей HTML-странице. Для этого в теге &lt;head&gt; вы пишите строчку:
+		</div>
+		<div id="code_4" class="text code">
+			&lt;<span>link</span> <span>rel</span>="stylesheet" <span>type</span>="text/css" <span>href</span>="путь к документу"&gt;
+		</div>
+		<div id="div_7" class="text">
+			Из всех трех способов чаще всего используется третий (намного удобней, когда все ваши стили находятся в одном файле).
+		</div>
+		<div id="div_8" class="text">
+			Особенность CSS в том, что вы можете менять не только все одинаковые теги, но и какие-то конкретно из них, так как в CSS имеются понятия <span>классов</span> и <span>id. Указав класс или id, вы можете прописать для него отдельные стили.
+		</div>
+		<div id="code_5" class="text code">
+			&emsp;&lt;!--HTML--&gt;
+				<br>
+			&lt;<span>div</span> <span>class</span>="some_class"&gt;&lt;/div&gt;
+				<br>
+			&lt;<span>div</span> <span>id</span>="some_id"&gt;&lt;/div&gt;
+				<br><br>
+			&emsp;/*CSS*/
+				<br>
+			.<span>some_class</span>{
+				<br>
+			&emsp;background-color: black; /*Указание стилей класса (точка + имя класса)*/
+				<br>
+			}
+				<br>
+			<span>#some_id</span>{
+				<br>
+			&emsp;background-color: red; /*Указание стилей id (решетка + имя id)*/
+				<br>
+			}
+		</div>
+		<div id="div_9" class="text">
+			Отличие между class и id состоит в том, что один и тот же class может быть у нескольких элементов, а вот id только у какого-то одного элемента.
+		</div>
+		<div id="div_10" class="text">
+			В CSS вам понадобится указывать значения свойств и часто это будет какое-то численное значение. У таких значений есть две составляющие: число и единицы измерения. Например, запись "15px" означает 15 пикселей.
+		</div>
+	</div>
+
+	<script src="../../script/lesson_scroll.js"></script>
+</body>
+</html>

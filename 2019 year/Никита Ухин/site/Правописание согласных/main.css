@@ -1,0 +1,179 @@
+@font-face {
+	font-family: 'Amatic SC';
+	src: url('../AmaticSC-Regular.ttf');
+}
+
+body {
+	margin: 0;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	height: 7vh;
+	z-index: 2;
+}
+
+.memutext {
+	font-family:  'Montserrat', sans-serif;
+	display: block;
+	width: 6vw;
+	height: 4vh;
+	color: #fff;
+	margin-left: 4vw;
+	user-select: none;
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #fff;
+	margin-top: 2vh;
+	line-height: 4vh;
+	text-align: center;
+	transition-duration: .3s;
+}
+
+.memutext:hover {
+	background-color: rgba(255,255,255,0.4);
+}
+
+.section1 {
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+}
+
+.img {
+	width: 100%;
+	filter: brightness(.5);
+	margin-top: -10vh;
+}
+
+.section1 h1 {
+	position: absolute;
+	display: block;
+	width: 50vw;
+	height: 20vh;
+	border-bottom: 3px solid #fafafa;
+	border-top: 3px solid #fafafa;
+	line-height: 20vh;
+	color: #fafafa;
+	font-size: 9vh;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	top: 20vh;
+	left: 25vw;
+}
+
+.soglprisctav {
+	width: 100%;
+	height: 150vh;
+	background-color: #fafafa;
+}
+
+.h2sp {
+	position: absolute;
+	font-family: 'Amatic SC', cursive;
+	display: block;
+	width: 20vw;
+	height: 8vh;
+	line-height: 8vh;
+	color: black;
+	font-size: 8vh;
+	text-align: center;
+	left: 4vw;
+}
+
+.stick {
+	height: 3px;
+	width: 100%;
+	background-color: orange;
+	position: absolute;
+	top: 95vh;
+}
+
+.themeh1 {
+	position: absolute;
+	font-family: 'Amatic SC', cursive;
+	display: block;
+	width: 50vw;
+	height: 15vh;
+	line-height: 15vh;
+	color: black;
+	font-size: 5.5vh;
+	text-align: left;
+	left: 5vw;
+}
+
+#h11 {
+	margin-top: 17vh;	
+}
+
+.zzz {
+	position: absolute;
+	width: 35vw;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3vh;
+	height: 40vh;
+	margin-left: 7vw;
+	margin-top: 30vh;
+}
+
+.ccc {
+	position: absolute;
+	width: 35vw;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3vh;
+	height: 40vh;
+	margin-left: 53vw;
+	margin-top: 30vh;
+}
+
+.prim1 {
+	display: block;
+	width: 80vw;
+	position: absolute;
+	margin-left: 10vw;
+	margin-top: 58vh;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6vh;
+}
+
+.prim2 {
+	display: block;
+	width: 80vw;
+	position: absolute;
+	margin-left: 10vw;
+	margin-top: 68vh;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6vh;
+}
+
+.prim3 {
+	display: block;
+	width: 80vw;
+	position: absolute;
+	margin-left: 10vw;
+	margin-top: 77vh;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6vh;
+}
+
+.prim4 {
+	display: block;
+	width: 80vw;
+	position: absolute;
+	margin-left: 10vw;
+	margin-top: 83vh;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.6vh;
+}
+
+.parallax {
+	width: 100%;
+	height: 20vh;
+	overflow: hidden;
+}
+
+.img2 {
+	width: 100%;
+	margin-top: -80vh;
+	filter: brightness(.5);
+}
