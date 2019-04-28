@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Меню</title>
+	<link rel="shortcut iconn" type="image/x-iconn" href="iconn.jpg">
+	<style>
+		@font-face{
+			font-family: "roboto";
+			src: url("roboto.ttf");
+		}
+		html{
+			font-family: "roboto";
+		}
+		body{
+			margin: 0px;
+			background-image: url("fon.jpg");
+		}
+		#vid{
+			width: 40%;
+
+			position: absolute;
+			top: 50%; 
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#title{
+			width: 100%;
+			height: 80px;
+			font-size: 42pt;
+			background-color: #6270AF;
+			color: #25246A;
+			text-align: center;
+			border-bottom: solid 10px #25246A;
+			border-top: solid 10px #25246A;
+		}
+		.lesson{
+			position: absolute;
+			top: 100px;
+			width: 50px;
+			height: 50px;	
+			border-radius: 100%;
+			background-color: #6270AF;	
+			border: solid 3px #25246A;
+			margin: 0px;
+			cursor: pointer;
+		}
+		.lesson div{
+			font-size: 24pt;
+			color: #25246A;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			width: inherit;
+			height: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div id="title">
+		Задание №24
+	</div>
+
+	<div class="lesson" id="les1">
+		<div>1</div>
+	</div>
+	<div class="lesson" id="les2" style="left: 5%">
+		<div>2</div>
+	</div>
+	<div class="lesson" id="les3" style="left: 10%">
+		<div>3</div>
+	</div>
+	<div class="lesson" id="les4" style="left: 15%">
+		<div>4</div>
+	</div>
+	<div class="lesson" id="les5" style="left: 20%">
+		<div>5</div>
+	</div>
+	<div class="lesson" id="les6" style="left: 25%">
+		<div>6</div>
+	</div>
+	<div class="lesson" id="les7" style="left: 30%">
+		<div>7</div>
+	</div>
+	<div class="lesson" id="les8" style="left: 35%">
+		<div>8</div>
+	</div>
+	<div class="lesson" id="les9" style="left: 40%">
+		<div>9</div>
+	</div>
+	<div class="lesson" id="les10" style="left: 45%">
+		<div>10</div>
+	</div>
+	<div class="lesson" id="les11" style="right: 45%">
+		<div>11</div>
+	</div>
+	<div class="lesson" id="les12" style="right: 40%">
+		<div>12</div>
+	</div>
+	<div class="lesson" id="les13" style="right: 35%">
+		<div>13</div>
+	</div>
+	<div class="lesson" id="les14" style="right: 30%">
+		<div>14</div>
+	</div>
+	<div class="lesson" id="les15" style="right: 25%">
+		<div>15</div>
+	</div>
+	<div class="lesson" id="les16" style="right: 20%">
+		<div>16</div>
+	</div>
+	<div class="lesson" id="les17" style="right:15%">
+		<div>17</div>
+	</div>
+	<div class="lesson" id="les18" style="right:10%">
+		<div>18</div>
+	</div>
+	<div class="lesson" id="les19" style="right:5%">
+		<div>19</div>
+	</div>
+	<div class="lesson" id="les20" style="right:0">
+		<div>20</div>
+	</div>
+
+	
+	<video controls="controls" id="vid" ></video>
+
+	<script>
+		var video = document.getElementById('vid');
+
+		var src1 = document.getElementById('les1');
+		var src2 = document.getElementById('les2'); 
+                var src3 = document.getElementById('les3');
+                var src4 = document.getElementById('les4');
+                var src5 = document.getElementById('les5');
+                var src6 = document.getElementById('les6');
+                var src7 = document.getElementById('les7');
+                var src8 = document.getElementById('les8');
+                var src9 = document.getElementById('les9');
+                var src10 = document.getElementById('les10');
+                var src11 = document.getElementById('les11');
+                var src12 = document.getElementById('les12');
+                var src13 = document.getElementById('les13');
+                var src14 = document.getElementById('les14');
+                var src15 = document.getElementById('les15');
+                var src16 = document.getElementById('les16');
+                var src17 = document.getElementById('les17');
+                var src18 = document.getElementById('les18');
+                var src19 = document.getElementById('les19');
+                var src20 = document.getElementById('les20');
+
+
+		src1.addEventListener('click', function(){
+			video.setAttribute('src', '1.mp4');
+		});
+		src2.addEventListener('click', function(){
+			video.setAttribute('src', '2.mp4');
+		});
+		src3.addEventListener('click', function(){
+			video.setAttribute('src', '3.mp4');
+		}); 
+                src4.addEventListener('click', function(){
+			video.setAttribute('src', '4.mp4');
+		}); 
+                src5.addEventListener('click', function(){
+			video.setAttribute('src', '5.mp4');
+		}); 
+                src6.addEventListener('click', function(){
+			video.setAttribute('src', '6.mp4');
+		}); 
+                src7.addEventListener('click', function(){
+			video.setAttribute('src', '7.mp4');
+		}); 
+                src8.addEventListener('click', function(){
+			video.setAttribute('src', '8.mp4');
+		}); 
+                src9.addEventListener('click', function(){
+			video.setAttribute('src', '9.mp4');
+		});
+                src10.addEventListener('click', function(){
+			video.setAttribute('src', '10.mp4');
+		}); 
+                src11.addEventListener('click', function(){
+			video.setAttribute('src', '11.mp4');
+		}); 
+                src12.addEventListener('click', function(){
+			video.setAttribute('src', '12.mp4');
+		});
+                src13.addEventListener('click', function(){
+			video.setAttribute('src', '13.mp4');
+		});
+                src14.addEventListener('click', function(){
+			video.setAttribute('src', '14.mp4');
+		});
+                src15.addEventListener('click', function(){
+			video.setAttribute('src', '15.mp4');
+		});
+                src16.addEventListener('click', function(){
+			video.setAttribute('src', '16.mp4');
+		});
+                src17.addEventListener('click', function(){
+			video.setAttribute('src', '17.mp4');
+		});
+                src18.addEventListener('click', function(){
+			video.setAttribute('src', '18.mp4');
+		});
+                src19.addEventListener('click', function(){
+			video.setAttribute('src', '19.mp4');
+		});
+                src20.addEventListener('click', function(){
+			video.setAttribute('src', '20.mp4');
+		});
+	</script>
+</body>
+</html>
